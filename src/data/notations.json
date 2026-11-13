@@ -1,0 +1,742 @@
+{
+  "notations": [
+    {
+      "symbol": "U",
+      "name": "Up (Clockwise)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Trên (Up) 90° theo chiều kim đồng hồ khi nhìn trực diện từ trên xuống mặt U.",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn",
+        "megaminx",
+        "pyraminx",
+        "skewb"
+      ],
+      "example": "R U R' U'",
+      "axis": "y",
+      "dir": "CW",
+      "layers": "Top layer"
+    },
+    {
+      "symbol": "U'",
+      "name": "Up Prime (Counter-Clockwise)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Trên (Up) 90° ngược chiều kim đồng hồ khi nhìn trực diện từ trên xuống mặt U.",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn",
+        "megaminx",
+        "pyraminx",
+        "skewb"
+      ],
+      "example": "R U R' U'",
+      "axis": "y",
+      "dir": "CCW",
+      "layers": "Top layer"
+    },
+    {
+      "symbol": "U2",
+      "name": "Up Double (180°)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Trên (Up) 180° (nửa vòng).",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn",
+        "megaminx"
+      ],
+      "example": "R U2 R' U' R U' R'",
+      "axis": "y",
+      "dir": "180°",
+      "layers": "Top layer"
+    },
+    {
+      "symbol": "D",
+      "name": "Down (Clockwise)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Dưới (Down) 90° theo chiều kim đồng hồ khi nhìn trực diện từ dưới đáy lên mặt D (tức gảy từ trái sang phải ở mặt trước).",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn"
+      ],
+      "example": "R' D' R D",
+      "axis": "y",
+      "dir": "CW (từ đáy)",
+      "layers": "Bottom layer"
+    },
+    {
+      "symbol": "D'",
+      "name": "Down Prime (Counter-Clockwise)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Dưới (Down) 90° ngược chiều kim đồng hồ khi nhìn trực diện vào mặt D.",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn"
+      ],
+      "example": "R' D' R D",
+      "axis": "y",
+      "dir": "CCW (từ đáy)",
+      "layers": "Bottom layer"
+    },
+    {
+      "symbol": "D2",
+      "name": "Down Double (180°)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Dưới (Down) 180°.",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn"
+      ],
+      "example": "x R' U R' D2 R U' R' D2 R2 x'",
+      "axis": "y",
+      "dir": "180°",
+      "layers": "Bottom layer"
+    },
+    {
+      "symbol": "R",
+      "name": "Right (Clockwise)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Phải (Right) 90° theo chiều kim đồng hồ khi nhìn trực diện vào mặt phải (đẩy mặt phải từ dưới lên trên).",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn",
+        "pyraminx",
+        "megaminx",
+        "skewb"
+      ],
+      "example": "R U R' U'",
+      "axis": "x",
+      "dir": "CW",
+      "layers": "Right layer"
+    },
+    {
+      "symbol": "R'",
+      "name": "Right Prime (Counter-Clockwise)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Phải (Right) 90° ngược chiều kim đồng hồ khi nhìn trực diện vào mặt phải (kéo mặt phải từ trên xuống dưới).",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn",
+        "pyraminx",
+        "megaminx",
+        "skewb"
+      ],
+      "example": "R U R' U'",
+      "axis": "x",
+      "dir": "CCW",
+      "layers": "Right layer"
+    },
+    {
+      "symbol": "R2",
+      "name": "Right Double (180°)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Phải (Right) 180° (nửa vòng).",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn",
+        "gear-cube"
+      ],
+      "example": "R2 F2 R2",
+      "axis": "x",
+      "dir": "180°",
+      "layers": "Right layer"
+    },
+    {
+      "symbol": "L",
+      "name": "Left (Clockwise)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Trái (Left) 90° theo chiều kim đồng hồ khi nhìn trực diện vào mặt trái (tức kéo mặt trái từ trên xuống dưới!).",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn",
+        "pyraminx",
+        "megaminx",
+        "skewb"
+      ],
+      "example": "L' U' L U",
+      "axis": "x",
+      "dir": "CW (từ trái)",
+      "layers": "Left layer"
+    },
+    {
+      "symbol": "L'",
+      "name": "Left Prime (Counter-Clockwise)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Trái (Left) 90° ngược chiều kim đồng hồ khi nhìn trực diện vào mặt trái (đẩy mặt trái từ dưới lên trên).",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn",
+        "pyraminx",
+        "megaminx",
+        "skewb"
+      ],
+      "example": "L' U' L U",
+      "axis": "x",
+      "dir": "CCW (từ trái)",
+      "layers": "Left layer"
+    },
+    {
+      "symbol": "L2",
+      "name": "Left Double (180°)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Trái (Left) 180°.",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn"
+      ],
+      "example": "L2 U2 L2",
+      "axis": "x",
+      "dir": "180°",
+      "layers": "Left layer"
+    },
+    {
+      "symbol": "F",
+      "name": "Front (Clockwise)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Trước (Front) 90° theo chiều kim đồng hồ khi nhìn thẳng vào mặt trước.",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn",
+        "megaminx"
+      ],
+      "example": "F R U R' U' F'",
+      "axis": "z",
+      "dir": "CW",
+      "layers": "Front layer"
+    },
+    {
+      "symbol": "F'",
+      "name": "Front Prime (Counter-Clockwise)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Trước (Front) 90° ngược chiều kim đồng hồ khi nhìn thẳng vào mặt trước.",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn",
+        "megaminx"
+      ],
+      "example": "F R U R' U' F'",
+      "axis": "z",
+      "dir": "CCW",
+      "layers": "Front layer"
+    },
+    {
+      "symbol": "F2",
+      "name": "Front Double (180°)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Trước (Front) 180°.",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn"
+      ],
+      "example": "R2 F2 R2",
+      "axis": "z",
+      "dir": "180°",
+      "layers": "Front layer"
+    },
+    {
+      "symbol": "B",
+      "name": "Back (Clockwise)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Sau (Back) 90° theo chiều kim đồng hồ khi nhìn trực diện từ phía sau vào mặt B (ngược với chiều nhìn từ mặt F).",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn",
+        "pyraminx",
+        "skewb"
+      ],
+      "example": "R' F R B' R' F' R B",
+      "axis": "z",
+      "dir": "CW (từ sau)",
+      "layers": "Back layer"
+    },
+    {
+      "symbol": "B'",
+      "name": "Back Prime (Counter-Clockwise)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Sau (Back) 90° ngược chiều kim đồng hồ khi nhìn trực diện vào mặt B.",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn",
+        "pyraminx",
+        "skewb"
+      ],
+      "example": "R' F R B' R' F' R B",
+      "axis": "z",
+      "dir": "CCW (từ sau)",
+      "layers": "Back layer"
+    },
+    {
+      "symbol": "B2",
+      "name": "Back Double (180°)",
+      "group": "Basic Faces (6 Mặt Cơ Bản)",
+      "meaning": "Xoay tầng Sau (Back) 180°.",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn"
+      ],
+      "example": "R2 U' B2 U2 R2 U' R2",
+      "axis": "z",
+      "dir": "180°",
+      "layers": "Back layer"
+    },
+    {
+      "symbol": "r / Rw",
+      "name": "Right Wide (2 Tầng Phải)",
+      "group": "Wide Moves (Xoay 2 Tầng Rộng)",
+      "meaning": "Trên 3x3x3: `r` hoặc `Rw` là xoay đồng thời 2 tầng bên phải (R và M') theo chiều của R. Lưu ý: Trên Big Cube 4x4+ theo WCA, `Rw` là xoay 2 lớp ngoài bên phải, còn chữ thường `r` trong tài liệu cũ có thể chỉ riêng lớp trong thứ 2 (`2R`).",
+      "puzzleTypes": [
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn"
+      ],
+      "example": "r U R' U' r' F R F'",
+      "axis": "x",
+      "dir": "CW (2 layers)",
+      "layers": "R + inner slice"
+    },
+    {
+      "symbol": "r' / Rw'",
+      "name": "Right Wide Prime",
+      "group": "Wide Moves (Xoay 2 Tầng Rộng)",
+      "meaning": "Xoay đồng thời 2 tầng bên phải ngược chiều kim đồng hồ (kéo 2 tầng phải xuống).",
+      "puzzleTypes": [
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn"
+      ],
+      "example": "r U R' U' r' F R F'",
+      "axis": "x",
+      "dir": "CCW (2 layers)",
+      "layers": "R + inner slice"
+    },
+    {
+      "symbol": "l / Lw",
+      "name": "Left Wide (2 Tầng Trái)",
+      "group": "Wide Moves (Xoay 2 Tầng Rộng)",
+      "meaning": "Xoay đồng thời 2 tầng bên trái (L và M) theo chiều của L.",
+      "puzzleTypes": [
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn"
+      ],
+      "example": "l' U' L U' L' U2 l",
+      "axis": "x",
+      "dir": "CW (2 layers)",
+      "layers": "L + inner slice"
+    },
+    {
+      "symbol": "u / Uw",
+      "name": "Up Wide (2 Tầng Trên)",
+      "group": "Wide Moves (Xoay 2 Tầng Rộng)",
+      "meaning": "Xoay đồng thời 2 tầng trên (U và E') theo chiều của U.",
+      "puzzleTypes": [
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn"
+      ],
+      "example": "R2 u R' U R' U' R u' R2",
+      "axis": "y",
+      "dir": "CW (2 layers)",
+      "layers": "U + inner slice"
+    },
+    {
+      "symbol": "d / Dw",
+      "name": "Down Wide (2 Tầng Dưới)",
+      "group": "Wide Moves (Xoay 2 Tầng Rộng)",
+      "meaning": "Xoay đồng thời 2 tầng dưới (D và E) theo chiều của D.",
+      "puzzleTypes": [
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn"
+      ],
+      "example": "R U' R' d R' U R",
+      "axis": "y",
+      "dir": "CW (2 layers)",
+      "layers": "D + inner slice"
+    },
+    {
+      "symbol": "f / Fw",
+      "name": "Front Wide (2 Tầng Trước)",
+      "group": "Wide Moves (Xoay 2 Tầng Rộng)",
+      "meaning": "Xoay đồng thời 2 tầng phía trước (F và S) theo chiều của F.",
+      "puzzleTypes": [
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn"
+      ],
+      "example": "f R U R' U' f'",
+      "axis": "z",
+      "dir": "CW (2 layers)",
+      "layers": "F + inner slice"
+    },
+    {
+      "symbol": "b / Bw",
+      "name": "Back Wide (2 Tầng Sau)",
+      "group": "Wide Moves (Xoay 2 Tầng Rộng)",
+      "meaning": "Xoay đồng thời 2 tầng phía sau (B và S') theo chiều của B.",
+      "puzzleTypes": [
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn"
+      ],
+      "example": "b U L' U' b'",
+      "axis": "z",
+      "dir": "CW (2 layers)",
+      "layers": "B + inner slice"
+    },
+    {
+      "symbol": "M",
+      "name": "Middle Slice (Cùng chiều L)",
+      "group": "Slice Moves (Tầng Giữa M, E, S)",
+      "meaning": "Xoay tầng giữa dọc (nằm giữa L và R) 90° **theo chiều của mặt L** (tức kéo từ trên xuống dưới ở mặt trước!).",
+      "puzzleTypes": [
+        "3x3",
+        "void-cube",
+        "mixup-cube"
+      ],
+      "example": "M' U M",
+      "axis": "x",
+      "dir": "Follows L (Down in front)",
+      "layers": "Middle vertical slice"
+    },
+    {
+      "symbol": "M'",
+      "name": "Middle Slice Prime (Cùng chiều R)",
+      "group": "Slice Moves (Tầng Giữa M, E, S)",
+      "meaning": "Xoay tầng giữa dọc 90° ngược chiều L — tức **cùng chiều với mặt R** (đẩy tầng giữa từ dưới lên trên ở mặt trước, gảy bằng ngón giữa từ dưới sau lên).",
+      "puzzleTypes": [
+        "3x3",
+        "void-cube",
+        "mixup-cube"
+      ],
+      "example": "M' U M2 U M2 U M' U2 M2",
+      "axis": "x",
+      "dir": "Follows R (Up in front)",
+      "layers": "Middle vertical slice"
+    },
+    {
+      "symbol": "M2",
+      "name": "Middle Slice Double (180°)",
+      "group": "Slice Moves (Tầng Giữa M, E, S)",
+      "meaning": "Xoay tầng giữa M đi 180° (thực hiện bằng double-flick ngón áp út + ngón giữa). Nền tảng của H-Perm, Z-Perm, U-Perm và phương pháp Roux.",
+      "puzzleTypes": [
+        "3x3",
+        "void-cube"
+      ],
+      "example": "M2 U M2 U2 M2 U M2",
+      "axis": "x",
+      "dir": "180°",
+      "layers": "Middle vertical slice"
+    },
+    {
+      "symbol": "E",
+      "name": "Equatorial Slice (Cùng chiều D)",
+      "group": "Slice Moves (Tầng Giữa M, E, S)",
+      "meaning": "Xoay tầng giữa ngang (nằm giữa U và D) 90° **theo chiều của mặt D** (sang phải ở mặt trước).",
+      "puzzleTypes": [
+        "3x3",
+        "void-cube"
+      ],
+      "example": "M' E M E'",
+      "axis": "y",
+      "dir": "Follows D",
+      "layers": "Horizontal middle slice"
+    },
+    {
+      "symbol": "S",
+      "name": "Standing Slice (Cùng chiều F)",
+      "group": "Slice Moves (Tầng Giữa M, E, S)",
+      "meaning": "Xoay tầng giữa đứng (nằm giữa F và B) 90° **theo chiều của mặt F**.",
+      "puzzleTypes": [
+        "3x3",
+        "void-cube"
+      ],
+      "example": "S R U R' U' R' F R f'",
+      "axis": "z",
+      "dir": "Follows F",
+      "layers": "Standing middle slice"
+    },
+    {
+      "symbol": "x / x' / x2",
+      "name": "X-Axis Cube Rotation (Theo chiều R)",
+      "group": "Cube Rotations (Xoay Toàn Khối)",
+      "meaning": "Xoay TOÀN BỘ khối Rubik quanh trục X: `x` là ngửa cả khối lên theo chiều mặt **R** (mặt F chuyển lên U); `x'` là gập khối xuống theo chiều `R'`.",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn"
+      ],
+      "example": "x R' U R' D2 R U' R' D2 R2 x'",
+      "axis": "x",
+      "dir": "Follows R",
+      "layers": "Whole cube"
+    },
+    {
+      "symbol": "y / y' / y2",
+      "name": "Y-Axis Cube Rotation (Theo chiều U)",
+      "group": "Cube Rotations (Xoay Toàn Khối)",
+      "meaning": "Xoay TOÀN BỘ khối Rubik quanh trục Y: `y` là quay khối theo chiều mặt **U** (mặt R chuyển ra trước thành mặt F); `y'` là quay theo chiều `U'`.",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn",
+        "skewb",
+        "clock"
+      ],
+      "example": "y' U' R' U R y",
+      "axis": "y",
+      "dir": "Follows U",
+      "layers": "Whole cube"
+    },
+    {
+      "symbol": "z / z' / z2",
+      "name": "Z-Axis Cube Rotation (Theo chiều F)",
+      "group": "Cube Rotations (Xoay Toàn Khối)",
+      "meaning": "Xoay TOÀN BỘ khối Rubik quanh trục Z: `z` là nghiêng cả khối sang phải theo chiều mặt **F** (mặt U chuyển sang phải thành R).",
+      "puzzleTypes": [
+        "2x2",
+        "3x3",
+        "4x4",
+        "5x5",
+        "nxn"
+      ],
+      "example": "z U R' D R2 U' R D' z'",
+      "axis": "z",
+      "dir": "Follows F",
+      "layers": "Whole cube"
+    },
+    {
+      "symbol": "2'",
+      "name": "Double Counter-Clockwise (180° Fingertrick / Megaminx 144° CCW)",
+      "group": "Big Cube & Special Modifiers",
+      "meaning": "Trên 3x3/Big Cube: `U2'` hoặc `R2'` về mặt toán học giống hệt `U2`/`R2` (180°), nhưng chỉ rõ hướng đẩy ngón tay ngược chiều kim đồng hồ để tối ưu Finger Tricks. ĐẶC BIỆT trên **Megaminx**: vì mỗi mặt có 5 cạnh (72°/nấc), `U2` là xoay 2 nấc xuôi chiều (144° CW) còn `U2'` là xoay 2 nấc ngược chiều (144° CCW) — 2 vị trí đích KHÁC HẲN NHAU!",
+      "puzzleTypes": [
+        "3x3",
+        "4x4",
+        "megaminx"
+      ],
+      "example": "R U R' U R U2' R'",
+      "axis": "multi",
+      "dir": "CCW Double",
+      "layers": "Outer layer"
+    },
+    {
+      "symbol": "3Rw / nRw",
+      "name": "N-Layer Wide Move (Xoay N lớp ngoài cùng — Chuẩn WCA)",
+      "group": "Big Cube & Special Modifiers",
+      "meaning": "Theo quy định WCA (Regulation 12a2): Tiền tố số `n` trước ký hiệu Wide (`3Rw`, `3Uw`, `4Rw`) chỉ định xoay đồng thời **n lớp ngoài cùng** trên khối 5x5x5, 6x6x6, 7x7x7... Ví dụ `3Rw` là xoay cả 3 lớp bên phải cùng lúc.",
+      "puzzleTypes": [
+        "5x5",
+        "6x6",
+        "7x7",
+        "8x8",
+        "9x9",
+        "10x10",
+        "nxn"
+      ],
+      "example": "Rw U2 x Rw U2 Rw U2 3Rw' U2",
+      "axis": "x",
+      "dir": "CW (3 layers)",
+      "layers": "Outer 3 layers"
+    },
+    {
+      "symbol": "2R / 2L / 2U",
+      "name": "Inner Single Slice (Chỉ xoay riêng lớp trong thứ 2)",
+      "group": "Big Cube & Special Modifiers",
+      "meaning": "Chỉ xoay RIÊNG lớp thứ 2 tính từ ngoài vào (không xoay lớp ngoài cùng R!). Rất phổ biến trong công thức PLL Parity của 4x4x4: `2R2 U2 2R2 Uw2 2R2 Uw2`.",
+      "puzzleTypes": [
+        "4x4",
+        "5x5",
+        "6x6",
+        "7x7",
+        "nxn"
+      ],
+      "example": "2R2 U2 2R2 Uw2 2R2 Uw2",
+      "axis": "x",
+      "dir": "Inner Slice Only",
+      "layers": "2nd layer only"
+    },
+    {
+      "symbol": "u, l, r, b (Pyraminx)",
+      "name": "Pyraminx Tips (Xoay 4 Đỉnh Nhọn)",
+      "group": "Non-Cubic Specialized Notation",
+      "meaning": "Trên Pyraminx (WCA Regulation 12c): Chữ in hoa `U, L, R, B` xoay tầng lớn (gồm tâm trục và 3 cạnh); chữ thường `u, l, r, b` chỉ xoay riêng **viên đỉnh nhọn (Tip)** 120° theo chiều kim đồng hồ.",
+      "puzzleTypes": [
+        "pyraminx",
+        "master-pyraminx"
+      ],
+      "example": "U L' R B u' l r'",
+      "axis": "tetra",
+      "dir": "120° CW/CCW",
+      "layers": "Pyraminx Tip"
+    },
+    {
+      "symbol": "R++, R--, D++, D-- (Megaminx)",
+      "name": "Pochmann Megaminx Scramble Notation",
+      "group": "Non-Cubic Specialized Notation",
+      "meaning": "Ký hiệu Scramble chuẩn WCA cho Megaminx (Stefan Pochmann): Giữ cố định 3 mảnh góc-cạnh phía trên bên trái (UBL), `R++` / `R--` là xoay toàn bộ nửa phải của khối 12 mặt đi 2 nấc (144°) CW / CCW; `D++` / `D--` là xoay toàn bộ nửa dưới đi 2 nấc (144°) CW / CCW.",
+      "puzzleTypes": [
+        "megaminx",
+        "kilominx",
+        "gigaminx"
+      ],
+      "example": "R++ D-- R-- D++ U",
+      "axis": "dodeca",
+      "dir": "144° CW/CCW",
+      "layers": "Whole hemisphere"
+    },
+    {
+      "symbol": "(u, d) / (Square-1)",
+      "name": "Square-1 Top/Bottom 30° & Slice `/`",
+      "group": "Non-Cubic Specialized Notation",
+      "meaning": "Trên Square-1 (WCA Regulation 12e): Cặp số `(u, d)` biểu thị xoay tầng trên `u × 30°` và tầng dưới `d × 30°` (số dương = CW, số âm = CCW, từ -5 đến 6; mỗi viên cạnh = 1 đơn vị 30°, mỗi viên góc = 2 đơn vị 60°). Dấu gạch chéo `/` là xoay toàn bộ nửa bên phải của khối đi **180°**.",
+      "puzzleTypes": [
+        "square-1",
+        "super-square-1"
+      ],
+      "example": "(1,0) / (-1,-1) / (-2,4) / (-1,-1) / (3,0)",
+      "axis": "sq1",
+      "dir": "u*30°, d*30° + 180° Slice",
+      "layers": "U/D + Right Half"
+    },
+    {
+      "symbol": "UR2+ DR4- ALL5+ y2 (Clock)",
+      "name": "Rubik's Clock Pin & Dial Notation",
+      "group": "Non-Cubic Specialized Notation",
+      "meaning": "Trên Rubik's Clock (WCA Regulation 12g): Chữ cái (`UR, DR, DL, UL, U, R, D, L, ALL`) chỉ định các **chốt Pin đang được ấn LÊN (UP)**, con số (`0` đến `6`) kèm dấu `+` hoặc `-` chỉ số giờ vặn bánh xe theo chiều KĐH (`+`) hoặc ngược chiều KĐH (`-`). `y2` là lật ngược mặt đồng hồ.",
+      "puzzleTypes": [
+        "clock"
+      ],
+      "example": "UR2+ DR4- DL1+ UL3- U5+ R2- D0+ L1- ALL4+ y2",
+      "axis": "clock",
+      "dir": "Hours +/-",
+      "layers": "Pins & Dials"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "nq-1",
+      "question": "Khi thực hiện ký hiệu `L` (Left) trên khối Rubik 3x3x3, bạn đẩy mặt bên trái theo hướng nào khi cầm khối ở trước mặt?",
+      "options": [
+        "Kéo mặt trái từ trên XUỐNG DƯỚI (vì khi nhìn trực diện vào mặt trái thì đó là chiều kim đồng hồ)",
+        "Đẩy mặt trái từ dưới LÊN TRÊN giống như mặt R",
+        "Xoay 2 tầng bên trái 180 độ",
+        "Xoay cả khối Rubik sang bên trái"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quy ước quốc tế tính chiều kim đồng hồ khi NHÌN TRỰC DIỆN vào mặt đang xoay. Khi nhìn thẳng vào mặt Trái (L), chiều kim đồng hồ làm cạnh trước của mặt trái đi từ trên xuống dưới!"
+    },
+    {
+      "id": "nq-2",
+      "question": "Ký hiệu `M'` (M Prime) trên Rubik 3x3x3 xoay tầng giữa theo chiều của mặt nào?",
+      "options": [
+        "Cùng chiều với mặt R (đẩy tầng giữa từ dưới lên trên ở mặt trước)",
+        "Cùng chiều với mặt L (kéo tầng giữa từ trên xuống dưới ở mặt trước)",
+        "Cùng chiều với mặt U",
+        "Cùng chiều với mặt D"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo chuẩn WCA/Speedcubing, `M` xoay cùng chiều với `L` (kéo xuống), do đó `M'` xoay ngược chiều `L` — tức cùng chiều với `R` (đẩy từ dưới lên trên)."
+    },
+    {
+      "id": "nq-3",
+      "question": "Trên khối Square-1, ký hiệu `(1, -2) /` có ý nghĩa chính xác là gì?",
+      "options": [
+        "Xoay tầng trên 30° (1 cạnh) CW, xoay tầng dưới 60° (1 góc / 2 cạnh) CCW, sau đó xoay nửa phải 180°",
+        "Xoay tầng trên 1 vòng, tầng dưới 2 vòng ngược chiều",
+        "Đổi chỗ viên số 1 với viên số 2",
+        "Xoay mặt U 90° và mặt D 180°"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mỗi đơn vị trên Square-1 tương ứng góc 30° (bằng bề rộng 1 viên cạnh; viên góc rộng 60° = 2 đơn vị), và dấu `/` là xoay nửa phải 180°."
+    },
+    {
+      "id": "nq-4",
+      "question": "Sự khác biệt giữa `U2` và `U2'` trên khối 12 mặt Megaminx là gì?",
+      "options": [
+        "`U2` xoay 2 nấc (144°) xuôi chiều KĐH còn `U2'` xoay 2 nấc (144°) ngược chiều KĐH — đến 2 vị trí KHÁC NHAU",
+        "Hoàn toàn giống nhau vì cả hai đều xoay 180 độ",
+        "`U2'` xoay 2 tầng trên còn `U2` xoay 1 tầng",
+        "`U2'` là xoay đỉnh nhọn của Megaminx"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì mặt Megaminx là hình ngũ giác đều (5 cạnh, mỗi nấc = 72°), xoay 2 nấc xuôi chiều (144°) khác với xoay 2 nấc ngược chiều (-144° = +216° = 3 nấc xuôi chiều)!"
+    },
+    {
+      "id": "nq-5",
+      "question": "Trên khối 4x4x4 theo quy chuẩn WCA, sự khác nhau giữa `Rw2` và `2R2` là gì?",
+      "options": [
+        "`Rw2` xoay cả 2 lớp bên phải (lớp ngoài R + lớp trong 2R), còn `2R2` CHỈ xoay riêng lớp trong thứ 2 bên phải",
+        "Cả hai đều chỉ xoay mặt ngoài cùng R",
+        "`2R2` là xoay mặt R hai lần liên tiếp tổng cộng 360 độ",
+        "`Rw2` là xoay toàn bộ khối Rubik quanh trục X"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hậu tố `w` (Wide) chỉ xoay nhiều lớp tính từ ngoài vào (`Rw` = 2 lớp ngoài), còn tiền tố số không có `w` (`2R`) chỉ định xoay duy nhất lớp thứ 2 tính từ ngoài vào."
+    }
+  ]
+}

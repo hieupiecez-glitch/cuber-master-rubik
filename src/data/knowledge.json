@@ -1,0 +1,316 @@
+[
+  {
+    "id": "kb-01",
+    "title": "Cấu tạo Cơ học Rubik & Cơ chế Spider Core, Torpedo, Corner Cutting",
+    "category": "Cấu tạo & Phần cứng",
+    "summary": "Giải phẫu chi tiết bên trong một khối Speedcube hiện đại: trục Core 6 nhánh, chân góc, chân cạnh, ngàm chống văng (Torpedo) và cơ chế cắt góc (Corner Cutting).",
+    "sections": [
+      {
+        "heading": "1. Trục lõi Spider Core & 6 Viên Tâm (Center Pieces)",
+        "body": "Ở trung tâm mọi khối Rubik 3x3x3 là một trục chữ thập 3 chiều gồm 6 nhánh vuông góc nhau gọi là **Core (hoặc Spider)**. Sáu viên tâm (Center pieces) được bắt vít hoặc khóa trục MagLev trực tiếp vào 6 nhánh này. Vì vậy, 6 viên tâm chỉ có thể tự xoay quanh trục của nó mà KHÔNG BAO GIỜ thay đổi vị trí tương đối với nhau (Trắng luôn đối Vàng, Đỏ luôn đối Cam, Xanh lá luôn đối Xanh dương)."
+      },
+      {
+        "heading": "2. Chân Viên Cạnh (Edge Pieces + Torpedo) & Viên Góc (Corner Pieces)",
+        "body": "12 viên cạnh (mỗi viên 2 màu) và 8 viên góc (mỗi viên 3 màu) không gắn vào Core bằng ốc vít mà khóa lồng vào nhau nhờ hệ thống chân ngàm hình cầu đồng tâm. Trên các dòng Speedcube hiện đại (từ thời DaYan ZhanChi đến GAN / MoYu Weilong), dưới đáy mỗi chân viên cạnh đều có một thanh ngang chữ T gọi là **Torpedo (Ngàm chống Pop)** lồng dưới chân viên góc để ngăn viên cạnh văng ra ngoài khi xoay ở tốc độ >10 TPS."
+      },
+      {
+        "heading": "3. Cơ chế Cắt góc Thuận (Forward Corner Cutting) & Cắt góc Ngược (Reverse Corner Cutting)",
+        "body": "Khi bạn xoay mặt U chưa hết 90° (còn lệch khoảng 30°–45°) mà đã đẩy tiếp mặt R, các cạnh bo tròn bên trong viên tâm và chân góc sẽ trượt qua nhau tự động căn chỉnh tầng — đó gọi là **Forward Corner Cutting** (đạt 45°–55° trên Rubik cao cấp) và **Reverse Corner Cutting** (đạt 25°–30° nhờ góc vát Florian holes giữa các viên)."
+      }
+    ],
+    "example": "Thử nghiệm cắt góc chuẩn: Xoay mặt U lệch đi 45° (nửa ô) rồi đẩy mặt R — nếu mặt U tự động nhảy về đúng khớp để mặt R đi lên mượt mà thì độ căng (Tension) của bạn đã chuẩn.",
+    "relatedTerms": [
+      "Core / Spider",
+      "Center Piece",
+      "Edge Piece",
+      "Corner Piece",
+      "Torpedo",
+      "Florian Cut",
+      "Corner Cutting"
+    ],
+    "relatedAlgs": [
+      "R U R' U'"
+    ]
+  },
+  {
+    "id": "kb-02",
+    "title": "Toán học Rubik: Hoán vị (Permutation), Định hướng (Orientation) & Các Bất biến Khả giải",
+    "category": "Lý thuyết & Toán học Rubik",
+    "summary": "Tại sao có 43,252,003,274,489,856,000 trạng thái hợp lệ trên 3x3x3 và làm sao phát hiện ngay một khối Rubik bị tháo lắp sai (Corner Twist / Edge Flip / Swap)?",
+    "sections": [
+      {
+        "heading": "1. Phân biệt Permutation (Vị trí) và Orientation (Định hướng)",
+        "body": "**Permutation (Hoán vị)** là VỊ TRÍ của viên đó đang nằm ở khe nào trên khối Rubik (ví dụ viên góc Trắng-Đỏ-Xanh lá đã nằm đúng ở góc DFR giữa 3 tâm Trắng, Đỏ, Xanh lá). **Orientation (Định hướng)** là CHIỀU XOAY của viên đó tại vị trí hiện tại (ví dụ viên góc đã nằm đúng góc DFR nhưng mặt màu Trắng lại quay sang bên phải thay vì úp xuống đáy). Trong CFOP, OLL giải quyết Orientation, còn PLL giải quyết Permutation!"
+      },
+      {
+        "heading": "2. Ba Định luật Bất biến Toán học (3 Solvability Invariants của 3x3x3)",
+        "body": "Nếu bạn tháo rời một khối Rubik 3x3x3 và lắp ngẫu nhiên lại, xác suất lắp ra trạng thái giải được chỉ là **1/12 (8.33%)** vì mọi bước xoay hợp lệ đều bảo toàn 3 định luật nhóm toán học:\n1. **Tổng độ xoắn góc (Corner Orientation Sum ≡ 0 mod 3)**: Không bao giờ có chuyện chỉ **1 viên góc duy nhất** bị xoay lệch (Corner Twist)!\n2. **Tổng độ lật cạnh (Edge Orientation Sum ≡ 0 mod 2)**: Số lượng viên cạnh bị lật sai hướng luôn là một **số chẵn** (0, 2, 4, 6, 8, 10, 12) — không bao giờ có 1 cạnh lẻ bị lật trên 3x3x3!\n3. **Tính chẵn lẻ hoán vị tổng (sgn(Corner Perm) = sgn(Edge Perm))**: Không bao giờ chỉ có 2 cạnh đổi chỗ cho nhau (hoặc chỉ 2 góc đổi chỗ cho nhau) mà phần còn lại giữ nguyên!"
+      }
+    ],
+    "example": "Nếu đang giải 3x3x3 mà bạn thấy mọi viên đều đúng trừ đúng 1 góc bị xoay lệch tại chỗ: chắc chắn viên góc đó đã bị vặn xoắn vật lý (Corner Twist) trong lúc xoay mạnh — hãy cầm viên góc đó vặn nhẹ lại đúng chiều!",
+    "relatedTerms": [
+      "Permutation",
+      "Orientation",
+      "Parity Sign",
+      "Modulo 3 Corner Twist",
+      "Modulo 2 Edge Flip",
+      "God's Number (20 HTM)"
+    ],
+    "relatedAlgs": [
+      "R U R' U' R' F R2 U' R' U' R U R' F'"
+    ]
+  },
+  {
+    "id": "kb-03",
+    "title": "Giải mã Hiện tượng Parity trên Big Cube (4x4x4+), Square-1 & Void Cube",
+    "category": "Lý thuyết & Toán học Rubik",
+    "summary": "Tại sao trên 3x3x3 không bao giờ có 1 cạnh bị lật hay 2 cạnh đổi chỗ, nhưng trên 4x4x4, 6x6x6, Square-1 và Void Cube lại xuất hiện Parity?",
+    "sections": [
+      {
+        "heading": "1. Nguyên nhân của OLL Parity trên 4x4x4 (Single Dedge Flip)",
+        "body": "Trên khối 4x4x4, mỗi 'cạnh' thực chất là 1 cặp gồm 2 viên **Wing** riêng biệt. Mỗi lần bạn xoay một lớp trong (`2R` hoặc `2L`) đi 90°, bạn đang thực hiện một chu kỳ 4 viên wing (4-cycle). Trong đại số nhóm đối xứng, một chu kỳ 4 phần tử là một **hoán vị LẺ (Odd Permutation — bằng tích của 3 phép đổi chỗ)**! Do đó, nếu tổng số lần xoay 90° của các lớp trong trong quá trình ghép tâm & ghép cạnh là một số lẻ, hai viên wing của 1 cặp cạnh cuối sẽ bị tráo chéo vị trí và lật ngược lại — tạo thành **OLL Parity**!"
+      },
+      {
+        "heading": "2. Nguyên nhân của PLL Parity trên 4x4x4 (2-Dedge Swap)",
+        "body": "Vì 4x4x4 không có viên tâm cố định và một phép xoay `2R2 U2 2R2 Uw2 2R2 Uw2` thực hiện một số CHẴN các phép hoán đổi wing đơn lẻ (đổi chỗ 2 cặp wing = 2 phép transpositions = hoán vị chẵn trên các viên wing), nhưng khi nhìn dưới góc độ một khối 3x3x3 thu gọn thì nó lại đổi chỗ đúng **2 cặp cạnh lớn (1 transposition = hoán vị lẻ trên 3x3)**!"
+      },
+      {
+        "heading": "3. Tại sao Void Cube và Square-1 cũng có Parity?",
+        "body": "- **Trên Void Cube**: Vì không có 6 viên tâm, nếu bạn chọn vị trí màu các mặt lệch đi 90° so với tâm ẩn (tương đương 1 bước xoay `M` gồm 4-cycle cạnh = hoán vị lẻ trên cạnh nhưng giữ nguyên góc), bạn sẽ gặp Void Parity.\n- **Trên Square-1**: Khi ở trạng thái biến dạng có số lượng mảnh ở một nửa mặt là lẻ (ví dụ Scallop-Scallop), nhát cắt `/` thực hiện một hoán vị lẻ giữa các mảnh, gây ra Square-1 Parity."
+      }
+    ],
+    "example": "Cách sửa OLL Parity trên 4x4x4 thực chất là dùng 1 số LẺ lần xoay 90° của lớp rộng `Rw / Lw` (tổng cộng 5 bước 90° Rw/Lw và 4 bước 180° Rw2 trong công thức Lucas Parity) để đảo lại tính chẵn lẻ của 24 viên wing!",
+    "relatedTerms": [
+      "OLL Parity",
+      "PLL Parity",
+      "Wing Edges",
+      "Odd Permutation",
+      "Void Parity",
+      "Square-1 Scallop-Scallop"
+    ],
+    "relatedAlgs": [
+      "Rw U2 x Rw U2 Rw U2 Rw' U2 Lw U2 Rw' U2 Rw U2 Rw' U2 Rw'",
+      "2R2 U2 2R2 Uw2 2R2 Uw2"
+    ]
+  },
+  {
+    "id": "kb-04",
+    "title": "Commutator [A, B] và Conjugate [A: B] — Nghệ thuật Tự Sáng Tạo Công Thức Rubik",
+    "category": "Lý thuyết & Toán học Rubik",
+    "summary": "Hiểu cấu trúc toán học đằng sau hầu hết các thuật toán Rubik, giải Bịt mắt (3BLD) và ghép tâm Big Cube mà không cần học vẹt.",
+    "sections": [
+      {
+        "heading": "1. Commutator `[A, B] = A B A' B'` là gì?",
+        "body": "Trong lý thuyết nhóm, **Commutator (Giao hoán tử)** của hai chuỗi thao tác `A` và `B` được ký hiệu là **`[A, B] = A · B · A' · B'`** (Làm A -> Làm B -> Làm nghịch đảo của A -> Làm nghịch đảo của B). Nếu thao tác `A` chỉ làm thay đổi một vùng rất nhỏ trên tầng `U` (ví dụ chỉ thay đổi 1 viên góc ở `UFR` mà giữ nguyên 3 góc còn lại của tầng `U`), và thao tác `B` chỉ là một bước xoay tầng `U` (`U, U', U2`), thì tổ hợp `A B A' B'` sẽ **chỉ chu chuyển đúng 3 viên góc (3-Cycle)** hoặc xoay đúng 2 viên góc mà trả toàn bộ phần còn lại của khối Rubik về nguyên vẹn 100%!"
+      },
+      {
+        "heading": "2. Ví dụ thực tế: Niklas và Đổi góc 3BLD",
+        "body": "- Đặt `A = R U' R'` (chèn góc vào khe) và `B = L'`: Khi đó `[L', U R U'] = L' U R U' L U R' U'` chính là công thức **Niklas** chu chuyển 3 góc tầng cuối!\n- Đặt `A = R' D' R D R' D' R D` (lật góc UFR tại chỗ) và `B = U`: Khi đó `A B A' B'` lật 1 góc xuôi chiều và 1 góc ngược chiều ở Bước 11 của phương pháp Beginner!"
+      },
+      {
+        "heading": "3. Conjugate (Setup Moves) `[S: X] = S · X · S'`",
+        "body": "**Conjugate (Liên hợp / Bước Setup)** ký hiệu là **`[S: X] = S · X · S'`**: Nếu bạn đã biết một công thức `X` đổi chỗ 2 cạnh đối diện (như PLL Parity trên 4x4), nhưng trên tay bạn lại cần đổi 2 cạnh KỀ NHAU (UF và UR), bạn chỉ cần làm bước Setup `S = R U R' U'` để biến 2 cạnh kề thành 2 cạnh đối, thực hiện `X`, rồi trả lại `S' = U R U' R'`!"
+      }
+    ],
+    "example": "Commutator tâm trên Big Cube 5x5–10x10: Đặt `A = Rw U Rw'` và `B = U'`, khi đó `[A, B] = Rw U Rw' U' Rw U Rw' U` hoán đổi đúng 3 viên tâm góc giữa mặt U và mặt F!",
+    "relatedTerms": [
+      "Commutator [A, B]",
+      "Conjugate [S: X]",
+      "Setup Moves",
+      "3-Cycle",
+      "Niklas",
+      "3BLD / 3-Style"
+    ],
+    "relatedAlgs": [
+      "U R U' L' U R' U' L",
+      "R' F R B' R' F' R B"
+    ]
+  },
+  {
+    "id": "kb-05",
+    "title": "Kỹ thuật Finger Tricks Toàn diện — Tăng tốc TPS và Xóa bỏ Regrip",
+    "category": "Kỹ năng Speedcubing",
+    "summary": "Hướng dẫn chi tiết cách đặt ngón tay cho từng ký hiệu U2, D2, M2, F/F' và các Trigger nền tảng (Sexy Move, Sledgehammer, Double Flick).",
+    "sections": [
+      {
+        "heading": "1. Nguyên tắc Home Grip và Hạn chế Regrip",
+        "body": "**Home Grip** là tư thế chuẩn với 2 ngón cái ở mặt F và 6 ngón sau ở mặt B. Mỗi lần bạn phải nhấc ngón cái khỏi mặt F để đặt lên mặt U hoặc mặt D (gọi là **Regrip**) sẽ làm bạn mất từ 0.15 đến 0.25 giây. Mục tiêu của Finger Tricks nâng cao là thực hiện trọn vẹn công thức với ít lần regrip nhất nhờ kỹ thuật **Pinch (kẹp đẩy)** và **Push (đẩy ngược bằng mặt lưng ngón trỏ)**."
+      },
+      {
+        "heading": "2. Kỹ thuật Double-Flick cho U2, D2 và M2",
+        "body": "- **`U2` Double-Flick**: Dùng ngón trỏ phải kéo `U` đi 90°, ngay lập tức dùng ngón giữa phải (đang chờ sẵn ngay sát ngón trỏ) kéo tiếp 90° nữa trong một chuyển động lướt duy nhất.\n- **`D2` Double-Flick**: Dùng ngón áp út trái đẩy `D'` đi 90°, nối liền ngón út trái (hoặc ngón giữa + áp út) đẩy tiếp 90°.\n- **`M2` Double-Flick**: Dùng ngón áp út trái (hoặc phải) đặt dưới đáy mặt sau DB đẩy `M'` lên 90°, nối ngay ngón giữa đẩy tiếp 90° lên."
+      },
+      {
+        "heading": "3. Bốn Bộ Trigger Nền Tảng (4 Core Triggers)",
+        "body": "Hơn 85% các công thức OLL, PLL và CLL được ghép từ 4 cụm Trigger 4 bước này:\n1. **Sexy Move (`R U R' U'`)**: Lên - Trỏ phải kéo U - Xuống - Trỏ trái kéo U' (hoặc trỏ phải đẩy U' ngược).\n2. **Inverse Sexy (`U R U' R'`)**: Trỏ phải kéo U - Lên - Trỏ trái kéo U' - Xuống.\n3. **Sledgehammer (`R' F R F'`)**: Hạ R' - Trỏ phải kéo F xuống - Đẩy R lên - Ngón cái phải đẩy F' lên.\n4. **Hedgeslammer (`F R' F' R`)**: Nghịch đảo của Sledgehammer."
+      }
+    ],
+    "example": "Bài luyện tập Finger Tricks kinh điển: Thực hiện 6 lần liên tiếp Sexy Move `(R U R' U') x 6` dưới 2.5 giây mà hai ngón cái không rời khỏi mặt F.",
+    "relatedTerms": [
+      "Home Grip",
+      "Regrip",
+      "Double-Flick",
+      "Pinch U",
+      "Lefty Push",
+      "TPS (Turns Per Second)"
+    ],
+    "relatedAlgs": [
+      "R U R' U'",
+      "R' F R F'",
+      "M2 U M2 U2 M2 U M2"
+    ]
+  },
+  {
+    "id": "kb-06",
+    "title": "Lookahead, Recognition & Cross Efficiency — Bí quyết Phá vỡ Rào cản Sub-15 & Sub-10",
+    "category": "Kỹ năng Speedcubing",
+    "summary": "Tại sao xoay chậm mà không dừng lại (Zero Pause) luôn nhanh hơn xoay cực nhanh rồi khựng lại tìm mảnh?",
+    "sections": [
+      {
+        "heading": "1. Cross Efficiency (Tối ưu Dấu cộng ≤ 7 bước trong Inspection)",
+        "body": "Mọi dấu cộng Cross trên 3x3x3 đều có thể giải xong trong **tối đa 8 bước** (và 80% trường hợp chỉ cần 5–6 bước!). Trong 15 giây Inspection: hãy luôn giải Cross ở **mặt Đáy (D)**, tận dụng việc đặt các cạnh lệch tương đối với nhau rồi chỉ cần xoay `D / D' / D2` ở bước cuối cùng để khớp cả 4 tâm một lượt."
+      },
+      {
+        "heading": "2. Lookahead trong F2L: Tách biệt Muscle Memory và Tầm nhìn mắt",
+        "body": "**Lookahead** là khả năng mắt bạn tìm kiếm và theo dõi quỹ đạo của cặp F2L tiếp theo TRONG KHI hai tay bạn đang tự động chèn cặp F2L hiện tại bằng trí nhớ cơ bắp (Muscle Memory). Quy tắc vàng để luyện Lookahead:\n- **Không bao giờ nhìn vào cặp F2L mà bạn đã biết cách giải** — một khi đã nhận diện xong cặp thứ 1, hãy ép mắt nhìn sang tầng U và các khe chưa giải để bắt cặp thứ 2.\n- **Ưu tiên chèn vào khe Sau (Back Slots: BL và BR)** trước khe Trước (FL và FR) để giải phóng tầm nhìn ở mặt trước!"
+      },
+      {
+        "heading": "3. Two-Sided PLL Recognition (Nhận diện PLL chỉ từ 2 mặt U-F-R)",
+        "body": "Người mới thường phải xoay `U, U, U` hoặc nghiêng đầu nhìn cả 4 mặt mới biết đó là PLL nào. Người chơi nâng cao chỉ nhìn **6 sticker ở mặt Trước (F) và mặt Phải (R)** (kết hợp vị trí Đèn pha Headlights, Thanh 2 ô Bar, Thanh 3 ô Block và màu đối/kề) để nhận diện chính xác cả 21 PLL mà không cần xoay thử!"
+      }
+    ],
+    "example": "Bài tập Metronome Slow Turning: Đặt nhịp 3–4 bước/giây và giải hết 4 cặp F2L hoàn toàn không dừng tay một nhịp nào.",
+    "relatedTerms": [
+      "Lookahead",
+      "Inspection 15s",
+      "X-Cross",
+      "Back Slot Priority",
+      "2-Sided PLL Recognition",
+      "AUF Prediction"
+    ],
+    "relatedAlgs": [
+      "U' R U R' U2 R U' R'"
+    ]
+  },
+  {
+    "id": "kb-07",
+    "title": "Công nghệ Nam châm trong Rubik: Standard Magnetic, Core Magnet, MagLev & Ball-Core UV",
+    "category": "Cấu tạo & Phần cứng",
+    "summary": "Sự tiến hóa phần cứng Speedcube từ nam châm cạnh-góc (48 viên), nam châm lõi-góc (Ball-Core / Corner-Core) đến đệm từ trường MagLev thay thế lò xo.",
+    "sections": [
+      {
+        "heading": "1. Nam châm Cạnh - Góc tiêu chuẩn (48 viên / 96 viên trên 4x4)",
+        "body": "Từ năm 2016, việc gắn 48 viên nam châm Neodymium nhỏ vào mặt trong của 12 viên cạnh và 8 viên góc (24 cặp hút nhau) đã tạo nên cuộc cách mạng phần cứng Rubik. Lực hút từ tính tạo ra điểm dừng tự nhiên mỗi khi mặt xoay chạm mốc 90°, ngăn chặn hiện tượng **Overshooting (xoay quá đà)** và giữ khối vuông vức khi cắt góc."
+      },
+      {
+        "heading": "2. Core Magnet / Ball-Core (Nam châm Lõi - Chân Góc & Chân Cạnh Repulsion)",
+        "body": "Trên các dòng Flagship hiện đại, ngoài 48 viên nam châm ở vỏ ngoài, nhà sản xuất gắn thêm 8 viên nam châm trên quả cầu trục lõi (**Ball-Core**) hút trực tiếp vào 8 chân góc (và thậm chí thêm 12 nam châm đẩy ở chân cạnh để tự động hút mặt xoay về vị trí cân bằng từ góc lệch 25°–35° — gọi là **Auto-Homing / Leap Alignment**)."
+      },
+      {
+        "heading": "3. Cơ chế MagLev (Magnetic Levitation) vs Lò xo truyền thống (Spring)",
+        "body": "Thay vì dùng lò xo kim loại nén dưới nắp tâm, công nghệ **MagLev** sử dụng **2 vòng nam châm tròn đặt cùng cực đối diện nhau (đẩy nhau!)**. Vì hai vòng nam châm không tiếp xúc cơ học với nhau khi nén, MagLev triệt tiêu hoàn toàn tiếng kêu ma sát lò xo (spring noise), giảm lực cản khởi đầu giúp tốc độ xoay (TPS) nhanh hơn rõ rệt, và không bao giờ bị mỏi lò xo theo thời gian."
+      }
+    ],
+    "example": "Nếu bạn có phong cách xoay nhẹ, lướt ngón tay tốc độ cao (High TPS): chọn bản **MagLev + UV Coated**; nếu bạn thích cảm giác đằm tay, dễ kiểm soát cho Lookahead hoặc mới tập: chọn bản **Spring (Lò xo) + Magnetic**.",
+    "relatedTerms": [
+      "Neodymium Magnet",
+      "Ball-Core",
+      "Auto-Homing",
+      "MagLev",
+      "Spring Compression",
+      "UV Coating",
+      "Frosted Plastic"
+    ],
+    "relatedAlgs": []
+  },
+  {
+    "id": "kb-08",
+    "title": "Cẩm nang Lựa chọn Rubik cho Người mới, Trung cấp & Thi đấu Chuyên nghiệp",
+    "category": "Cấu tạo & Phần cứng",
+    "summary": "Các tiêu chí chọn mua Rubik 3x3x3, 2x2x2, 4x4x4+ phù hợp với ngân sách, kích thước bàn tay và trình độ mà không lãng phí vào các tính năng dư thừa.",
+    "sections": [
+      {
+        "heading": "1. Tại sao bắt buộc phải chọn Rubik có Nam châm (Magnetic) ngay từ đầu?",
+        "body": "Những khối Rubik không nam châm thế hệ cũ thường bị kẹt tầng (Lock-up) khi các mặt chưa căn thẳng hàng tuyệt đối. Hiện nay các dòng Rubik 3x3x3 có nam châm phân khúc phổ thông (Budget Magnetic như RS3M series, GuHong Pro, Tianma, Meilong M) có mức giá rất dễ tiếp cận nhưng đã tích hợp sẵn 48 nam châm và hệ thống chỉnh độ nén kép (Dual Adjustment), đủ sức đồng hành từ lúc mới học đến khi đạt Sub-10 giây."
+      },
+      {
+        "heading": "2. Lựa chọn Kích thước (54mm, 55mm, 55.5mm, 56mm) và Bề mặt nhựa",
+        "body": "- **55mm – 55.5mm**: Kích thước vàng cho người có bàn tay nhỏ đến trung bình hoặc người chơi giải 1 tay (One-Handed - OH), giúp ngón áp út với tới tầng D/M dễ dàng.\n- **56mm**: Kích thước tiêu chuẩn truyền thống cho cảm giác cầm đằm, chắc tay.\n- **Bề mặt Frosted (Nhám mờ)** chống bám vân tay tốt và giá rẻ; **Bề mặt UV Coated (Phủ bóng UV)** cho độ bám cực cao khi tay khô và chống trầy xước."
+      },
+      {
+        "heading": "3. Lựa chọn Big Cube (4x4x4 – 7x7x7) và Side Events",
+        "body": "Với Big Cube 4x4x4 và 5x5x5, yếu tố quan trọng nhất là **lực nam châm tầng trong mạnh hơn tầng ngoài** (để khi bạn xoay tầng ngoài R hay U thì lớp trong 2R không bị trượt theo gây kẹt khối)."
+      }
+    ],
+    "example": "Tiêu chí kiểm tra nhanh một khối Rubik tốt: Cắt góc thuận đạt ≥ 45° không cần dùng lực mạnh, cắt góc ngược đạt ≥ 25° (nửa ô), và có hệ thống chỉnh độ nén không cần tua-vít hoặc chỉnh từng nấc rõ ràng.",
+    "relatedTerms": [
+      "Budget Magnetic Cube",
+      "Dual Adjustment System",
+      "55mm vs 56mm",
+      "OH (One-Handed)",
+      "Inner/Outer Magnet Strength"
+    ],
+    "relatedAlgs": []
+  },
+  {
+    "id": "kb-09",
+    "title": "Bảo dưỡng, Vệ sinh, Bôi trơn (Silicone Lube) & Căn chỉnh Độ căng (Tension / Elasticity)",
+    "category": "Bảo dưỡng & Tối ưu Phần cứng",
+    "summary": "Quy trình tháo lắp vệ sinh định kỳ, phân biệt Lube đặc (Heavy Silicone) và Lube loãng (Water/Light Silicone), cùng cách chỉnh Dual Adjustment chuẩn xác.",
+    "sections": [
+      {
+        "heading": "1. Phân biệt Tension (Khoảng cách trục / Độ rơ) và Elasticity (Độ nén lò xo / MagLev)",
+        "body": "Hầu hết các khối Rubik hiện đại đều có **Hệ thống Căn chỉnh Kép (Dual Adjustment System)** dưới nắp viên tâm:\n1. **Axis Distance / Center Travel (Ốc vít hoặc vòng số trong)**: Quyết định viên tâm có thể kéo xa khỏi lõi bao nhiêu milimet — tức quyết định khả năng **Cắt góc (Corner Cutting)** và khả năng chống văng mảnh (Pop). Nới lỏng làm cắt góc rộng hơn nhưng dễ Pop; siết chặt làm khối đằm và không Pop.\n2. **Compression / Elasticity (Vòng răng cưa ngoài)**: Nén lò xo hoặc ép gần 2 vòng nam châm MagLev lại để tăng lực ma sát mặt xoay mà KHÔNG làm thay đổi biên độ cắt góc!"
+      },
+      {
+        "heading": "2. Quy trình Vệ sinh Rubik an toàn (Tuyệt đối không ngâm nước trục Core!)",
+        "body": "Sau 300–500 lượt giải, bụi mịn hòa vào dầu bôi trơn tạo thành lớp cặn đen làm khối nặng và rít:\n1. Xoay tầng U lệch 45° rồi nhấc nhẹ 1 viên cạnh tầng U ra trước, sau đó tháo rời 20 viên cạnh và góc.\n2. Dùng khăn giấy mềm hoặc khăn sợi microfiber lau sạch toàn bộ mặt tiếp xúc (Tracks) và chân góc/cạnh.\n3. **TUYỆT ĐỐI KHÔNG rửa phần Core + 6 viên tâm dưới vòi nước** vì nước lọt vào ốc vít, lò xo hoặc vòng nam châm sẽ gây rỉ sét không thể phục hồi!"
+      },
+      {
+        "heading": "3. Phối hợp Lube Đặc (Heavy Silicone) cho Chân và Lube Loãng (Fast Lube) cho Bề mặt",
+        "body": "- **Tuyệt đối không bao giờ dùng dầu ăn, Vaseline hay RP7/WD-40** vì dung môi dầu mỏ sẽ ăn mòn và làm chảy nhựa ABS của Rubik!\n- **Lube Đặc (Heavy Silicone / Weight 5 / 30k–50k cSt)**: Chấm 1 lượng nhỏ bằng đầu tăm vào **chân viên cạnh và chân góc (Tracks)** để tạo độ êm, đầm và kiểm soát tốc độ.\n- **Lube Loãng (Light Silicone / Water-based Fast Lube)**: Nhỏ 1–2 giọt vào **bề mặt phẳng tiếp xúc giữa các viên (Piece Surface)** để tăng độ trơn mượt tức thì."
+      }
+    ],
+    "example": "Công thức Setup Rubik chuẩn thi đấu: Cân bằng đồng đều cả 6 mặt ở mức Center Travel trung bình (nấc 3/5), Compression mức 3–4/9, tra 1 chấm Lube đặc vào chân góc và 2 giọt Lube nhanh vào bề mặt rồi giải nháp 20 lượt để Lube phủ đều.",
+    "relatedTerms": [
+      "Dual Adjustment",
+      "Center Travel / Tension",
+      "Elasticity / Compression",
+      "Heavy Silicone Lube",
+      "Water-based Fast Lube",
+      "Break-in"
+    ],
+    "relatedAlgs": []
+  },
+  {
+    "id": "kb-10",
+    "title": "Chuẩn Thi đấu WCA (World Cube Association) — Quy định Inspection, +2, DNF & Tính điểm Ao5/Mo3",
+    "category": "Kỹ năng Speedcubing",
+    "summary": "Nắm vững luật thi đấu chính thức của Hiệp hội Rubik Thế giới (WCA Regulations): quy trình 15 giây quan sát, lỗi phạt +2 giây, lỗi DNF và cách tính Average of 5.",
+    "sections": [
+      {
+        "heading": "1. Quy trình 15 giây Quan sát (Inspection Time — Điều 4d & A3)",
+        "body": "Khi trọng tài nhấc hộp che khối Rubik ra, đồng hồ đếm ngược 15 giây Inspection bắt đầu chạy. Bạn được phép cầm khối lên xoay nhìn từ mọi phía nhưng **không được thực hiện bất kỳ bước xoay tầng nào**. Trọng tài sẽ hô **'8 seconds!'** ở giây thứ 8 và **'12 seconds!'** ở giây thứ 12:\n- Bắt đầu giải từ **15.00s đến dưới 17.00s**: Phạt **+2 giây** vào thành tích.\n- Bắt đầu giải từ **17.00s trở đi**: Kết quả lượt giải đó bị tính là **DNF (Did Not Finish)**."
+      },
+      {
+        "heading": "2. Quy tắc Dừng đồng hồ Stackmat & Phạt lệch tầng (Misalignment Penalty — Điều 10e/10f)",
+        "body": "Khi dừng đồng hồ Stackmat, bạn phải buông hoàn toàn khối Rubik xuống thảm (không được chạm tay vào khối khi đập đồng hồ) và đặt hai lòng bàn tay úp xuống mặt cảm ứng. Khi khối Rubik nằm yên:\n- Nếu một tầng bị lệch **≤ 45°** (dưới nửa góc vuông cho khối NxN): Khối được tính là đã giải hợp lệ (**Solved, không phạt**).\n- Nếu cần **1 bước xoay mặt ngoài** (lệch > 45°) để đưa khối về trạng thái giải xong: Phạt **+2 giây**.\n- Nếu cần từ **2 bước xoay trở lên** (hoặc lệch tầng giữa M/E/S): Kết quả bị tính là **DNF**!"
+      },
+      {
+        "heading": "3. Cách tính Average of 5 (Ao5) và Mean of 3 (Mo3 — Điều 9f)",
+        "body": "- **Average of 5 (Ao5 — áp dụng cho 2x2, 3x3, 4x4, 5x5, OH, Pyraminx, Megaminx, Skewb, Square-1, Clock)**: Thi 5 lượt, loại bỏ **1 lượt nhanh nhất (Best)** và **1 lượt chậm nhất (Worst)**, rồi lấy trung bình cộng của **3 lượt ở giữa**. Do đó, nếu có 1 lần bị DNF thì DNF đó được tính là lượt Worst và bạn vẫn có điểm Ao5; nếu có từ 2 lần DNF trở lên thì cả Ao5 bị DNF.\n- **Mean of 3 (Mo3 — áp dụng cho 6x6x6, 7x7x7, FMC, 3BLD, 4BLD, 5BLD)**: Thi 3 lượt và lấy trung bình cộng của cả 3 lượt (không bỏ lượt nào)."
+      }
+    ],
+    "example": "Ví dụ tính Ao5: 5 lượt giải của bạn là `11.20s`, `9.85s` (Best), `10.40s`, `DNF` (Worst), `10.90s`. Bỏ 9.85s và DNF, lấy `(11.20 + 10.40 + 10.90) / 3 = 10.83s`!",
+    "relatedTerms": [
+      "WCA Regulations",
+      "15s Inspection",
+      "+2 Penalty",
+      "DNF (Did Not Finish)",
+      "DNS (Did Not Start)",
+      "Average of 5 (Ao5)",
+      "Mean of 3 (Mo3)"
+    ],
+    "relatedAlgs": []
+  }
+]

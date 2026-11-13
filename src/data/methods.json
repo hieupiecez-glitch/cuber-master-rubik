@@ -1,0 +1,684 @@
+{
+  "methods": [
+    {
+      "id": "3x3-beginner",
+      "puzzleId": "3x3",
+      "name": "Layer-by-Layer (Phương pháp Cơ bản 11 bước cho Người mới)",
+      "slug": "beginner",
+      "level": "Beginner (Người mới bắt đầu)",
+      "algCount": 8,
+      "avgMoves": "85–110 bước",
+      "overview": "Phương pháp nhập môn tiêu chuẩn giúp bất kỳ ai chưa từng cầm Rubik có thể giải thành công khối 3x3x3 chỉ với 6–8 công thức ngắn và lộ trình 11 bước trực quan.",
+      "stages": [
+        {
+          "name": "1. White Cross (Dấu cộng Trắng)",
+          "desc": "Ghép 4 viên cạnh Trắng qua bước Hoa Cúc (Daisy) hoặc trực tiếp xuống đáy sao cho khớp 4 tâm bên."
+        },
+        {
+          "name": "2. First Layer Corners (4 Góc tầng 1)",
+          "desc": "Dùng tổ hợp 4 bước `R U R' U'` đưa 4 góc Trắng xuống hoàn tất tầng đầu tiên."
+        },
+        {
+          "name": "3. Middle Layer (4 Cạnh tầng 2)",
+          "desc": "Dùng 2 công thức đối xứng Chèn Phải (`U R U' R' U' F' U F`) và Chèn Trái (`U' L' U L U F U' F'`)."
+        },
+        {
+          "name": "4. Yellow Cross & Last Layer (Tầng cuối 4 bước)",
+          "desc": "Tạo dấu cộng Vàng (`F R U R' U' F'`), khớp cạnh (`Sune`), đưa góc về đúng chỗ (`Niklas`) và lật góc (`R' D' R D`)."
+        }
+      ],
+      "expectedCases": 8,
+      "enteredCases": 8,
+      "verifiedCases": 8,
+      "missingCases": 0,
+      "referenceUrl": "https://www.speedsolving.com/wiki/index.php/3x3x3_speedsolving_methods"
+    },
+    {
+      "id": "3x3-intermediate",
+      "puzzleId": "3x3",
+      "name": "4LLL CFOP Trung cấp (Intuitive F2L + 2-Look OLL + 2-Look PLL)",
+      "slug": "intermediate-cfop",
+      "level": "Intermediate (Trung cấp)",
+      "algCount": 16,
+      "avgMoves": "60–68 bước",
+      "overview": "Bước chuyển mình quan trọng nhất từ Beginner lên Speedcubing: ghép đồng thời góc + cạnh ở 2 tầng đầu (F2L) và giải tầng cuối trong 4 lần nhìn (4-Look Last Layer: 10 công thức 2-Look OLL + 6 công thức 2-Look PLL), giúp giảm thời gian xuống dưới 20–30 giây.",
+      "stages": [
+        {
+          "name": "1. Efficient Bottom Cross (Giải dấu cộng trực tiếp ở mặt Đáy D)",
+          "desc": "Lập kế hoạch 4 cạnh chữ thập trong 15 giây Inspection, giải trong ≤ 8 bước mà không cần làm Hoa Cúc."
+        },
+        {
+          "name": "2. Intuitive / Basic F2L (Ghép 4 cặp góc-cạnh tầng 1 & 2)",
+          "desc": "Đưa cả góc và cạnh lên tầng U, ghép thành 3 dạng cơ bản (Cùng màu mặt trên, Khác màu mặt trên, Trắng ngửa lên U) rồi chèn vào 4 khe."
+        },
+        {
+          "name": "3. 2-Look OLL (Định hướng tầng cuối trong 2 bước — 10 công thức)",
+          "desc": "Bước 3a: Tạo dấu cộng Vàng (3 công thức: Chữ I `F R U R' U' F'`, Chữ L `f R U R' U' f'`, Chấm `F...f...`). Bước 3b: Lật 4 góc Vàng bằng 7 trường hợp OCLL (`OLL 21` đến `OLL 27`)."
+        },
+        {
+          "name": "4. 2-Look PLL (Hoán vị tầng cuối trong 2 bước — 6 công thức)",
+          "desc": "Bước 4a: Hoán vị 4 góc bằng `T-Perm / Aa-Perm` (khi có đèn pha) hoặc `Y-Perm` (không có đèn pha). Bước 4b: Hoán vị 4 cạnh bằng `Ua, Ub, H, Z Perm`."
+        },
+        {
+          "name": "5. Finger Tricks & Lookahead cơ bản",
+          "desc": "Dùng ngón trỏ/áp út flick U, U2, M2 không đổi thế cầm tay (regrip) và xoay chậm đều để mắt tìm cặp F2L tiếp theo."
+        }
+      ],
+      "expectedCases": 16,
+      "enteredCases": 16,
+      "verifiedCases": 16,
+      "missingCases": 0,
+      "referenceUrl": "https://en.wikipedia.org/wiki/CFOP_method"
+    },
+    {
+      "id": "3x3-cfop",
+      "puzzleId": "3x3",
+      "name": "Full CFOP / Fridrich Method (41 F2L + 57 OLL + 21 PLL = 119 Cases)",
+      "slug": "cfop",
+      "level": "Advanced (Nâng cao – Chuyên nghiệp)",
+      "algCount": 119,
+      "avgMoves": "52–56 bước",
+      "overview": "Phương pháp Speedcubing phổ biến nhất thế giới được phát triển bởi Jessica Fridrich và cộng đồng cuber quốc tế. Bao gồm 4 giai đoạn: Cross, F2L (41 trường hợp tiêu chuẩn), Full OLL (57 trường hợp định hướng tầng cuối trong 1 bước) và Full PLL (21 trường hợp hoán vị tầng cuối trong 1 bước). Toàn bộ 119/119 trường hợp đã được nhập đầy đủ và kiểm chứng toán học 100% trên hệ thống!",
+      "stages": [
+        {
+          "name": "1. Advanced Cross & X-Cross",
+          "desc": "Giải Cross ở mặt D trong ≤ 7 bước, bảo toàn hoặc ghép sẵn cặp F2L đầu tiên (X-Cross) ngay trong lúc làm chữ thập."
+        },
+        {
+          "name": "2. Full F2L (41 Cases — First Two Layers)",
+          "desc": "Làm chủ toàn bộ 41 trường hợp chuẩn (từ F2L 01 đến F2L 41), chèn từ nhiều góc độ (multi-slotting) và hạn chế tối đa xoay khối `y`."
+        },
+        {
+          "name": "3. Full OLL (57 Cases — Orientation of the Last Layer)",
+          "desc": "Nhận diện và lật toàn bộ 9 sticker mặt U về đồng màu Vàng chỉ bằng 1 thuật toán duy nhất trong bộ 57 OLL."
+        },
+        {
+          "name": "4. Full PLL (21 Cases — Permutation of the Last Layer)",
+          "desc": "Nhận diện 2 mặt (2-sided PLL recognition) và hoán vị toàn bộ 8 viên tầng cuối về trạng thái hoàn thành chỉ bằng 1 trong 21 PLL."
+        }
+      ],
+      "expectedCases": 119,
+      "enteredCases": 119,
+      "verifiedCases": 119,
+      "missingCases": 0,
+      "referenceUrl": "https://en.wikipedia.org/wiki/CFOP_method"
+    },
+    {
+      "id": "3x3-roux",
+      "puzzleId": "3x3",
+      "name": "Roux Method (Blockbuilding + CMLL + LSE)",
+      "slug": "roux",
+      "level": "Advanced (Nâng cao)",
+      "algCount": 42,
+      "avgMoves": "45–50 bước",
+      "overview": "Được Gilles Roux phát minh: phương pháp lớn thứ 2 trong Speedcubing hiện đại với số bước trung bình cực thấp (45–50 bước), hoàn toàn KHÔNG cần xoay cả khối (zero cube rotations) và sử dụng tối đa tầng giữa M kết hợp tầng U.",
+      "stages": [
+        {
+          "name": "1. First Block (FB — Khối 1x2x3 bên Trái)",
+          "desc": "Xây dựng trực quan một khối 1x2x3 ở phía dưới bên trái (dL) trong ≤ 8 bước mà không bị ràng buộc bởi chữ thập Cross."
+        },
+        {
+          "name": "2. Second Block (SB — Khối 1x2x3 bên Phải)",
+          "desc": "Chỉ sử dụng các bước xoay `<R, Rw, M, U>` để xây dựng khối 1x2x3 đối diện ở phía dưới bên phải (dR)."
+        },
+        {
+          "name": "3. CMLL (Corners of the Last Layer — 42 Cases)",
+          "desc": "Giải đồng thời cả định hướng lẫn vị trí của 4 viên góc tầng U trong 1 thuật toán (dùng chung 42 trường hợp của CLL nhưng được phép tự do dùng tầng M)."
+        },
+        {
+          "name": "4. LSE (Last Six Edges — 4a EO, 4b UL/UR, 4c M-Slice)",
+          "desc": "Chỉ dùng `<M, U>` cực nhanh để: (4a) Định hướng 6 cạnh còn lại, (4b) Giải 2 cạnh trái/phải UL-UR, và (4c) Giải 4 cạnh cuối trên vòng M."
+        }
+      ],
+      "expectedCases": 54,
+      "enteredCases": 54,
+      "verifiedCases": 54,
+      "missingCases": 0,
+      "referenceUrl": "https://www.speedsolving.com/wiki/index.php/3x3x3_speedsolving_methods"
+    },
+    {
+      "id": "3x3-zz",
+      "puzzleId": "3x3",
+      "name": "ZZ Method (Zbigniew Zborowski — EOLine / EOCross + ZZF2L + LL)",
+      "slug": "zz",
+      "level": "Advanced (Nâng cao)",
+      "algCount": 47,
+      "avgMoves": "50–54 bước",
+      "overview": "Phương pháp hiện đại do Zbigniew Zborowski sáng tạo năm 2006: định hướng toàn bộ 12 viên cạnh ngay ở bước đầu tiên (EOLine hoặc EOCross), giúp toàn bộ phần F2L chỉ cần xoay 3 mặt `<R, U, L>` siêu mượt mà không bao giờ phải xoay khối và luôn có sẵn dấu cộng trên tầng cuối!",
+      "stages": [
+        {
+          "name": "1. EOLine / EOCross (Định hướng toàn bộ 12 cạnh + Đặt cạnh đáy)",
+          "desc": "Phát hiện các cạnh xấu (Bad Edges) trong lúc Inspection, dùng bước xoay 90° của mặt F hoặc B để chuyển tất cả thành cạnh tốt đồng thời đặt 2 cạnh DF-DB (EOLine) hoặc cả 4 cạnh đáy (EOCross)."
+        },
+        {
+          "name": "2. ZZF2L (First & Second 1x2x3 Blocks bằng <R, U, L>)",
+          "desc": "Xây dựng 2 khối 1x2x3 trái/phải (hoặc 4 cặp F2L) chỉ bằng các mặt R, U, L mà không bao giờ cần dùng F, B hay xoay khối."
+        },
+        {
+          "name": "3. Last Layer (OCLL + PLL, COLL + EPLL, hoặc 1-Look ZBLL)",
+          "desc": "Vì cả 4 cạnh tầng U luôn ngửa đúng màu Vàng sau ZZF2L, bạn chỉ cần học 7 OCLL + 21 PLL, hoặc 42 COLL + 4 EPLL, hoặc tiến lên bộ 493 ZBLL (1-Look Last Layer)."
+        }
+      ],
+      "expectedCases": 28,
+      "enteredCases": 28,
+      "verifiedCases": 28,
+      "missingCases": 0,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Speedcubing"
+    },
+    {
+      "id": "3x3-petrus",
+      "puzzleId": "3x3",
+      "name": "Petrus Method (Lars Petrus — 2x2x2 -> 2x2x3 -> EO -> 2-Gen F2L -> LL)",
+      "slug": "petrus",
+      "level": "Advanced (Nâng cao & FMC)",
+      "algCount": 28,
+      "avgMoves": "48–52 bước",
+      "overview": "Được nhà vô địch Thụy Điển Lars Petrus phát minh năm 1981: nền tảng của mọi kỹ thuật Blockbuilding và thi đấu Fewest Moves (FMC). Mở đầu bằng khối 2x2x2, mở rộng thành 2x2x3, định hướng 7 cạnh còn lại và hoàn tất F2L chỉ bằng 2 mặt `<R, U>`!",
+      "stages": [
+        {
+          "name": "1. Build 2x2x2 Block",
+          "desc": "Ghép trực quan 1 góc và 3 cạnh kề nhau tạo thành khối lập phương nhỏ 2x2x2 ở góc DBL."
+        },
+        {
+          "name": "2. Expand to 2x2x3 Block",
+          "desc": "Mở rộng khối 2x2x2 dọc theo mặt sau hoặc mặt dưới thành khối hộp 2x2x3."
+        },
+        {
+          "name": "3. Edge Orientation (Định hướng 7 cạnh chưa giải)",
+          "desc": "Nhận diện các cạnh bị lật sai trên mặt U và R, sửa từng cặp bằng `F' U' F` hoặc `R' F R` mà không chạm vào khối 2x2x3."
+        },
+        {
+          "name": "4. Finish F2L 2-Gen (<R, U> Only)",
+          "desc": "Chỉ xoay mặt R và mặt U để hoàn thiện khối 1x2x3 còn lại bên phải — dấu cộng tầng cuối tự động hoàn thành!"
+        },
+        {
+          "name": "5. Last Layer (OCLL + PLL hoặc COLL + EPLL)",
+          "desc": "Giải tầng cuối với dấu cộng đã định hướng sẵn."
+        }
+      ],
+      "expectedCases": 28,
+      "enteredCases": 28,
+      "verifiedCases": 28,
+      "missingCases": 0,
+      "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Petrus_Method"
+    },
+    {
+      "id": "3x3-advanced-others",
+      "puzzleId": "3x3",
+      "name": "Các Phương Pháp Chuyên Sâu Khác (Heise, Waterman, Corners First, VH/ZB)",
+      "slug": "other-methods",
+      "level": "Expert (Chuyên gia & Nghiên cứu)",
+      "algCount": 493,
+      "avgMoves": "40–48 bước",
+      "overview": "Tổng hợp các phương pháp giải chuyên biệt dành cho Fewest Moves (FMC), giải cổ điển tốc độ cao và tối ưu hóa tầng cuối 1-Look:\n- **Heise Method** (Ryan Heise): Giải toàn bộ Rubik trực quan bằng 4 khối 1x2x2 và Commutator góc mà không cần thuộc bất kỳ thuật toán cố định nào.\n- **Corners First & Waterman Method** (Minh Thai & Marc Waterman): Giải 8 viên góc trước (tương tự 2x2x2), sau đó chèn 12 viên cạnh bằng các bước tầng giữa M/E/S.\n- **VH Method (Vandenbergh-Harris) & ZB Method (Zborowski-Bruchem)**: Định hướng cả 4 cạnh tầng cuối ngay trong lúc chèn cặp F2L thứ 4 (VHLS 32 cases / ZBLS 302 cases), sau đó giải toàn bộ tầng cuối trong 1 bước với **ZBLL (493 cases)**.",
+      "stages": [
+        {
+          "name": "Heise Method (No-Algorithm FMC)",
+          "desc": "4 khối 1x2x2 -> Định hướng cạnh + Ghép khối -> Giải hết các cạnh + 2 góc -> Dùng 1 Commutator `[A, B]` giải 3 góc cuối cùng."
+        },
+        {
+          "name": "Waterman / Corners First",
+          "desc": "Giải mặt L hoàn chỉnh -> Giải 4 góc mặt R bằng CLL -> Giải các cạnh mặt R và 4 cạnh tầng giữa M bằng Slice Moves."
+        },
+        {
+          "name": "VHLS / ZBLS + ZBLL (493 Cases Catalog Scope)",
+          "desc": "Chèn cặp F2L cuối kèm định hướng cạnh tầng U -> Áp dụng ZBLL giải tầng cuối trong 1 lần nhìn. (Lưu ý minh bạch: Bộ ZBLL đầy đủ gồm 493 trường hợp chia theo 7 nhóm OCLL; hệ thống hiện đã nhập và xác minh các trường hợp đại diện cốt lõi + 21 PLL và công bố rõ số lượng 493 case của toàn bộ ZBLL)."
+        }
+      ],
+      "expectedCases": 493,
+      "enteredCases": 24,
+      "verifiedCases": 24,
+      "missingCases": 469,
+      "referenceUrl": "https://www.speedsolving.com/wiki/index.php/List_of_methods"
+    },
+    {
+      "id": "2x2-lbl",
+      "puzzleId": "2x2",
+      "name": "2x2x2 Layer-by-Layer (Giải từng tầng cho Người mới)",
+      "slug": "2x2-lbl",
+      "level": "Beginner (Người mới 2x2)",
+      "algCount": 4,
+      "avgMoves": "22–28 bước",
+      "overview": "Phương pháp dễ nhất để giải Rubik 2x2x2 nếu bạn đã biết giải 3x3x3: giải 4 viên góc mặt Trắng đúng vị trí tương đối với nhau, định hướng mặt Vàng bằng Sune (`R U R' U R U2 R'`) và hoán vị góc tầng cuối bằng T-Perm/Jb-Perm hoặc Y-Perm.",
+      "stages": [
+        {
+          "name": "1. First Layer (Hoàn thành tầng 1 đúng màu bên)",
+          "desc": "Chọn 1 viên góc Trắng làm mốc, đưa 3 viên góc Trắng còn lại vào đúng vị trí sao cho 4 mặt bên tạo thành 4 thanh ngang đồng màu."
+        },
+        {
+          "name": "2. OLL (Định hướng 4 góc mặt Vàng)",
+          "desc": "Sử dụng 1 trong 7 công thức OCLL (hoặc lặp lại Sune `R U R' U R U2 R'`) để lật cả 4 góc mặt Vàng ngửa lên."
+        },
+        {
+          "name": "3. PLL (Hoán vị 4 góc tầng cuối)",
+          "desc": "Đổi 2 góc kề bằng Jb/T-Perm (`R U R' F' R U R' U' R' F R2 U' R'`) hoặc đổi 2 góc chéo bằng Y-Perm."
+        }
+      ],
+      "expectedCases": 9,
+      "enteredCases": 9,
+      "verifiedCases": 9,
+      "missingCases": 0,
+      "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+    },
+    {
+      "id": "2x2-ortega",
+      "puzzleId": "2x2",
+      "name": "2x2x2 Ortega / Varasano Method (Full 12 Cases: 7 OLL + 5 PBL)",
+      "slug": "2x2-ortega",
+      "level": "Intermediate (Trung cấp 2x2)",
+      "algCount": 12,
+      "avgMoves": "16–20 bước",
+      "overview": "Phương pháp trung cấp cực kỳ hiệu quả do Victor Ortega và Jeffrey Varasano phổ biến: ở Bước 1 chỉ cần ghép 1 mặt đồng màu (KHÔNG cần đúng vị trí góc tầng 1!), sau đó định hướng mặt đối diện (7 OLL) và hoán vị cả 2 tầng cùng lúc (5 PBL). Toàn bộ 12/12 trường hợp đã được kiểm chứng đầy đủ!",
+      "stages": [
+        {
+          "name": "1. First Face (Ghép 1 mặt đồng màu bất kỳ trong 3–5 bước)",
+          "desc": "Chỉ cần 4 ô mặt đáy cùng màu (không cần quan tâm thanh màu bên hông khớp hay chưa)."
+        },
+        {
+          "name": "2. OLL (7 Trường hợp định hướng mặt trên)",
+          "desc": "Dùng 7 công thức OLL tối ưu riêng cho 2x2x2 (như H-Case chỉ 5 bước `R2 U2 R U2 R2`)."
+        },
+        {
+          "name": "3. PBL (5 Trường hợp Permute Both Layers)",
+          "desc": "Đếm số thanh đồng màu (Bars) ở tầng trên và tầng dưới để chọn đúng 1 trong 5 công thức PBL (ví dụ `R2 F2 R2` cho 0 thanh ở cả 2 tầng)."
+        }
+      ],
+      "expectedCases": 12,
+      "enteredCases": 12,
+      "verifiedCases": 12,
+      "missingCases": 0,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Speedcubing"
+    },
+    {
+      "id": "2x2-cll",
+      "puzzleId": "2x2",
+      "name": "2x2x2 Full CLL Method (Corners of Last Layer — Full 42 Cases)",
+      "slug": "2x2-cll",
+      "level": "Advanced (Nâng cao 2x2)",
+      "algCount": 42,
+      "avgMoves": "13–16 bước",
+      "overview": "Phương pháp 1-Look Last Layer tiêu chuẩn cho vận động viên 2x2x2 đạt sub-3 giây: giải hoàn chỉnh tầng 1 (Layer 1 có đủ 4 thanh đồng màu), sau đó giải cả định hướng lẫn vị trí của 4 góc tầng cuối chỉ bằng **1 thuật toán duy nhất** trong bộ 42 trường hợp CLL. Toàn bộ 42/42 trường hợp đã được nhập đầy đủ và kiểm chứng toán học 100%!",
+      "stages": [
+        {
+          "name": "1. Complete First Layer (Tầng 1 hoàn chỉnh góc)",
+          "desc": "Lên kế hoạch toàn bộ tầng 1 trong 15 giây Inspection (thường từ 4–6 bước)."
+        },
+        {
+          "name": "2. CLL Recognition & Execution (42 Trường hợp)",
+          "desc": "Nhận diện nhóm hướng góc (Sune, Anti-Sune, Pi, U, T, L, H) kết hợp vị trí các cặp màu cùng/đối nhau trên 4 góc để áp dụng 1 trong 42 công thức CLL."
+        }
+      ],
+      "expectedCases": 42,
+      "enteredCases": 42,
+      "verifiedCases": 42,
+      "missingCases": 0,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Speedcubing"
+    },
+    {
+      "id": "2x2-eg",
+      "puzzleId": "2x2",
+      "name": "2x2x2 EG Method (Erik–Gunnar: CLL + EG-1 + EG-2 = 128 Cases)",
+      "slug": "2x2-eg",
+      "level": "Expert (Đỉnh cao WCA 2x2)",
+      "algCount": 128,
+      "avgMoves": "10–13 bước",
+      "overview": "Phương pháp đỉnh cao của kỷ lục gia thế giới 2x2x2 (do Erik Akkersdijk và Gunnar Krig phát triển): bất kể mặt đáy sau khi ghép xong thuộc trạng thái nào (Đã đúng hết góc -> dùng **42 CLL**; Có 1 thanh đồng màu và 2 góc đổi chỗ -> dùng **43 EG-1**; Không có thanh màu nào / 2 góc đổi chéo -> dùng **43 EG-2**), bạn luôn giải xong phần còn lại chỉ trong **1 công thức duy nhất**!",
+      "stages": [
+        {
+          "name": "1. Any First Face (Ghép mặt đầu tiên trong ≤ 4 bước)",
+          "desc": "Ghép mặt bất kỳ và dự đoán luôn vị trí thanh đồng màu (Bar) của mặt đáy ngay trong lúc Inspection."
+        },
+        {
+          "name": "2. 1-Look Completion (CLL / EG-1 / EG-2)",
+          "desc": "Nếu đáy hoàn chỉnh: áp dụng bộ 42 CLL (đã có đủ 42/42). Nếu đáy có 1 thanh Bar (đặt ở mặt sau DB): áp dụng bộ 43 EG-1. Nếu đáy đổi chéo: áp dụng bộ 43 EG-2 (tương đương CLL + `R2 F2 R2`)."
+        }
+      ],
+      "expectedCases": 128,
+      "enteredCases": 42,
+      "verifiedCases": 42,
+      "missingCases": 86,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Speedcubing"
+    },
+    {
+      "id": "4x4-reduction",
+      "puzzleId": "4x4",
+      "name": "Reduction Method & Parity (Phương pháp Thu gọn cho 4x4x4 – NxN)",
+      "slug": "reduction",
+      "level": "Intermediate – Advanced (Big Cube)",
+      "algCount": 9,
+      "avgMoves": "110–135 bước (4x4)",
+      "overview": "Phương pháp nền tảng cho mọi khối Rubik lớn từ 4x4x4 đến 10x10x10 (NxN): thu gọn khối nhiều tầng về cấu trúc của một khối 3x3x3 thông qua việc gom cụm tâm, ghép các cặp cạnh (Freeslice / 3-2-2-2-3), giải như 3x3x3 và xử lý OLL/PLL Parity.",
+      "stages": [
+        {
+          "name": "1. Center Building (Ghép 6 cụm tâm đúng hệ màu BOY)",
+          "desc": "Ghép 2 tâm đối diện (Trắng - Vàng), sau đó ghép 4 tâm mặt bên theo thứ tự Trắng ở trái -> Đỏ -> Xanh lá -> Cam -> Xanh dương."
+        },
+        {
+          "name": "2. Edge Pairing (Ghép 12 bộ cạnh đôi / đa viên)",
+          "desc": "Sử dụng Freeslice trên tầng Uw/Dw kết hợp công thức lật cạnh `R U R' F R' F' R` cho 2–4 bộ cạnh cuối cùng."
+        },
+        {
+          "name": "3. 3x3x3 Stage & Parity Resolution",
+          "desc": "Giải Cross + F2L + OLL (kèm Lucas OLL Parity nếu lẻ 1 cạnh lật) + PLL (kèm PLL Parity `2R2 U2 2R2 Uw2 2R2 Uw2` nếu lẻ 2 cạnh hoán vị)."
+        }
+      ],
+      "expectedCases": 9,
+      "enteredCases": 9,
+      "verifiedCases": 9,
+      "missingCases": 0,
+      "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+    },
+    {
+      "id": "4x4-yau",
+      "puzzleId": "4x4",
+      "name": "Yau Method (Robert Yau — Chuẩn mực Speedcubing cho 4x4x4 & 5x5x5)",
+      "slug": "yau",
+      "level": "Advanced (Chuyên nghiệp 4x4–6x6)",
+      "algCount": 9,
+      "avgMoves": "100–120 bước",
+      "overview": "Được Robert Yau phát triển và hiện được hầu hết các kỷ lục gia thế giới 4x4x4 sử dụng: giải trước 3 cạnh Cross đáy ngay sau khi xong 2 mặt tâm đầu tiên, giúp hoàn thành luôn chữ thập Cross khi vừa ghép xong 4 mặt tâm giữa và cho phép ghép 8 cạnh cuối siêu tốc bằng kỹ thuật **3-2-3 Edge Pairing** không cần nhìn mặt đáy!",
+      "stages": [
+        {
+          "name": "1. First 2 Opposite Centers (Tâm Trắng & Tâm Vàng)",
+          "desc": "Giải cụm tâm Trắng và cụm tâm Vàng đối diện nhau."
+        },
+        {
+          "name": "2. Three Cross Dedges (Ghép 3/4 cạnh chữ thập Trắng)",
+          "desc": "Ghép 3 cặp cạnh có màu Trắng đặt vào mặt đáy Trắng (bên trái), chừa trống 1 khe cạnh thứ 4 để tự do xoay tầng Rw."
+        },
+        {
+          "name": "3. Last 4 Centers & Final Cross Edge",
+          "desc": "Chỉ dùng `<Rw, U, Lw, R, L>` để giải nốt 4 mặt tâm giữa mà không chạm vào 3 cạnh Cross đã ghép, sau đó ghép nốt cạnh Cross thứ 4."
+        },
+        {
+          "name": "4. 3-2-3 Edge Pairing & 3x3 Stage + Parity",
+          "desc": "Đặt Cross xuống đáy D, ghép 8 cạnh còn lại trên 4 khe dọc bằng chu trình 3-2-3 (`Uw ... Uw'`) rồi giải thẳng vào F2L + OLL/PLL."
+        }
+      ],
+      "expectedCases": 9,
+      "enteredCases": 9,
+      "verifiedCases": 9,
+      "missingCases": 0,
+      "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+    },
+    {
+      "id": "4x4-hoya",
+      "puzzleId": "4x4",
+      "name": "Hoya Method (Jong-Ho Jeong — Giải 4 tâm trước khi ghép Cross)",
+      "slug": "hoya",
+      "level": "Advanced (Big Cube)",
+      "algCount": 9,
+      "avgMoves": "105–125 bước",
+      "overview": "Phương pháp đối trọng với Yau do Jong-Ho Jeong sáng tạo: giải 4 mặt tâm trước (chỉ chừa lại mặt U và mặt F), sau đó lợi dụng mặt F và U đang tự do để ghép 4 cạnh Cross đáy cực kỳ trực quan trước khi hoàn thiện 2 mặt tâm cuối (L2C).",
+      "stages": [
+        {
+          "name": "1. First 4 Centers (Giải 4 tâm D, B, L, R — chừa U và F)",
+          "desc": "Giải 4 mặt tâm sao cho mặt U và mặt F kề nhau còn trống."
+        },
+        {
+          "name": "2. 4 Cross Dedges (Ghép cả 4 cạnh chữ thập trên mặt F/U)",
+          "desc": "Ghép từng cạnh Cross trên vùng tâm F-U rồi cất xuống đáy D."
+        },
+        {
+          "name": "3. Last 2 Centers (Giải 2 tâm cuối U và F) & 3-2-3 Pairing",
+          "desc": "Giải 2 mặt tâm U và F rồi ghép 8 cạnh cuối giống hệt Yau Method."
+        }
+      ],
+      "expectedCases": 9,
+      "enteredCases": 9,
+      "verifiedCases": 9,
+      "missingCases": 0,
+      "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+    },
+    {
+      "id": "pyraminx-lbl",
+      "puzzleId": "pyraminx",
+      "name": "Pyraminx Layer-by-Layer & L4E (Last 4 Edges)",
+      "slug": "pyraminx-methods",
+      "level": "Beginner – Advanced (Pyraminx)",
+      "algCount": 5,
+      "avgMoves": "12–18 bước",
+      "overview": "Bao gồm phương pháp giải từng tầng (LBL — 5 trường hợp tầng cuối) cho người mới và phương pháp L4E (Last 4 Edges — ghép chữ V ở đáy rồi giải 4 cạnh cuối trực quan) dành cho vận động viên tốc độ.",
+      "stages": [
+        {
+          "name": "1. Tips & Axial Centers",
+          "desc": "Xoay 4 đỉnh nhọn khớp với 4 tâm trục và quy tụ 3 tâm cùng màu về mặt đáy."
+        },
+        {
+          "name": "2. Bottom Layer / V-First",
+          "desc": "Đưa 3 cạnh đáy vào bằng Sledgehammer (LBL) hoặc chỉ ghép 2 cạnh đáy tạo chữ V (L4E)."
+        },
+        {
+          "name": "3. Last Layer (5 Cases) / L4E Completion",
+          "desc": "Áp dụng 1 trong 5 công thức tầng cuối: 3-Cycle CW, 3-Cycle CCW, 2-Flip, Cycle+Flip CW, Cycle+Flip CCW."
+        }
+      ],
+      "expectedCases": 5,
+      "enteredCases": 5,
+      "verifiedCases": 5,
+      "missingCases": 0,
+      "referenceUrl": "https://www.worldcubeassociation.org/regulations/"
+    },
+    {
+      "id": "megaminx-4lll",
+      "puzzleId": "megaminx",
+      "name": "Megaminx Westlund S2L + 4-Look Last Layer",
+      "slug": "megaminx-methods",
+      "level": "Intermediate – Advanced (Megaminx)",
+      "algCount": 16,
+      "avgMoves": "120–150 bước",
+      "overview": "Phương pháp chuẩn để chinh phục khối 12 mặt Megaminx: giải Ngôi sao đáy + F2L tầng dưới, tiếp tục giải các cụm S2L (Second Two Layers) theo thứ tự vòng tròn của Simon Westlund, và kết thúc bằng 4-Look Last Layer (EO Star -> CO Sune -> EP 3-Cycle -> CP Commutator).",
+      "stages": [
+        {
+          "name": "1. Star & First 5 F2L Pairs",
+          "desc": "Ghép 5 cạnh mặt Trắng tạo Ngôi sao và chèn 5 cặp góc-cạnh tầng đáy như 3x3x3."
+        },
+        {
+          "name": "2. S2L (Second Two Layers — Westlund / Yu Da-Hyun)",
+          "desc": "Đi vòng quanh 5 mặt bên để giải từng cụm 2 cạnh đáy + 2 cặp F2L trên mỗi mặt cho đến khi chỉ còn mặt Xám trên cùng."
+        },
+        {
+          "name": "3. 4-Look Last Layer (EO -> CO -> EP -> CP)",
+          "desc": "Tạo Ngôi sao Xám (`F R U R' U' F'`), lật góc bằng Sune (`R U R' U R U2' R'`), hoán vị cạnh và hoán vị góc bằng `R' D' R`."
+        }
+      ],
+      "expectedCases": 5,
+      "enteredCases": 5,
+      "verifiedCases": 5,
+      "missingCases": 0,
+      "referenceUrl": "https://www.worldcubeassociation.org/regulations/"
+    },
+    {
+      "id": "skewb-sarah",
+      "puzzleId": "skewb",
+      "name": "Sarah's Skewb Method (Beginner, Intermediate & Advanced)",
+      "slug": "skewb-sarah",
+      "level": "Beginner – Advanced (Skewb)",
+      "algCount": 4,
+      "avgMoves": "14–20 bước",
+      "overview": "Hệ thống phương pháp giải Skewb nổi tiếng nhất thế giới do Sarah Strong biên soạn: sử dụng duy nhất tổ hợp Sledgehammer (`R' L R L'`) và Hedgeslammer (`L R' L' R`) để giải toàn bộ khối Skewb!",
+      "stages": [
+        {
+          "name": "1. First Side (Mặt Trắng hoàn chỉnh)",
+          "desc": "Đưa 4 viên góc Trắng về quanh tâm Trắng đúng thứ tự màu kề nhau."
+        },
+        {
+          "name": "2. Opposite Corners (Pi & Peanut Cases)",
+          "desc": "Định hướng 4 góc mặt Vàng bằng 1 lần Sledgehammer (case Pi) hoặc 2 lần Sledgehammer (case Peanut)."
+        },
+        {
+          "name": "3. Yellow Center & Last 3/4 Centers",
+          "desc": "Đưa tâm Vàng lên đỉnh và chu chuyển 3 viên tâm cuối bằng `R' L R L' y2 R' L R L'`."
+        }
+      ],
+      "expectedCases": 4,
+      "enteredCases": 4,
+      "verifiedCases": 4,
+      "missingCases": 0,
+      "referenceUrl": "https://www.worldcubeassociation.org/regulations/"
+    },
+    {
+      "id": "sq1-vandenbergh",
+      "puzzleId": "square-1",
+      "name": "Square-1 Vandenbergh Method (CS -> CO -> EO -> CP -> EP + Parity)",
+      "slug": "square-1-vandenbergh",
+      "level": "Advanced (Square-1)",
+      "algCount": 5,
+      "avgMoves": "22–30 slices",
+      "overview": "Phương pháp 5 bước tiêu chuẩn của Lars Vandenbergh cho Square-1: khôi phục hình lập phương (Cube Shape), chia màu góc (CO), chia màu cạnh (EO), giải vị trí góc (CP) và giải vị trí cạnh kèm xử lý Parity (EP).",
+      "stages": [
+        {
+          "name": "1. Cube Shape (Khôi phục hình lập phương)",
+          "desc": "Gom 8 cạnh nhỏ tạo hình Scallop-Kite rồi cắt `/ (-2,-4) / (-1,-2) / (-3,-3) /` về mặt vuông."
+        },
+        {
+          "name": "2. Corner & Edge Orientation (CO + EO)",
+          "desc": "Đưa toàn bộ góc và cạnh màu Vàng/Trắng về đúng tầng U và D tương ứng."
+        },
+        {
+          "name": "3. Corner & Edge Permutation (CP + EP + Parity)",
+          "desc": "Hoán vị 8 góc bằng J/N Perm và hoán vị 8 cạnh bằng Adj-Adj Swap + Square-1 Parity."
+        }
+      ],
+      "expectedCases": 5,
+      "enteredCases": 5,
+      "verifiedCases": 5,
+      "missingCases": 0,
+      "referenceUrl": "https://www.worldcubeassociation.org/regulations/"
+    }
+  ],
+  "beginnerSteps": [
+    {
+      "stepNumber": 1,
+      "title": "Bước 1: Giới thiệu cấu tạo bên trong khối Rubik 3x3x3",
+      "subtitle": "Hiểu nguyên lý trục lõi Spider Core trước khi xoay bước đầu tiên",
+      "formula": "R U R' U' R U R' U' R U R' U' R U R' U' R U R' U' R U R' U'",
+      "setup": "",
+      "initialState": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "resultState": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "explanation": "Nhiều người mới lầm tưởng Rubik gồm 54 ô màu độc lập và cố gắng ghép từng mặt một. Thực chất, bên trong Rubik 3x3x3 là một trục chữ thập 6 nhánh cố định gọi là **Core (Spider)** giữ 6 viên tâm, và 20 viên chuyển động (12 cạnh + 8 góc) móc vào nhau xung quanh lõi này. Do đó, bạn phải **giải theo từng TẦNG (Layer-by-Layer)** chứ không bao giờ giải từng mặt riêng lẻ!",
+      "expectedResult": "Nắm vững quy tắc cốt lõi: Giải theo 3 tầng (Tầng 1 -> Tầng 2 -> Tầng 3) và hiểu tại sao xoay 1 mặt luôn kéo theo các mặt kề bên.",
+      "commonMistakes": "Cố ghép xong 1 mặt Trắng nhưng viền xung quanh tầng 1 lại lộn xộn màu không khớp với tâm các mặt bên."
+    },
+    {
+      "stepNumber": 2,
+      "title": "Bước 2: Phân biệt 3 loại viên — Tâm (Center), Cạnh (Edge) và Góc (Corner)",
+      "subtitle": "Quy luật bất biến: Tâm không bao giờ đổi chỗ cho Cạnh hay Góc",
+      "formula": "U R F D L B",
+      "setup": "B' L' D' F' R' U'",
+      "initialState": "DBBLURFFRFFLRRBRDDLLUFFUDDBLLUDDRBBRBBULLURFFUULRBUFDD",
+      "resultState": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "explanation": "Khối Rubik 3x3x3 có đúng 3 loại viên không bao giờ hoán đổi chức năng cho nhau:\n- **6 Viên Tâm (Centers)**: Nằm chính giữa 6 mặt, chỉ có **1 màu**, chỉ tự xoay tại chỗ và **quyết định màu của cả mặt đó**.\n- **12 Viên Cạnh (Edges)**: Nằm giữa 2 góc, có **2 màu**, chỉ di chuyển đến các vị trí cạnh.\n- **8 Viên Góc (Corners)**: Nằm ở 8 đỉnh khối, có **3 màu**, chỉ di chuyển đến các vị trí góc.",
+      "expectedResult": "Chỉ vào bất kỳ viên nào trên khối Rubik cũng phân biệt được ngay đó là Tâm (1 màu), Cạnh (2 màu) hay Góc (3 màu).",
+      "commonMistakes": "Tìm cách đưa màu ở một viên Góc (3 màu) vào vị trí khuyết của dấu cộng (vốn là vị trí của viên Cạnh 2 màu)."
+    },
+    {
+      "stepNumber": 3,
+      "title": "Bước 3: Tư thế cầm Rubik chuẩn (Home Grip) & Định vị 6 mặt không gian",
+      "subtitle": "Giữ cố định mặt Tâm Đáy và mặt Tâm Trước khi thực hiện công thức",
+      "formula": "R U R' U'",
+      "setup": "U R U' R'",
+      "initialState": "RFUUUUUURDBBRRRRRRFFFFFUFFUDDFDDDDDDULLLLLLLLLRBBBBBBB",
+      "resultState": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "explanation": "Cách cầm chuẩn (**Home Grip**): Hai ngón cái đặt ở mặt Trước (**F - Front**), ngón giữa và áp út giữ mặt Sau (**B - Back**), để ngón trỏ hai tay tự do ở tầng trên (**U - Up**) nhằm gảy mặt U nhanh chóng. Với người mới, hãy thống nhất giữ **Tâm Trắng ở mặt Đáy (D - Down)** và **Tâm Vàng ở mặt Trên (U - Up)** xuyên suốt quá trình giải.",
+      "expectedResult": "Giữ khối Rubik chắc chắn bằng 2 tay, xác định tức thì 6 mặt: Trên (U), Dưới (D), Phải (R), Trái (L), Trước (F), Sau (B).",
+      "commonMistakes": "Đang làm công thức giữa chừng lại xoay cả khối Rubik trên tay làm mặt Trước (F) bị đổi sang mặt khác."
+    },
+    {
+      "stepNumber": 4,
+      "title": "Bước 4: Nhận biết Hệ màu chuẩn quốc tế (BOY Color Scheme)",
+      "subtitle": "Trắng đối Vàng • Đỏ đối Cam • Xanh lá đối Xanh dương",
+      "formula": "M2 E2 S2",
+      "setup": "S2 E2 M2",
+      "initialState": "UDUDUDUDURLRLRLRLRFBFBFBFBFDUDUDUDUDLRLRLRLRLBFBFBFBFB",
+      "resultState": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "explanation": "Mọi khối Rubik chuẩn WCA đều tuân theo hệ màu quốc tế **BOY (Blue - Orange - Yellow theo chiều kim đồng hồ quanh đỉnh)**:\n- **Trắng (White)** luôn đối diện **Vàng (Yellow)**.\n- **Đỏ (Red)** luôn đối diện **Cam (Orange)**.\n- **Xanh lá (Green)** luôn đối diện **Xanh dương (Blue)**.\nKhi đặt mặt Trắng ở đáy (D) và mặt Vàng ở trên (U), nhìn mặt Đỏ ở trước (F) thì bên Phải (R) luôn là Xanh lá, phía Sau (B) là Cam và bên Trái (L) là Xanh dương.",
+      "expectedResult": "Thuộc lòng 3 cặp màu đối diện để nhận diện nhanh vị trí đích của từng viên mà không cần lật khối tìm tâm.",
+      "commonMistakes": "Quên thứ tự màu mặt bên khi giải các loại Rubik không có tâm cố định như 2x2x2 hoặc 4x4x4."
+    },
+    {
+      "stepNumber": 5,
+      "title": "Bước 5: Làm chủ Ký hiệu cơ bản (U, D, R, L, F, B và dấu phẩy ' / số 2)",
+      "subtitle": "Quy tắc vàng: Chiều kim đồng hồ được tính khi NHÌN TRỰC DIỆN vào mặt đó",
+      "formula": "R U R' U'",
+      "setup": "U R U' R'",
+      "initialState": "RFUUUUUURDBBRRRRRRFFFFFUFFUDDFDDDDDDULLLLLLLLLRBBBBBBB",
+      "resultState": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "explanation": "Mỗi chữ cái in hoa biểu thị xoay mặt đó **90 độ (1/4 vòng)**:\n- **Chữ cái không dấu** (`R, U, F, L, D, B`): Xoay **cùng chiều kim đồng hồ (CW)** khi bạn nhìn thẳng trực diện vào chính mặt đó.\n- **Có dấu phẩy `'` (Prime)** (`R', U', F', L', D', B'`): Xoay **ngược chiều kim đồng hồ (CCW)** 90 độ khi nhìn trực diện vào mặt đó.\n- **Có số `2`** (`R2, U2, F2...`): Xoay **180 độ (nửa vòng)** — xoay chiều nào cũng cho cùng 1 kết quả!\nHãy bấm **Play / Step Forward** trên tổ hợp **Right Trigger (`R U R' U'`)** bên cạnh để làm quen ngay!",
+      "expectedResult": "Thực hiện chuẩn xác tổ hợp 4 bước `R U R' U'` (Lên - Sang trái - Xuống - Sang phải) mà không bị nhầm chiều giữa L và R.",
+      "commonMistakes": "Nhầm chiều của `L` và `B` hoặc `D`: Ví dụ `R` là đẩy mặt phải lên, nhưng `L` (cùng chiều KĐH khi nhìn vào mặt trái) lại là kéo mặt trái XUỐNG!"
+    },
+    {
+      "stepNumber": 6,
+      "title": "Bước 6: Tạo Dấu cộng Trắng ở tầng đầu (White Cross)",
+      "subtitle": "Phương pháp Hoa Cúc (Daisy) dành cho người mới hoặc giải trực tiếp xuống đáy",
+      "formula": "F2 U' R2 U2 L2 U' B2",
+      "setup": "B2 U L2 U2 R2 U F2",
+      "initialState": "DDDUUUUDUFRLRRRBLLBFLBFBRRLDDUUDDUUDRLRLLLFFFBBBFBFFBR",
+      "resultState": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "explanation": "Mục tiêu: Đưa 4 viên cạnh có màu Trắng (Trắng-Đỏ, Trắng-Xanh lá, Trắng-Cam, Trắng-Xanh dương) về mặt đáy (D) tạo thành dấu cộng Trắng, **ĐỒNG THỜI màu bên hông của 4 viên cạnh phải trùng khít với màu viên tâm của 4 mặt bên**!\n**Cách dễ nhất (Phương pháp Hoa Cúc - Daisy)**:\n1. Đưa 4 viên cạnh Trắng lên bao quanh viên tâm Vàng ở mặt U (như bông hoa cúc nhụy Vàng cánh Trắng).\n2. Xoay tầng U cho màu bên hông của từng cánh hoa Trắng trùng với màu viên tâm mặt bên đó, rồi xoay mặt đó `180 độ` (`F2, R2, B2, L2`) để đưa cánh hoa xuống đáy Trắng!",
+      "expectedResult": "Mặt đáy có dấu cộng Trắng VÀ 4 mặt bên đều có 2 ô màu thẳng hàng giữa cạnh đáy và viên tâm.",
+      "commonMistakes": "Chỉ ghép được dấu cộng màu Trắng ở đáy nhưng 4 màu hông của viên cạnh không khớp với 4 viên tâm mặt bên."
+    },
+    {
+      "stepNumber": 7,
+      "title": "Bước 7: Hoàn thành 4 Góc tầng đầu (First Layer Corners)",
+      "subtitle": "Sử dụng duy nhất tổ hợp 4 bước Right Trigger (R U R' U')",
+      "formula": "R U R' U'",
+      "setup": "U R U' R'",
+      "initialState": "RFUUUUUURDBBRRRRRRFFFFFUFFUDDFDDDDDDULLLLLLLLLRBBBBBBB",
+      "resultState": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "explanation": "Tìm ở tầng trên (U) một viên góc có chứa màu Trắng (ví dụ viên góc **Trắng - Đỏ - Xanh lá**):\n1. Xoay tầng U để đưa viên góc đó về nằm ngay phía trên khe đích của nó (giữa tâm Trắng, tâm Đỏ và tâm Xanh lá — tức vị trí góc phải-trước `UFR`).\n2. Lặp lại công thức 4 bước **`R U R' U'`** (1 lần, 3 lần hoặc 5 lần) cho đến khi viên góc đó chui xuống góc dưới `DFR` và mặt màu Trắng úp đúng xuống đáy!\n3. Nếu viên góc Trắng bị kẹt sẵn ở dưới đáy nhưng sai vị trí, làm 1 lần `R U R' U'` để nhấc nó lên tầng U rồi làm như trên.",
+      "expectedResult": "Hoàn thành trọn vẹn Tầng 1: Mặt đáy Trắng kín 9 ô và viền tầng 1 ở cả 4 mặt bên tạo thành chữ T ngược đồng màu với viên tâm.",
+      "commonMistakes": "Đặt viên góc chưa đúng giữa 2 màu tâm tương ứng của nó mà đã vội làm `R U R' U'`."
+    },
+    {
+      "stepNumber": 8,
+      "title": "Bước 8: Giải 4 Cạnh tầng giữa (Middle Layer Edges)",
+      "subtitle": "Công thức Chèn Phải và Chèn Trái cho 4 viên cạnh không chứa màu Vàng",
+      "formula": "U R U' R' U' F' U F",
+      "setup": "F' U' F U R U' R' U'",
+      "initialState": "UURLUUFUUFFUFRRURRRBLFFRFFBDDLDDDDDDBUDLLLLLLFRRBBBBBB",
+      "resultState": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "explanation": "Tìm trên tầng U một viên cạnh **KHÔNG có màu Vàng**. Xoay tầng U để màu mặt trước của viên cạnh đó trùng với viên tâm mặt trước (tạo thành 1 cột dọc 3 ô cùng màu ở mặt F):\n- **Trường hợp 1 — Cần đưa cạnh xuống khe bên PHẢI (FR)**: Thực hiện **`U R U' R' U' F' U F`** (Xoay U sang trái xa đích -> Làm Right Trigger -> Xoay sang mặt phải làm Left Trigger).\n- **Trường hợp 2 — Cần đưa cạnh xuống khe bên TRÁI (FL)**: Thực hiện đối xứng **`U' L' U L U F U' F'`**.\n- Nếu cạnh tầng 2 bị kẹt ngược trong khe, áp dụng 1 lần công thức trên với cạnh bất kỳ để đẩy nó lên tầng U.",
+      "expectedResult": "Hoàn thành trọn vẹn 2 tầng đầu tiên (First Two Layers - F2L) ở cả 4 mặt bên.",
+      "commonMistakes": "Chọn nhầm viên cạnh có chứa màu Vàng để đưa xuống tầng 2, hoặc bước đầu xoay U về phía khe đích thay vì xoay ra xa khe đích."
+    },
+    {
+      "stepNumber": 9,
+      "title": "Bước 9: Tạo Dấu cộng Vàng & Đồng bộ 4 cạnh tầng cuối (Yellow Cross)",
+      "subtitle": "Công thức 6 bước F R U R' U' F' và công thức Sune đổi cạnh",
+      "formula": "F R U R' U' F'",
+      "setup": "F U R U' R' F'",
+      "initialState": "RFUUUURRUFBBRRRRRRFULFFFFFFDDDDDDDDDULULLLLLLLUBBBBBBB",
+      "resultState": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "explanation": "**Phần 9A — Tạo dấu cộng Vàng trên mặt U** bằng công thức **`F R U R' U' F'`**:\n- Nếu mặt U chỉ có **1 chấm Vàng ở tâm**: Làm `F R U R' U' F'` từ hướng bất kỳ -> thành hình chữ L nhỏ.\n- Nếu mặt U có **hình chữ L nhỏ (Góc 9 giờ)**: Đặt chữ L ở góc **Sau-Trái** (hướng 9 giờ và 12 giờ), làm `F R U R' U' F'` -> thành đường thẳng ngang.\n- Nếu mặt U có **đường thẳng ngang**: Giữ đường thẳng nằm **NGANG (Trái - Phải)**, làm `F R U R' U' F'` -> hoàn thành Dấu cộng Vàng!\n**Phần 9B — Đưa 4 cạnh chữ thập Vàng khớp với 4 tâm bên**: Xoay tầng U sao cho có ít nhất 2 cạnh khớp màu tâm bên. Đặt 2 cạnh đã đúng ở **mặt Sau (B) và mặt Phải (R)**, rồi làm công thức Sune: **`R U R' U R U2 R' U`**.",
+      "expectedResult": "Tầng trên có dấu cộng Vàng hoàn chỉnh và cả 4 viên cạnh của dấu cộng đều khớp màu với 4 viên tâm mặt bên.",
+      "commonMistakes": "Đặt đường thẳng Vàng nằm dọc (Trước - Sau) thay vì nằm ngang (Trái - Phải) khi làm `F R U R' U' F'` khiến nó quay vòng lại chữ L."
+    },
+    {
+      "stepNumber": 10,
+      "title": "Bước 10: Đưa 4 Góc tầng cuối về đúng vị trí (Permute Last Layer Corners)",
+      "subtitle": "Chu chuyển 3 góc bằng công thức Niklas (U R U' L' U R' U' L)",
+      "formula": "U R U' L' U R' U' L",
+      "setup": "L' U R U' L U R' U'",
+      "initialState": "FULUUUBUURRURRRRRRRFFFFFFFFDDDDDDDDDLLULLLLLLBBUBBBBBB",
+      "resultState": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "explanation": "Quan sát 4 viên góc ở tầng trên xem đã đứng **đúng vị trí giữa 3 màu tâm của nó chưa** (chưa cần màu Vàng ngửa lên trên!):\n- Nếu có **1 góc đã đứng đúng chỗ**: Giữ viên góc đúng đó ở vị trí **Trước-Phải (`UFR`)**, rồi thực hiện công thức **`U R U' L' U R' U' L`** (1 hoặc 2 lần) cho đến khi cả 4 góc đều về đúng vị trí của nó.\n- Nếu **chưa có góc nào đúng vị trí**: Cầm ở hướng bất kỳ và làm 1 lần `U R U' L' U R' U' L`, chắc chắn sẽ xuất hiện 1 góc đúng vị trí!",
+      "expectedResult": "Cả 4 viên góc tầng cuối đều nằm đúng giữa 3 mặt màu tương ứng của chúng (dù một số góc có thể chưa lật màu Vàng lên trên).",
+      "commonMistakes": "Tưởng viên góc đứng sai vị trí chỉ vì màu Vàng của nó đang quay sang hông — hãy kiểm tra 3 màu của viên góc so với 3 màu tâm bao quanh góc đó!"
+    },
+    {
+      "stepNumber": 11,
+      "title": "Bước 11: Định hướng các góc tầng cuối & Hoàn thành Rubik!",
+      "subtitle": "Quy tắc bất di bất dịch: Chỉ xoay tầng U để đưa góc tiếp theo vào vị trí UFR",
+      "formula": "R' D' R D R' D' R D U R' D' R D R' D' R D R' D' R D R' D' R D U'",
+      "setup": "U D' R' D R D' R' D R D' R' D R D' R' D R U' D' R' D R D' R' D R",
+      "initialState": "UUBUUUUUFURURRRRRRFFRFFFFFFDDDDDDDDDLLLLLLLLLRBBBBBBBB",
+      "resultState": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "explanation": "Đây là bước cuối cùng và dễ mắc lỗi nhất nếu không giữ nguyên mặt Trước (**F**):\n1. Đặt một góc chưa lật màu Vàng ở vị trí **Trước-Phải (`UFR`)**.\n2. Lặp lại cụm 4 bước **`R' D' R D`** (2 lần hoặc 4 lần) cho đến khi mặt Vàng của góc đó ngửa lên trên mặt U. *(Đừng hoảng sợ khi thấy 2 tầng dưới bị xáo trộn tạm thời — chúng sẽ tự động khôi phục khi góc cuối cùng lật xong!)*\n3. **BẮT BUỘC**: Giữ nguyên toàn bộ khối Rubik (tuyệt đối không xoay khối!), **CHỈ XOAY RIÊNG TẦNG TRÊN (`U`)** để đưa viên góc chưa lật tiếp theo vào đúng vị trí `UFR`, rồi tiếp tục làm `R' D' R D` cho đến khi toàn bộ mặt Vàng ngửa lên và cả khối Rubik hoàn thành!",
+      "expectedResult": "Toàn bộ 6 mặt của khối Rubik 3x3x3 được giải hoàn chỉnh 100%!",
+      "commonMistakes": "Quên bước cuối `D` trong cụm `R' D' R D` sau khi thấy màu Vàng đã ngửa lên, hoặc xoay cả khối Rubik thay vì chỉ xoay tầng U để chuyển sang góc tiếp theo."
+    }
+  ]
+}

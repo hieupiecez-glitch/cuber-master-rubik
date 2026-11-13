@@ -1,0 +1,2030 @@
+[
+  {
+    "id": "2x2",
+    "name": "Rubik 2x2x2 (Pocket Cube)",
+    "slug": "2x2",
+    "category": "Cube Puzzles (Rubik Lập Phương)",
+    "categoryCode": "cube",
+    "difficulty": "Cơ bản – Trung cấp",
+    "layers": "2x2x2 (8 viên góc)",
+    "wcaOfficial": true,
+    "simulatorEngine": "cube-2x2",
+    "description": "Khối Rubik lập phương 2x2x2 chỉ bao gồm 8 viên góc (Corner), không có viên tâm cố định hay viên cạnh. Tuy nhìn đơn giản nhưng 2x2x2 là bộ môn tốc độ đỉnh cao trong WCA với các phương pháp giải chỉ trong 1–2 lần nhìn (Ortega, CLL, EG-1, EG-2).",
+    "structure": "Gồm 8 viên góc (mỗi viên 3 màu) xoay quanh trục lõi bên trong. Không có tâm cố định nên màu đối diện phải được suy luận từ quy ước màu chuẩn (Trắng đối Vàng, Đỏ đối Cam, Xanh lá đối Xanh dương).",
+    "differences": "Không có viên tâm (Center) và viên cạnh (Edge); mọi bước xoay đều tương đương với xoay tầng ngoài của 3x3x3 nhưng chỉ tác động lên góc.",
+    "supportedNotation": [
+      "U",
+      "U'",
+      "U2",
+      "D",
+      "D'",
+      "D2",
+      "R",
+      "R'",
+      "R2",
+      "L",
+      "L'",
+      "L2",
+      "F",
+      "F'",
+      "F2",
+      "B",
+      "B'",
+      "B2",
+      "x",
+      "y",
+      "z"
+    ],
+    "supportedMethods": [
+      "2x2-lbl",
+      "2x2-ortega",
+      "2x2-cll",
+      "2x2-eg"
+    ],
+    "stages": [
+      "Bước 1: Giải mặt đầu tiên (Layer 1 — đúng vị trí góc hoặc chỉ cần đồng màu mặt Đáy với Ortega)",
+      "Bước 2: Định hướng mặt trên cùng (OLL — 7 trường hợp chuẩn)",
+      "Bước 3: Hoán vị góc cả hai tầng (PBL — 5 trường hợp) hoặc giải trực tiếp tầng cuối bằng 1 công thức (CLL — 42 trường hợp)"
+    ],
+    "specialCases": [
+      "Trường hợp đổi 2 góc chéo ở cả hai tầng (Double Diagonal Swap): giải cực nhanh bằng R2 F2 R2.",
+      "Nhận diện màu mặt bên (Bar Recognition) để chọn đúng 1 trong 42 công thức CLL mà không cần xoay khối."
+    ],
+    "referenceUrl": "https://www.worldcubeassociation.org/regulations/"
+  },
+  {
+    "id": "3x3",
+    "name": "Rubik 3x3x3 (Standard Cube)",
+    "slug": "3x3",
+    "category": "Cube Puzzles (Rubik Lập Phương)",
+    "categoryCode": "cube",
+    "difficulty": "Cơ bản – Chuyên sâu",
+    "layers": "3x3x3 (6 tâm, 12 cạnh, 8 góc)",
+    "wcaOfficial": true,
+    "simulatorEngine": "cube-3x3",
+    "description": "Khối Rubik 3x3x3 kinh điển do Ernő Rubik phát minh năm 1974. Đây là nền tảng trung tâm của mọi phương pháp Speedcubing hiện đại (CFOP, Roux, ZZ, Petrus) và là chuẩn mực về hệ thống ký hiệu xoay quốc tế.",
+    "structure": "Bao gồm 1 trục lõi (Core/Spider) giữ 6 viên tâm (Center) cố định vị trí tương đối, 12 viên cạnh (Edge — mỗi viên 2 màu) và 8 viên góc (Corner — mỗi viên 3 màu).",
+    "differences": "Là khối chuẩn gốc để đối chiếu cho toàn bộ các biến thể NxN và Shape Mods. Không bao giờ xảy ra lỗi Parity đơn lẻ như trên 4x4x4.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B",
+      "r",
+      "l",
+      "u",
+      "d",
+      "f",
+      "b",
+      "M",
+      "E",
+      "S",
+      "x",
+      "y",
+      "z"
+    ],
+    "supportedMethods": [
+      "3x3-beginner",
+      "3x3-cfop",
+      "3x3-roux",
+      "3x3-zz",
+      "3x3-petrus",
+      "3x3-advanced-others"
+    ],
+    "stages": [
+      "Giai đoạn 1: Tạo chữ thập đáy (Cross) hoặc khối Block nền tảng (First Block / EOLine)",
+      "Giai đoạn 2: Hoàn thiện 2 tầng đầu (F2L — 41 trường hợp tiêu chuẩn hoặc Blockbuilding)",
+      "Giai đoạn 3: Định hướng tầng cuối (OLL — 57 trường hợp hoặc 2-Look OLL 10 trường hợp)",
+      "Giai đoạn 4: Hoán vị tầng cuối (PLL — 21 trường hợp hoặc 2-Look PLL 6 trường hợp)"
+    ],
+    "specialCases": [
+      "Các trường hợp F2L cả góc và cạnh nằm kẹt trong Slot (F2L 37–41).",
+      "Nhóm OLL Dot Cases (OLL 01–04, 17–20) không có cạnh nào lật đúng trên mặt U.",
+      "Nhóm G-Perms (Ga, Gb, Gc, Gd) và N-Perms (Na, Nb) trong bộ 21 PLL."
+    ],
+    "referenceUrl": "https://en.wikipedia.org/wiki/CFOP_method"
+  },
+  {
+    "id": "4x4",
+    "name": "Rubik 4x4x4 (Rubik's Revenge)",
+    "slug": "4x4",
+    "category": "Cube Puzzles (Rubik Lập Phương)",
+    "categoryCode": "cube",
+    "difficulty": "Trung cấp – Nâng cao",
+    "layers": "4x4x4 (24 tâm, 24 cạnh, 8 góc)",
+    "wcaOfficial": true,
+    "simulatorEngine": "cube-4x4",
+    "description": "Khối Big Cube chẵn đầu tiên (4x4x4), nổi tiếng với việc không có tâm cố định và sự xuất hiện của 2 trạng thái đặc biệt là OLL Parity (lật 1 cặp cạnh đơn) và PLL Parity (đổi 2 cặp cạnh đối/kề).",
+    "structure": "Gồm 24 viên tâm nhỏ (chia làm 6 cụm 2x2 trên mỗi mặt), 24 viên cạnh đơn (Wings — ghép thành 12 cặp cạnh đôi) và 8 viên góc.",
+    "differences": "Không có viên tâm cố định (người chơi phải tự nhớ hệ màu chuẩn khi ghép tâm) và xuất hiện OLL/PLL Parity do các lượt xoay lớp trong thay đổi tính chẵn lẻ của hoán vị.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B",
+      "Uw",
+      "Dw",
+      "Rw",
+      "Lw",
+      "Fw",
+      "Bw",
+      "r",
+      "l",
+      "u",
+      "d",
+      "f",
+      "b",
+      "x",
+      "y",
+      "z"
+    ],
+    "supportedMethods": [
+      "4x4-reduction",
+      "4x4-yau",
+      "4x4-hoya"
+    ],
+    "stages": [
+      "Giai đoạn 1: Ghép 6 cụm tâm 2x2 (Center Building — đúng thứ tự màu chuẩn quốc tế)",
+      "Giai đoạn 2: Ghép 12 cặp cạnh đôi (Edge Pairing — Freeslice hoặc 3-2-3 Pairing trong Yau Method)",
+      "Giai đoạn 3: Giải như Rubik 3x3x3 (CFOP / Roux / ZZ)",
+      "Giai đoạn 4: Xử lý OLL Parity (lật 1 cặp cạnh) và PLL Parity (hoán vị 2 cặp cạnh) nếu xuất hiện"
+    ],
+    "specialCases": [
+      "OLL Parity (Single Dedge Flip): Rw U2 x Rw U2 Rw U2 Rw' U2 Lw U2 Rw' U2 Rw U2 Rw' U2 Rw'",
+      "PLL Parity (Opposite Double Edge Swap): 2R2 U2 2R2 Uw2 2R2 Uw2",
+      "Double Parity (vừa lật cạnh vừa đổi 2 cạnh): có thể kết hợp giải trong 1 thuật toán tối ưu."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "5x5",
+    "name": "Rubik 5x5x5 (Professor's Cube)",
+    "slug": "5x5",
+    "category": "Cube Puzzles (Rubik Lập Phương)",
+    "categoryCode": "cube",
+    "difficulty": "Trung cấp – Nâng cao",
+    "layers": "5x5x5 (54 tâm, 36 cạnh, 8 góc)",
+    "wcaOfficial": true,
+    "simulatorEngine": "cube-3x3",
+    "description": "Khối Rubik lẻ 5x5x5 có viên tâm chính giữa cố định trên mỗi mặt, giúp định hướng màu dễ hơn 4x4x4 nhưng đòi hỏi kỹ thuật ghép cụm tâm 3x3 và ghép bộ 3 viên cạnh (Tredges).",
+    "structure": "Mỗi mặt có 9 viên tâm (1 tâm cố định chính giữa, 4 tâm cạnh t-center, 4 tâm góc x-center), 12 bộ cạnh (mỗi bộ gồm 1 Mid-edge chính giữa và 2 Wing-edges hai bên), cùng 8 viên góc.",
+    "differences": "Có tâm cố định nên không bị lệch hệ màu và không có PLL Parity như 4x4x4; tuy nhiên ở 2 cạnh cuối (Last 2 Edges - L2E) có thể gặp trường hợp Parity lật 2 wing-edges hai bên tâm cạnh.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B",
+      "Uw",
+      "Dw",
+      "Rw",
+      "Lw",
+      "Fw",
+      "Bw",
+      "3Rw",
+      "3Uw",
+      "x",
+      "y",
+      "z"
+    ],
+    "supportedMethods": [
+      "4x4-reduction",
+      "4x4-yau",
+      "bigcube-l2e"
+    ],
+    "stages": [
+      "Giai đoạn 1: Giải 2 tâm đầu đối diện (Trắng & Vàng), sau đó hoàn thiện 4 tâm còn lại (Last 2 Centers - L2C)",
+      "Giai đoạn 2: Ghép 8 bộ cạnh đầu bằng Freeslice",
+      "Giai đoạn 3: Giải 4 bộ cạnh cuối (L4E / L2E) bằng công thức lật cạnh (Flipping Algorithm: R U R' F R' F' R) và Edge Parity",
+      "Giai đoạn 4: Giải hoàn tất như Rubik 3x3x3"
+    ],
+    "specialCases": [
+      "Last 2 Edges (L2E) Wing Flip Parity: 2 viên wing của cạnh cuối bị lật ngược so với mid-edge chính giữa (giải bằng Rw U2 x Rw U2 Rw U2 Rw' U2 Lw U2 3Rw' U2 Rw U2 Rw' U2 Rw').",
+      "Last 2 Centers (L2C) Swap: đổi 1 viên tâm góc hoặc tâm cạnh giữa mặt U và mặt F bằng Niklas/Commutator."
+    ],
+    "referenceUrl": "https://www.worldcubeassociation.org/regulations/"
+  },
+  {
+    "id": "6x6",
+    "name": "Rubik 6x6x6 (V-Cube 6 / WCA 6x6)",
+    "slug": "6x6",
+    "category": "Cube Puzzles (Rubik Lập Phương)",
+    "categoryCode": "cube",
+    "difficulty": "Nâng cao",
+    "layers": "6x6x6 (96 tâm, 48 cạnh, 8 góc)",
+    "wcaOfficial": true,
+    "simulatorEngine": "cube-4x4",
+    "description": "Khối Big Cube chẵn chính thức trong thi đấu WCA. Kết hợp cả độ phức tạp khi ghép cụm tâm 4x4, ghép bộ 4 viên cạnh (Quad-edges) và cả 3 loại Parity (L2E Parity, OLL Parity, PLL Parity).",
+    "structure": "Mỗi mặt có cụm tâm 4x4 (16 viên tâm nhỏ), mỗi cạnh gồm 4 viên wing (2 inner wings và 2 outer wings), không có tâm cố định.",
+    "differences": "Có thể xảy ra Parity ở cả vòng trong (inner wings) lẫn vòng ngoài (outer wings), hoặc toàn bộ cụm cạnh 4 viên bị lật ngược trong giai đoạn 3x3.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B",
+      "Uw",
+      "Dw",
+      "Rw",
+      "Lw",
+      "3Rw",
+      "3Lw",
+      "3Uw",
+      "3Dw"
+    ],
+    "supportedMethods": [
+      "4x4-reduction",
+      "4x4-yau",
+      "bigcube-l2e"
+    ],
+    "stages": [
+      "Giai đoạn 1: Xây dựng từng thanh tâm 1x4 để ghép thành 6 cụm tâm 4x4 chuẩn màu",
+      "Giai đoạn 2: Freeslice ghép 8 cụm cạnh đầu và xử lý 4 cụm cạnh cuối (L4E)",
+      "Giai đoạn 3: Giải giai đoạn 3x3x3 kết hợp xử lý OLL Parity (3Rw) và PLL Parity (3Rw2)"
+    ],
+    "specialCases": [
+      "Pure OLL Parity 6x6x6 (lật toàn bộ 4 viên cạnh trên UB): thực hiện công thức OLL Parity với lớp xoay 3Rw và 3Lw.",
+      "Inner vs Outer Wing Swap ở 2 cạnh cuối: dùng thuật toán L2E với lớp xoay 2Rw hoặc 3Rw tương ứng."
+    ],
+    "referenceUrl": "https://www.worldcubeassociation.org/regulations/"
+  },
+  {
+    "id": "7x7",
+    "name": "Rubik 7x7x7 (WCA Largest Cube)",
+    "slug": "7x7",
+    "category": "Cube Puzzles (Rubik Lập Phương)",
+    "categoryCode": "cube",
+    "difficulty": "Nâng cao",
+    "layers": "7x7x7 (150 tâm, 60 cạnh, 8 góc)",
+    "wcaOfficial": true,
+    "simulatorEngine": "cube-3x3",
+    "description": "Khối Rubik lập phương lớn nhất được công nhận chính thức trong thi đấu WCA. Có tâm chính giữa cố định, mỗi mặt chứa cụm tâm 5x5 (25 viên) và mỗi cạnh gồm 5 viên.",
+    "structure": "150 viên tâm chia đều cho 6 mặt (25 viên/mặt), 60 viên cạnh chia làm 12 bộ 5 viên (1 mid-edge, 2 inner wings, 2 outer wings) và 8 viên góc.",
+    "differences": "Đòi hỏi kỹ năng Commutator tâm (Last 2 Centers) rất tốt để xử lý các viên tâm obliques (tâm lệch) không đối xứng trên lưới 5x5.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B",
+      "Uw",
+      "3Uw",
+      "Rw",
+      "3Rw",
+      "Lw",
+      "3Lw"
+    ],
+    "supportedMethods": [
+      "4x4-reduction",
+      "4x4-yau",
+      "bigcube-l2e"
+    ],
+    "stages": [
+      "Giai đoạn 1: Tạo các thanh tâm 1x5 để hoàn thiện 6 cụm tâm 5x5 (sử dụng Commutator cho các viên tâm cuối ở L2C)",
+      "Giai đoạn 2: Freeslice ghép 12 bộ cạnh 5 viên và xử lý L2E",
+      "Giai đoạn 3: Giải hoàn thiện như Rubik 3x3x3 (không có PLL Parity)"
+    ],
+    "specialCases": [
+      "Oblique Center Commutator trên L2C: dùng [r U r', U'] hoặc [3r U' 2r', U] để hoán đổi từng viên tâm lẻ giữa mặt U và mặt F.",
+      "L2E Inner/Outer Wing Parity: xử lý bằng thuật toán lật wing theo đúng độ sâu lớp xoay (2Rw hoặc 3Rw)."
+    ],
+    "referenceUrl": "https://www.worldcubeassociation.org/regulations/"
+  },
+  {
+    "id": "8x8",
+    "name": "Rubik 8x8x8 (Super Big Cube Chẵn)",
+    "slug": "8x8",
+    "category": "Cube Puzzles (Rubik Lập Phương)",
+    "categoryCode": "cube",
+    "difficulty": "Chuyên gia",
+    "layers": "8x8x8 (216 tâm, 72 cạnh, 8 góc)",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-4x4",
+    "description": "Khối Rubik 8x8x8 mở rộng nguyên lý của 6x6x6 lên cụm tâm 6x6 (36 viên/mặt) và bộ cạnh 6 viên. Đòi hỏi khả năng quản lý nhiều lớp xoay từ 2Rw đến 4Rw.",
+    "structure": "Không có tâm cố định; mỗi mặt gồm 36 viên tâm chia thành 3 vòng đồng tâm, mỗi cạnh gồm 6 viên wing chia thành 3 cặp đối xứng.",
+    "differences": "So với 4x4 và 6x6, số lượng viên tâm oblique tăng mạnh (24 viên oblique trên mỗi mặt), cần ghép theo từng dải thanh 1x6.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B",
+      "2Rw",
+      "3Rw",
+      "4Rw",
+      "2Uw",
+      "3Uw",
+      "4Uw"
+    ],
+    "supportedMethods": [
+      "4x4-reduction",
+      "bigcube-l2e"
+    ],
+    "stages": [
+      "Giai đoạn 1: Ghép thanh 1x6 tạo 6 mặt tâm 6x6 đúng hệ màu chuẩn",
+      "Giai đoạn 2: Ghép 12 bộ cạnh 6 viên bằng Freeslice và xử lý L2E theo từng cặp wing",
+      "Giai đoạn 3: Giải 3x3x3 và xử lý OLL/PLL Parity ở lớp 4Rw"
+    ],
+    "specialCases": [
+      "Parity lật cả cụm cạnh hoặc từng cặp wing: điều chỉnh độ sâu lớp xoay (2Rw, 3Rw, 4Rw) trong công thức OLL Parity."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "9x9",
+    "name": "Rubik 9x9x9 (Super Big Cube Lẻ)",
+    "slug": "9x9",
+    "category": "Cube Puzzles (Rubik Lập Phương)",
+    "categoryCode": "cube",
+    "difficulty": "Chuyên gia",
+    "layers": "9x9x9 (294 tâm, 84 cạnh, 8 góc)",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-3x3",
+    "description": "Khối Rubik lẻ 9x9x9 có viên tâm chính giữa cố định, mỗi mặt chứa lưới tâm 7x7 (49 viên/mặt) và mỗi cạnh gồm 7 viên.",
+    "structure": "294 viên tâm (49 viên/mặt), 84 viên cạnh (7 viên/cạnh) và 8 góc. Có tâm cố định định hướng.",
+    "differences": "Không có PLL Parity; mọi trạng thái L2C và L2E đều quy về Commutator tâm `[A, B]` và lật cặp wing đối xứng qua mid-edge.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B",
+      "2Rw",
+      "3Rw",
+      "4Rw",
+      "2Uw",
+      "3Uw",
+      "4Uw"
+    ],
+    "supportedMethods": [
+      "4x4-reduction",
+      "bigcube-l2e"
+    ],
+    "stages": [
+      "Giai đoạn 1: Ghép dải tâm 1x7 từ tâm giữa ra ngoài cho đủ 6 mặt tâm 7x7",
+      "Giai đoạn 2: Ghép 12 bộ cạnh 7 viên và giải L2E",
+      "Giai đoạn 3: Giải 3x3x3 hoàn tất"
+    ],
+    "specialCases": [
+      "Dùng Commutator `[mR U nL', U']` (với m, n từ 2 đến 4) để đưa chính xác 1 viên tâm bất kỳ trên mặt U xuống mặt F mà không phá các dải tâm đã ghép."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "10x10",
+    "name": "Rubik 10x10x10 (Deca-Layer Cube)",
+    "slug": "10x10",
+    "category": "Cube Puzzles (Rubik Lập Phương)",
+    "categoryCode": "cube",
+    "difficulty": "Chuyên gia",
+    "layers": "10x10x10 (384 tâm, 96 cạnh, 8 góc)",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-4x4",
+    "description": "Khối Rubik chẵn 10x10x10 với 384 viên tâm (lưới tâm 8x8 trên mỗi mặt) và 96 viên cạnh (8 viên/cạnh). Là cột mốc chinh phục sự kiên nhẫn và kỹ thuật Commutator chính xác.",
+    "structure": "Mỗi mặt có 64 viên tâm nhỏ, mỗi cạnh gồm 8 viên wing (4 cặp đối xứng), không có tâm cố định.",
+    "differences": "Cần kiểm soát chặt chẽ căn chỉnh tầng (layer alignment) khi thực hiện Freeslice và Parity ở lớp giữa thứ 5 (`5Rw`).",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B",
+      "2Rw",
+      "3Rw",
+      "4Rw",
+      "5Rw"
+    ],
+    "supportedMethods": [
+      "4x4-reduction",
+      "bigcube-l2e"
+    ],
+    "stages": [
+      "Giai đoạn 1: Xây dựng 6 cụm tâm 8x8 theo từng thanh 1x8",
+      "Giai đoạn 2: Freeslice ghép 12 bộ cạnh 8 viên và xử lý L2E",
+      "Giai đoạn 3: Giải 3x3x3 + OLL/PLL Parity với lớp `5Rw`"
+    ],
+    "specialCases": [
+      "Kommutator tâm tổng quát `[xR yL' U xR' yL, U']` giải quyết mọi viên tâm lẻ ở 2 mặt tâm cuối cùng."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "nxn",
+    "name": "Hệ thống Tổng quát Rubik NxNxN",
+    "slug": "nxn",
+    "category": "Cube Puzzles (Rubik Lập Phương)",
+    "categoryCode": "cube",
+    "difficulty": "Trung cấp – Chuyên gia",
+    "layers": "Tổng quát N ≥ 4 (Chẵn N=2k & Lẻ N=2k+1)",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-4x4",
+    "description": "Kiến thức nền tảng và nâng cao áp dụng cho MỌI khối Rubik NxNxN bất kỳ (từ 4x4x4 lên đến 11x11, 13x13, 17x17, 21x21...). Thay vì học vẹt từng kích thước, nắm vững quy luật tổng quát giúp bạn giải được mọi khối NxN.",
+    "structure": "Với khối N tầng: mỗi mặt có cụm tâm `(N-2) x (N-2)`, mỗi cạnh có `N-2` viên cạnh nhỏ, và luôn chỉ có đúng 8 viên góc. Khối N lẻ có tâm chính giữa cố định và mid-edge cố định; khối N chẵn không có tâm cố định và có thể gặp cả OLL lẫn PLL Parity.",
+    "differences": "Mọi khối NxN đều quy về 3 bài toán bất biến: (1) Ghép tâm bằng dải thanh `1 x (N-2)` và Commutator Niklas, (2) Ghép cạnh bằng Freeslice + Flipping Alg `R U R' F R' F' R`, và (3) Xử lý Wing Parity + Giải 3x3x3.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B",
+      "nRw",
+      "nLw",
+      "nUw",
+      "nDw",
+      "mR",
+      "mL"
+    ],
+    "supportedMethods": [
+      "4x4-reduction",
+      "4x4-yau",
+      "bigcube-l2e"
+    ],
+    "stages": [
+      "Nguyên lý 1 (Center Reduction): Tạo các thanh tâm 1×(N-2) và dùng Commutator `[mR U nL', U']` cho 2 mặt tâm cuối",
+      "Nguyên lý 2 (Edge Pairing): Dùng Freeslice trên tầng E/Uw kết hợp công thức lật cạnh `R U R' F R' F' R`",
+      "Nguyên lý 3 (Parity Resolution): Áp dụng công thức Wing Parity trên đúng các lớp bị lật và hoàn tất giai đoạn 3x3x3"
+    ],
+    "specialCases": [
+      "Quy luật Chẵn - Lẻ: Khối N lẻ chỉ có Wing Flip Parity (L2E); khối N chẵn có thêm PLL Parity (đổi 2 cụm cạnh) do không có tâm và mid-edge cố định."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "mirror-cube",
+    "name": "Mirror Cube (Mirror Blocks / Bump Cube)",
+    "slug": "mirror-cube",
+    "category": "Shape Mods (Biến Thể Hình Dạng)",
+    "categoryCode": "shapemod",
+    "difficulty": "Trung cấp",
+    "layers": "3x3x3 biến thể kích thước khối",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-3x3",
+    "description": "Biến thể Shape Mod nổi tiếng nhất thế giới do Hidetoshi Takeji thiết kế: tất cả các mặt có cùng một màu (thường là Bạc hoặc Vàng kim), và việc nhận diện viên hoàn toàn dựa vào ĐỘ DÀY / CHIỀU CAO khác nhau của từng viên thay vì màu sắc.",
+    "structure": "Cơ chế bên trong hoàn toàn giống Rubik 3x3x3 tiêu chuẩn, nhưng tâm bị dịch lệch khỏi chính giữa làm cho 26 viên bên ngoài có 26 kích thước hình hộp chữ nhật khác nhau.",
+    "differences": "Thay vì nhìn màu sắc, người chơi phải nhận diện chiều cao (tầng dày nhất hoặc mỏng nhất làm mặt Đáy) và chú ý hướng vân xước (trên bản sticker có vân) của viên tâm tầng giữa.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B",
+      "M",
+      "E",
+      "S",
+      "x",
+      "y",
+      "z"
+    ],
+    "supportedMethods": [
+      "3x3-beginner",
+      "3x3-cfop",
+      "shapemod-core"
+    ],
+    "stages": [
+      "Bước 1: Tìm viên tâm cao nhất (hoặc thấp nhất) làm chuẩn và ghép dấu cộng Cross phẳng mặt",
+      "Bước 2: Ghép 4 góc tầng 1 và 4 cạnh tầng 2 bằng cách ướm chiều cao khớp với viên tâm",
+      "Bước 3: Định hướng tầng cuối (sao cho các mặt trên cùng nằm trên một mặt phẳng phẳng lì)",
+      "Bước 4: Hoán vị tầng cuối bằng PLL (T-Perm, U-Perm, A-Perm) để đưa khối về hình lập phương hoàn chỉnh"
+    ],
+    "specialCases": [
+      "Nếu bản Mirror Cube có vân xước định hướng trên mặt: cần xoay đúng chiều viên tâm tầng giữa bằng `(R U R' U) x 5` (xoay tâm U 180°)."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "fisher-cube",
+    "name": "Fisher Cube",
+    "slug": "fisher-cube",
+    "category": "Shape Mods (Biến Thể Hình Dạng)",
+    "categoryCode": "shapemod",
+    "difficulty": "Trung cấp",
+    "layers": "3x3x3 xoay trục 45 độ",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-3x3",
+    "description": "Được Tony Fisher thiết kế năm 1985 bằng cách xoay mặt phẳng cắt của Rubik 3x3x3 đi một góc 45 độ quanh trục U-D. Nhờ đó, các viên cạnh tầng giữa biến thành góc hình học của khối, còn các viên góc biến thành cạnh!",
+    "structure": "Gồm 2 viên tâm 1 màu (U và D), 4 viên tâm tầng giữa có 2 màu (nhạy cảm với hướng xoay!), 8 viên cạnh tầng U/D có 2 màu đối xứng, và 4 viên cạnh tầng giữa chỉ có 1 màu.",
+    "differences": "Xuất hiện 'False Equator Parity' (trông như 1 cạnh tầng U bị lật lẻ loi trên dấu cộng tầng cuối) do thực chất 1 trong 4 cạnh tầng giữa (chỉ có 1 màu) đang bị lật ngược mà mắt thường không thấy!",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B"
+    ],
+    "supportedMethods": [
+      "shapemod-core",
+      "3x3-beginner"
+    ],
+    "stages": [
+      "Bước 1: Tạo chữ thập đáy VÀ định hướng đúng chiều 4 viên tâm 2-màu ở tầng giữa trước khi đặt cạnh đáy vào",
+      "Bước 2: Giải 4 góc tầng đầu và 4 cạnh 1-màu tầng giữa (tạo phẳng cạnh khối)",
+      "Bước 3: Nếu tầng cuối có số lẻ cạnh bị lật (False Parity), lấy 1 cạnh tầng giữa ra, đảo chiều rồi lắp lại để triệt tiêu Parity",
+      "Bước 4: Giải OLL và PLL như 3x3x3"
+    ],
+    "specialCases": [
+      "False OLL Edge Flip Parity: Xảy ra khi 1 viên cạnh tầng giữa (1 màu đối xứng) bị đặt ngược chiều. Cách sửa: đưa 1 cạnh tầng giữa lên U, đổi hướng lắp xuống lại (`U R U' R' U' F' U F`).",
+      "Xoay viên tâm 2 màu tầng giữa 90° hoặc 180°: luôn định hướng đúng 4 tâm giữa ngay từ bước Cross."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "windmill-cube",
+    "name": "Windmill Cube",
+    "slug": "windmill-cube",
+    "category": "Shape Mods (Biến Thể Hình Dạng)",
+    "categoryCode": "shapemod",
+    "difficulty": "Trung cấp",
+    "layers": "3x3x3 cắt xiên 30 độ",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-3x3",
+    "description": "Biến thể tương tự Fisher Cube nhưng mặt phẳng cắt được xoay lệch 30 độ thay vì 45 độ, tạo hình cánh cối xay gió đặc trưng khi nhìn từ mặt U và D.",
+    "structure": "Các viên cạnh tầng giữa có hình vát chéo bất đối xứng nên người chơi nhìn thấy ngay chiều đúng/sai của chúng mà không gặp False Parity ẩn như Fisher Cube.",
+    "differences": "Dễ nhận biết chiều cạnh tầng giữa hơn Fisher Cube vì hình dạng vát nghiêng bất đối xứng, nhưng 4 tâm tầng giữa vẫn cần được định hướng đúng trước khi hoàn thiện Cross.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B"
+    ],
+    "supportedMethods": [
+      "shapemod-core",
+      "3x3-beginner"
+    ],
+    "stages": [
+      "Bước 1: Giải Cross mặt Trắng đồng thời xoay 4 tâm tầng giữa khớp mặt phẳng với tâm đáy",
+      "Bước 2: Giải F2L theo hình khối vát nghiêng của từng cặp góc-cạnh",
+      "Bước 3: Giải tầng cuối bằng Sune, Niklas và U-Perm để tránh làm xoay tâm tầng giữa"
+    ],
+    "specialCases": [
+      "Nếu tâm tầng trên bị xoay 180° sau khi giải xong: dùng `(R U R' U) x 5` để xoay tâm U 180° mà không làm hỏng phần còn lại."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "axis-cube",
+    "name": "Axis Cube (Axel Cube)",
+    "slug": "axis-cube",
+    "category": "Shape Mods (Biến Thể Hình Dạng)",
+    "categoryCode": "shapemod",
+    "difficulty": "Nâng cao",
+    "layers": "3x3x3 cắt lệch trục không gian 3D",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-3x3",
+    "description": "Một trong những Shape Mod biến dạng mạnh nhất của 3x3x3: trục xoay bị nghiêng theo đường chéo không gian khiến toàn bộ 6 viên tâm đều có 2 màu và hình dạng các viên cạnh/góc biến đổi hoàn toàn.",
+    "structure": "Cả 6 viên tâm đều gồm 2 màu ghép trên 2 mặt phẳng vuông góc nhau; có 2 loại góc (góc tam giác phẳng 1 màu và góc 3 màu) và 2 loại cạnh.",
+    "differences": "Tất cả 6 viên tâm đều nhạy cảm với hướng xoay (Supercube Centers), và một số viên góc chỉ có 1 màu nên có thể tự xoay tại chỗ mà nhìn vẫn phẳng (tạo ra False Corner Orientation Parity ở tầng cuối).",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B"
+    ],
+    "supportedMethods": [
+      "shapemod-core"
+    ],
+    "stages": [
+      "Bước 1: Định hướng chính xác tâm đáy và 4 tâm bên khi giải Cross",
+      "Bước 2: Giải tầng 1 và tầng 2 (chú ý các viên góc 1-màu tam giác cân)",
+      "Bước 3: Định hướng tâm tầng cuối và giải tầng cuối bằng các công thức bảo toàn hướng tâm (Sune, Niklas, U-Perm)"
+    ],
+    "specialCases": [
+      "Xoay tâm U 180°: `(R U R' U) x 5`.",
+      "Xoay đồng thời tâm U 90° CW và tâm R 90° CCW: `M' U M E M' U' M E'`."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "ghost-cube",
+    "name": "Ghost Cube",
+    "slug": "ghost-cube",
+    "category": "Shape Mods (Biến Thể Hình Dạng)",
+    "categoryCode": "shapemod",
+    "difficulty": "Chuyên gia",
+    "layers": "3x3x3 lệch tầng + lệch trục",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-3x3",
+    "description": "Đỉnh cao độ khó của dòng Shape Mod 3x3x3 do Adam G. Cowan thiết kế: chỉ có duy nhất 1 màu đơn sắc, các mặt cắt bị xoay lệch ở cả 3 chiều không gian, và ở trạng thái đã giải hoàn chỉnh thì các tầng phải nằm LỆCH góc với nhau nên không thể xoay tự do nếu chưa vặn lệch tầng giữa!",
+    "structure": "26 viên bên ngoài có 26 hình dạng đa diện bất đối xứng hoàn toàn khác nhau; 6 viên tâm đều có hướng cố định bắt buộc.",
+    "differences": "Ở trạng thái lập phương hoàn chỉnh, tầng trên và tầng dưới bị xoay lệch khoảng 30° so với tầng giữa để khóa chặt hình khối. Khi giải phải xoay lệch tầng chuẩn để mở khóa trục xoay 3x3x3.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B"
+    ],
+    "supportedMethods": [
+      "shapemod-core"
+    ],
+    "stages": [
+      "Bước 1: Nhận diện viên tâm đáy (thường là viên tâm tam giác/tứ giác có logo hoặc góc vát đặc trưng) và căn chỉnh trục xoay",
+      "Bước 2: Ghép Cross và định hướng 4 viên tâm tầng giữa sao cho cạnh khớp phẳng với cạnh đáy",
+      "Bước 3: Hoàn thiện F2L và giải tầng cuối bằng Beginner/Supercube-safe algorithms (tránh làm xoay tâm đã đúng)"
+    ],
+    "specialCases": [
+      "Mọi viên đều duy nhất nên không có False Parity, nhưng rất dễ nhầm 2 viên cạnh tam giác gần giống nhau ở tầng 1 và tầng 3."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "mastermorphix",
+    "name": "Mastermorphix (4-Color Pillow Pyraminx 3x3)",
+    "slug": "mastermorphix",
+    "category": "Shape Mods (Biến Thể Hình Dạng)",
+    "categoryCode": "shapemod",
+    "difficulty": "Nâng cao",
+    "layers": "3x3x3 hình tứ diện cong 4 màu",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-3x3",
+    "description": "Khối Rubik 3x3x3 được tạo hình thành một khối tứ diện (kim tự tháp 4 mặt cong). Dù nhìn bên ngoài giống Pyraminx nhưng cơ chế bên trong là một khối 3x3x3 hoàn chỉnh!",
+    "structure": "Gồm 6 viên tâm 2-màu (nằm ở giữa 6 cạnh của tứ diện), 4 viên góc lớn 3-màu (đỉnh của tứ diện), 4 viên góc nhỏ 1-màu phẳng (tâm của 4 mặt tứ diện!) và 12 viên cạnh hình thang.",
+    "differences": "4 viên góc nhỏ 1-màu nằm ở chính giữa mặt tứ diện có thể xoay tại chỗ mà không làm biến dạng khối (giúp khử Corner Twist hoặc tạo False Corner Parity), trong khi 6 viên tâm đều có 2 màu nên bắt buộc phải đúng hướng.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B"
+    ],
+    "supportedMethods": [
+      "shapemod-core"
+    ],
+    "stages": [
+      "Bước 1: Ghép chữ thập Cross đồng thời định hướng đúng 4 viên tâm 2-màu tầng giữa",
+      "Bước 2: Đưa 4 góc tầng 1 (gồm 2 đỉnh tứ diện 3-màu và 2 tâm mặt phẳng 1-màu) cùng 4 cạnh tầng 2 về vị trí",
+      "Bước 3: Hoán vị cạnh tầng cuối, định hướng tâm đỉnh bằng `(R U R' U) x 5`, sau đó dùng Niklas hoán vị góc và xoay góc bằng `(R' D' R D) x 2`"
+    ],
+    "specialCases": [
+      "1 góc đỉnh duy nhất bị xoay lệch ở bước cuối: Dùng `(R' D' R D) x 2` xoay góc đỉnh đó, sau đó xoay mặt U đưa 1 viên góc phẳng 1-màu (tâm mặt) vào vị trí và làm `(D' R' D R) x 2` — viên góc 1-màu xoay tại chỗ vẫn phẳng hoàn hảo!"
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "barrel-cube",
+    "name": "Barrel Cube & Barrel 3x3 (Octagonal Cylinder)",
+    "slug": "barrel-cube",
+    "category": "Shape Mods (Biến Thể Hình Dạng)",
+    "categoryCode": "shapemod",
+    "difficulty": "Cơ bản – Trung cấp",
+    "layers": "3x3x3 hình trụ bát giác / bo tròn",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-3x3",
+    "description": "Khối Rubik 3x3x3 được cắt vát hoặc bo tròn 4 cột góc đứng tạo thành hình trụ lăng trụ bát giác (Octagonal Barrel) hoặc hình trụ tròn (Cylinder 3x3).",
+    "structure": "4 cột góc (gồm 8 viên góc và 4 viên cạnh tầng giữa) được vát phẳng hoặc bo cong thành 1 màu duy nhất trên mỗi cột.",
+    "differences": "Vì 4 viên cạnh tầng giữa chỉ có 1 màu và đối xứng hoàn toàn, người chơi có thể đặt ngược vị trí hoặc ngược chiều cạnh tầng giữa, dẫn đến cả OLL Edge Flip Parity lẫn PLL 2-Edge Swap Parity ở tầng cuối.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B"
+    ],
+    "supportedMethods": [
+      "shapemod-core",
+      "3x3-beginner"
+    ],
+    "stages": [
+      "Bước 1: Giải Cross và tầng 1 như 3x3x3",
+      "Bước 2: Đưa 4 cột cạnh 1-màu vào tầng 2",
+      "Bước 3: Giải tầng cuối; nếu gặp 1 cạnh bị lật hoặc 2 cạnh cần đổi chỗ, hoán đổi/lật lại 1 cạnh tầng giữa"
+    ],
+    "specialCases": [
+      "False PLL Parity (chỉ cần đổi 2 góc hoặc 2 cạnh tầng U): hoán đổi 2 viên cạnh tầng giữa có cùng màu (hoặc xoay 1 cột góc đồng màu) để khử Parity."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "unequal-cube",
+    "name": "Unequal Cube (Inequilateral 3x3)",
+    "slug": "unequal-cube",
+    "category": "Shape Mods (Biến Thể Hình Dạng)",
+    "categoryCode": "shapemod",
+    "difficulty": "Trung cấp",
+    "layers": "3x3x3 bất đối xứng chiều dày 6 mặt",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-3x3",
+    "description": "Sự kết hợp giữa Rubik 3x3x3 6 màu chuẩn và Mirror Cube: vừa có đủ 6 màu sắc tiêu chuẩn vừa có độ dày các tầng bất đối xứng như Mirror Cube.",
+    "structure": "Tâm khối bị lệch về một góc khiến 3 tầng theo cả 3 trục X, Y, Z có độ dày mỏng khác nhau, nên khi xoay khối bị biến dạng (shapeshifting) mạnh.",
+    "differences": "Giúp người mới tập làm quen với biến dạng khối (shapeshifting) trước khi chuyển sang Mirror Cube hoặc Ghost Cube vì vẫn có màu sắc dẫn đường.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B"
+    ],
+    "supportedMethods": [
+      "3x3-beginner",
+      "3x3-cfop"
+    ],
+    "stages": [
+      "Giải hoàn toàn giống 3x3x3 theo màu sắc; khi màu sắc đúng thì hình dạng lập phương tự động khớp phẳng 100%."
+    ],
+    "specialCases": [
+      "Không có Parity hay tâm xoay ẩn vì 6 màu đã định danh duy nhất từng viên."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "bandaged-cube",
+    "name": "Bandaged Cube (Banded / Fuse / Bicube 3x3)",
+    "slug": "bandaged-cube",
+    "category": "Shape Mods (Biến Thể Hình Dạng)",
+    "categoryCode": "shapemod",
+    "difficulty": "Nâng cao",
+    "layers": "3x3x3 có các khối dính liền (Bandaged)",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-3x3",
+    "description": "Nhóm Rubik 3x3x3 có một số viên được gắn dính liền nhau thành các khối 1x1x2, 1x2x2 hoặc 2x2x2 (như AI Cube, Fuse Cube, Pocket-3x3, Bicube), làm khóa một số mặt xoay ở những góc độ nhất định.",
+    "structure": "Các dải băng (bandages) nối các viên kề nhau; mặt xoay chỉ thực hiện được khi đường cắt không đi xuyên qua một khối dính liền.",
+    "differences": "Không thể áp dụng tùy ý mọi công thức CFOP nếu công thức đó cắt qua viên bị khóa; phải ưu tiên các thuật toán 2-gen (`<R, U>`) hoặc xoay đưa khối dính liền ra vùng không bị cắt trước khi thực hiện thuật toán.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B"
+    ],
+    "supportedMethods": [
+      "3x3-petrus",
+      "3x3-roux",
+      "shapemod-core"
+    ],
+    "stages": [
+      "Bước 1: Đưa khối Bandaged lớn nhất về góc DBL (phía dưới-sau-trái) để giải phóng 3 mặt xoay R, U, F",
+      "Bước 2: Mở rộng thành khối 2x2x3 theo phương pháp Petrus",
+      "Bước 3: Định hướng cạnh và giải phần còn lại chỉ bằng các bước xoay R và U (2-Gen)"
+    ],
+    "specialCases": [
+      "Sử dụng bộ công thức 2-Gen `<R, U>` (Sune, Anti-Sune, H-OLL, Pi-OLL, Ua/Ub Perm, H/Z Perm 2-gen) để giải tầng cuối mà không chạm vào khối bị khóa ở DBL."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Petrus_Method"
+  },
+  {
+    "id": "void-cube",
+    "name": "Void Cube (Rubik Rỗng Tâm)",
+    "slug": "void-cube",
+    "category": "Shape Mods (Biến Thể Hình Dạng)",
+    "categoryCode": "shapemod",
+    "difficulty": "Trung cấp",
+    "layers": "3x3x3 rỗng xuyên tâm (12 cạnh, 8 góc)",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-3x3",
+    "description": "Được Katsuhiko Okamoto sáng chế: khối Rubik 3x3x3 được khoét rỗng hoàn toàn phần tâm xuyên qua cả 3 trục, chỉ còn 12 viên cạnh và 8 viên góc trượt trên hệ ray vòng tròn bên trong.",
+    "structure": "Không có trục Core giữa và không có 6 viên tâm; các viên cạnh và góc móc vào nhau qua cơ chế rãnh trượt đồng tâm.",
+    "differences": "Vì không có viên tâm cố định, nếu người chơi vô tình chọn vị trí mặt giải lệch đi 90° (tương đương một phép xoay tầng giữa M hoặc E lẻ lần so với tâm ẩn), tầng cuối sẽ xuất hiện **Void Cube Parity** (2 cạnh hoặc 2 góc cần đổi chỗ lẻ loi!).",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B",
+      "M",
+      "E",
+      "S"
+    ],
+    "supportedMethods": [
+      "3x3-beginner",
+      "3x3-cfop",
+      "shapemod-core"
+    ],
+    "stages": [
+      "Bước 1: Giải tầng 1 và tầng 2 bằng cách nhìn màu của các viên góc làm chuẩn hệ màu",
+      "Bước 2: Định hướng tầng cuối (OLL)",
+      "Bước 3: Giải PLL; nếu gặp Void Parity (chỉ 2 cạnh hoặc 2 góc bị đổi chỗ), áp dụng công thức Void Parity ngắn để dịch tầng giữa M đi 90° rồi giải lại tầng cuối"
+    ],
+    "specialCases": [
+      "Void Cube Parity (Đổi 2 cạnh kề UF và UR): `M' U M' U' M U' M U2 M'` hoặc `F L R' B U2 D' F U L' U' L R' D F' R'`."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "fisher-diamond",
+    "name": "Fisher Diamond & Octahedron Mods",
+    "slug": "fisher-diamond",
+    "category": "Shape Mods (Biến Thể Hình Dạng)",
+    "categoryCode": "shapemod",
+    "difficulty": "Nâng cao",
+    "layers": "3x3x3 cắt vát bát diện kim cương",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-3x3",
+    "description": "Biến thể cắt vát toàn bộ 8 đỉnh của khối Fisher Cube tạo thành hình bát diện kim cương (Octahedron / Diamond Shape Mod) với 8 mặt tam giác lớn và các dải cạnh giữa.",
+    "structure": "Tương đương cơ học với 3x3x3/Fisher Cube nhưng các viên góc biến thành đỉnh nhọn còn 8 mặt bên là các mặt phẳng tam giác đều.",
+    "differences": "Nhận diện tầng dựa trên đường cắt ngang hình vuông (Equator) thay vì mặt phẳng thông thường; cần định hướng tâm tầng giữa chuẩn xác.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B"
+    ],
+    "supportedMethods": [
+      "shapemod-core"
+    ],
+    "stages": [
+      "Bước 1: Xác định mặt phẳng xích đạo (Equator) và giải mặt đỉnh trên + định hướng 4 tâm giữa",
+      "Bước 2: Giải tầng xích đạo và đỉnh dưới bằng các thuật toán 3x3x3 chuẩn"
+    ],
+    "specialCases": [
+      "Các mảnh tam giác đồng màu có thể đổi chỗ cho nhau để khử trạng thái Parity giả."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "crazy-cube",
+    "name": "Crazy Cube / Crazy 3x3 Plus Series",
+    "slug": "crazy-cube",
+    "category": "Shape Mods (Biến Thể Hình Dạng)",
+    "categoryCode": "shapemod",
+    "difficulty": "Chuyên gia",
+    "layers": "3x3x3 kết hợp vòng tròn trung tâm (Circle 3x3)",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-3x3",
+    "description": "Dòng biến thể nổi tiếng của DaYan / MF8 (Crazy 3x3 Plus — các hành tinh Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune): trên mỗi mặt của khối 3x3x3 có một vòng tròn chia các viên cạnh thành phần trong (inner circle) và phần ngoài (outer edge).",
+    "structure": "Trên mặt نوع '0' (Circle đứng yên so với tâm), phần trong của viên cạnh không xoay theo mặt đó mà giữ nguyên vị trí; trên mặt loại '1' (Circle xoay cùng mặt), cả vòng trong và ngoài xoay cùng nhau.",
+    "differences": "Phải giải khối 3x3x3 bên ngoài trước, sau đó dùng các chuỗi Commutator xoay mặt loại '1' để hoán vị độc lập các mảnh vòng tròn bên trong (inner circle petals).",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B"
+    ],
+    "supportedMethods": [
+      "shapemod-core"
+    ],
+    "stages": [
+      "Bước 1: Giải hoàn chỉnh phần ngoài (Outer 3x3x3) như Rubik 3x3x3 thông thường",
+      "Bước 2: Sử dụng mặt loại '1' (vòng tròn xoay theo mặt) làm mặt trung gian để thực hiện 3-cycle các mảnh cánh hoa vòng trong bằng Commutator `[R2, U' L2 U]`"
+    ],
+    "specialCases": [
+      "3-Cycle Inner Petals (khi mặt U là mặt '0' cố định và mặt R, L là mặt '1' xoay): `R2 U' L2 U R2 U' L2 U`."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "pyraminx",
+    "name": "Pyraminx (Rubik Kim Tự Tháp 3 Tầng)",
+    "slug": "pyraminx",
+    "category": "Pyraminx Family (Họ Kim Tự Tháp)",
+    "categoryCode": "pyraminx",
+    "difficulty": "Cơ bản – Nâng cao",
+    "layers": "Tứ diện 3 tầng (4 Tips, 4 Axial Centers, 6 Edges)",
+    "wcaOfficial": true,
+    "simulatorEngine": "none",
+    "description": "Được Uwe Mèffert phát minh năm 1970 (trước cả Rubik 3x3x3!) và là bộ môn tốc độ chính thức của WCA. Có cấu trúc tứ diện đều gồm 4 đỉnh nhỏ (Tips), 4 viên tâm trục (Axial Centers) và chỉ 6 viên cạnh.",
+    "structure": "4 viên đỉnh (Tips `u, l, r, b`) chỉ xoay tại chỗ (3 hướng mỗi đỉnh); 4 viên tâm gắn liền trục dưới mỗi đỉnh cũng chỉ xoay tại chỗ; chỉ có 6 viên cạnh thực sự đổi vị trí cho nhau.",
+    "differences": "Không có viên góc đổi vị trí như 3x3x3! Độ sâu tối đa (God's Number) của Pyraminx chỉ là 11 bước xoay (không tính 4 đỉnh Tips), cho phép các vận động viên WCA lên kế hoạch toàn bộ lời giải trong 15 giây Inspection.",
+    "supportedNotation": [
+      "U",
+      "U'",
+      "L",
+      "L'",
+      "R",
+      "R'",
+      "B",
+      "B'",
+      "u",
+      "u'",
+      "l",
+      "l'",
+      "r",
+      "r'",
+      "b",
+      "b'"
+    ],
+    "supportedMethods": [
+      "pyraminx-lbl",
+      "pyraminx-l4e",
+      "pyraminx-top-first"
+    ],
+    "stages": [
+      "Bước 1: Xoay 4 đỉnh nhỏ (`u, l, r, b`) khớp với 4 viên tâm trục kề nó và định hướng 3 tâm về cùng 1 mặt đáy",
+      "Bước 2: Giải hoàn chỉnh mặt đáy (3 cạnh đáy với LBL, hoặc chữ V gồm 2 cạnh đáy với phương pháp L4E)",
+      "Bước 3: Giải 3 cạnh tầng trên cùng bằng 1 trong 5 công thức Last Layer (hoặc giải 4 cạnh cuối L4E trực quan)"
+    ],
+    "specialCases": [
+      "2-Edge Flip trên tầng cuối Pyraminx: `R' L R L' U L' U' L`.",
+      "3-Cycle Edges CW (Xoay vòng 3 cạnh cùng chiều KĐH): `R U' R' U' R U' R'`. CCW: `R U R' U R U R'`."
+    ],
+    "referenceUrl": "https://www.worldcubeassociation.org/regulations/"
+  },
+  {
+    "id": "master-pyraminx",
+    "name": "Master Pyraminx (Kim Tự Tháp 4 Tầng)",
+    "slug": "master-pyraminx",
+    "category": "Pyraminx Family (Họ Kim Tự Tháp)",
+    "categoryCode": "pyraminx",
+    "difficulty": "Trung cấp – Nâng cao",
+    "layers": "Tứ diện 4 tầng",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Phiên bản mở rộng 4 tầng của Pyraminx: mỗi cạnh gồm 2 viên cạnh nhỏ (tương tự 4x4x4) và chính giữa mỗi mặt xuất hiện thêm 1 viên tâm mặt (Face Center) hoàn toàn mới.",
+    "structure": "Gồm 4 Tips, 4 Axial Centers, 12 Edge Wings (6 cặp cạnh), 4 Face Centers (chính giữa 4 mặt) và 4 Inner Centers.",
+    "differences": "Có thể giải theo phương pháp Reduction (ghép 6 cặp cạnh rồi giải như Pyraminx 3 tầng + xử lý 4 viên tâm mặt cuối cùng bằng Commutator `R' L R L'`).",
+    "supportedNotation": [
+      "U",
+      "L",
+      "R",
+      "B",
+      "Uw",
+      "Lw",
+      "Rw",
+      "Bw",
+      "u",
+      "l",
+      "r",
+      "b"
+    ],
+    "supportedMethods": [
+      "pyraminx-lbl",
+      "pyraminx-reduction"
+    ],
+    "stages": [
+      "Bước 1: Đồng bộ Tips + Axial Centers và ghép 6 cặp cạnh đôi (Edge Pairing)",
+      "Bước 2: Giải khung ngoài như Pyraminx 3 tầng",
+      "Bước 3: Hoán vị 3 hoặc 4 viên tâm mặt (Face Centers) bằng tổ hợp Sledgehammer `(R' L R L') x 3`"
+    ],
+    "specialCases": [
+      "Hoán vị 2 cặp tâm mặt (Face Centers Swap): thực hiện `(R' L R L') x 3` với lớp xoay thường, kết hợp setup tầng Uw."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "professor-pyraminx",
+    "name": "Professor Pyraminx (Kim Tự Tháp 5 Tầng)",
+    "slug": "professor-pyraminx",
+    "category": "Pyraminx Family (Họ Kim Tự Tháp)",
+    "categoryCode": "pyraminx",
+    "difficulty": "Nâng cao",
+    "layers": "Tứ diện 5 tầng",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Khối kim tự tháp 5 tầng tương đương mức độ phức tạp của Rubik 5x5x5 trong họ tứ diện, với cụm 4 viên tâm trên mỗi mặt và bộ 3 viên cạnh trên mỗi gờ.",
+    "structure": "Mỗi mặt có 4 viên tâm nhỏ (3 tâm góc mặt và 1 tâm chính giữa mặt), mỗi cạnh gồm 1 mid-edge và 2 wing-edges.",
+    "differences": "Cần ghép cụm tâm mặt 4 viên trước khi ghép bộ 3 viên cạnh (Tredges), sau đó thu gọn hoàn toàn về Pyraminx tiêu chuẩn.",
+    "supportedNotation": [
+      "U",
+      "L",
+      "R",
+      "B",
+      "Uw",
+      "Lw",
+      "Rw",
+      "Bw",
+      "3Uw",
+      "3Lw",
+      "3Rw",
+      "3Bw"
+    ],
+    "supportedMethods": [
+      "pyraminx-reduction"
+    ],
+    "stages": [
+      "Bước 1: Ghép cụm 4 viên tâm trên từng mặt tứ diện",
+      "Bước 2: Ghép 6 bộ cạnh 3 viên (Tredges) bằng Freeslice trên trục tứ diện",
+      "Bước 3: Giải hoàn thiện như Pyraminx 3 tầng"
+    ],
+    "specialCases": [
+      "Wing Swap giữa 2 cạnh trên Professor Pyraminx: sử dụng `[Rw' L Rw L', U]` để chu chuyển 3 viên wing."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "pyramorphix",
+    "name": "Pyramorphix & Jing's Pyraminx (Biến thể Pyraminx)",
+    "slug": "pyramorphix",
+    "category": "Pyraminx Family (Họ Kim Tự Tháp)",
+    "categoryCode": "pyraminx",
+    "difficulty": "Trung cấp",
+    "layers": "Biến thể Tứ diện 2x2 / Halpern-Meier",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-2x2",
+    "description": "Bao gồm Pyramorphix (khối tứ diện biến dạng có cơ chế bên trong là Rubik 2x2x2) và Jing's Pyraminx (biến thể Halpern-Meier Tetrahedron không có đỉnh nhọn, có 4 tâm mặt lớn và 6 cạnh).",
+    "structure": "Pyramorphix gồm 4 viên đỉnh 3-màu và 4 viên mặt phẳng 1-màu xoay trên cơ chế 2x2x2; Jing's Pyraminx là một Pyraminx cắt bỏ 4 Tips và mở rộng 4 tâm mặt.",
+    "differences": "Pyramorphix biến dạng hình học khi xoay 90° trên trục 2x2x2; Jing's Pyraminx loại bỏ thao tác xoay Tips rườm rà và thêm bài toán hoán vị 4 tâm mặt.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B"
+    ],
+    "supportedMethods": [
+      "2x2-ortega",
+      "pyraminx-lbl"
+    ],
+    "stages": [
+      "Với Pyramorphix: đưa về hình tứ diện chuẩn bằng `R2`, sau đó hoán vị và định hướng 4 đỉnh bằng công thức 2x2x2.",
+      "Với Jing's Pyraminx: giải 4 tâm mặt trước, sau đó chu chuyển 6 cạnh bằng Sledgehammer `R' L R L'`."
+    ],
+    "specialCases": [
+      "Xoay 2 đỉnh Pyramorphix tại chỗ: dùng chuỗi `(R' D' R D) x 2` kết hợp với 1 viên mặt phẳng 1-màu."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "megaminx",
+    "name": "Megaminx (Khối Thập Nhị Diện 12 Mặt WCA)",
+    "slug": "megaminx",
+    "category": "Megaminx Family (Họ Thập Nhị Diện 12 Mặt)",
+    "categoryCode": "megaminx",
+    "difficulty": "Trung cấp – Nâng cao",
+    "layers": "12 mặt ngũ giác (12 tâm, 30 cạnh, 20 góc)",
+    "wcaOfficial": true,
+    "simulatorEngine": "none",
+    "description": "Khối Rubik thập nhị diện đều (Dodecahedron) 12 mặt chính thức của WCA. Mỗi mặt là một hình ngũ giác đều có 1 tâm, 5 cạnh và 5 góc. Cơ chế giải mở rộng trực tiếp từ CFOP của Rubik 3x3x3.",
+    "structure": "Gồm 12 viên tâm cố định (12 màu), 30 viên cạnh (2 màu/viên) và 20 viên góc (3 màu/viên) — tổng cộng 62 viên chuyển động.",
+    "differences": "Không có bước xoay 180° (mỗi nấc xoay là 72°, nên có `R, R2, R', R2'`) và KHÔNG BAO GIỜ có trường hợp chỉ đổi 2 cạnh và 2 góc đơn lẻ (như T-Perm trên 3x3) vì mỗi bước xoay mặt trên Megaminx là một chu kỳ 5 viên (5-cycle = hoán vị chẵn!). Do đó mọi PLL của Megaminx đều là chu kỳ 3 viên hoặc 2 cặp viên.",
+    "supportedNotation": [
+      "U",
+      "U'",
+      "U2",
+      "U2'",
+      "R",
+      "R'",
+      "L",
+      "L'",
+      "F",
+      "F'",
+      "D",
+      "D'",
+      "R++",
+      "R--",
+      "D++",
+      "D--"
+    ],
+    "supportedMethods": [
+      "megaminx-s2l",
+      "megaminx-4lll"
+    ],
+    "stages": [
+      "Giai đoạn 1: Tạo Ngôi sao đáy (White Star — 5 cạnh mặt Trắng) và ghép 5 cặp F2L đầu tiên",
+      "Giai đoạn 2: Giải các tầng giữa S2L (Second Two Layers — theo phương pháp Westlund hoặc Yu Da-Hyun)",
+      "Giai đoạn 3: Định hướng tầng cuối (EO tạo Ngôi sao Xám + CO định hướng 5 góc)",
+      "Giai đoạn 4: Hoán vị tầng cuối (EP hoán vị 5 cạnh + CP hoán vị 5 góc bằng Commutator `R' D' R`)"
+    ],
+    "specialCases": [
+      "Định hướng cạnh tầng cuối (Star EO): `F R U R' U' F'` (lật 2 cạnh không kề) và `F U R U' R' F'` (lật 2 cạnh kề).",
+      "Hoán vị 3 cạnh Megaminx (EP 3-Cycle): `R U R' U R U2' R'` hoặc `R2 U2' R2' U' R2 U2' R2'`."
+    ],
+    "referenceUrl": "https://www.worldcubeassociation.org/regulations/"
+  },
+  {
+    "id": "kilominx",
+    "name": "Kilominx (2x2 Megaminx / Flowerminx)",
+    "slug": "kilominx",
+    "category": "Megaminx Family (Họ Thập Nhị Diện 12 Mặt)",
+    "categoryCode": "megaminx",
+    "difficulty": "Cơ bản – Trung cấp",
+    "layers": "12 mặt chỉ gồm 20 viên góc",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Phiên bản 2x2x2 của Megaminx: chỉ bao gồm 20 viên góc (và tâm ẩn/cố định tùy hãng sản xuất), không có viên cạnh. Giải nhanh và thú vị bằng kỹ thuật Blockbuilding góc và Commutator tầng cuối.",
+    "structure": "20 viên góc 3-màu chia đều trên 12 mặt ngũ giác (mỗi mặt 5 góc).",
+    "differences": "Không cần ghép cạnh S2L hay tạo ngôi sao EO/EP; tầng cuối chỉ cần định hướng 5 góc (OCLL) và hoán vị 5 góc (CPLL).",
+    "supportedNotation": [
+      "U",
+      "U'",
+      "U2",
+      "U2'",
+      "R",
+      "R'",
+      "L",
+      "L'",
+      "F",
+      "F'",
+      "D",
+      "D'"
+    ],
+    "supportedMethods": [
+      "megaminx-s2l"
+    ],
+    "stages": [
+      "Bước 1: Giải 5 góc mặt đáy Trắng",
+      "Bước 2: Giải 10 góc tầng giữa theo từng cụm 2 góc trên mỗi mặt bên",
+      "Bước 3: Định hướng 5 góc mặt trên bằng Sune (`R U R' U R U2' R'`) và hoán vị góc bằng Commutator `R' D' R U(...) R' D R`"
+    ],
+    "specialCases": [
+      "Hoán vị 3 góc tầng cuối Kilominx: `R' D' R U R' D R U' R' D' R U' R' D R`."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "master-kilominx",
+    "name": "Master Kilominx (4-Layer Megaminx)",
+    "slug": "master-kilominx",
+    "category": "Megaminx Family (Họ Thập Nhị Diện 12 Mặt)",
+    "categoryCode": "megaminx",
+    "difficulty": "Nâng cao",
+    "layers": "12 mặt 4 tầng (Tâm 5 cánh + Cạnh đôi + Góc)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Tương đương với Rubik 4x4x4 trong dòng thập nhị diện 12 mặt: mỗi mặt có cụm tâm 5 viên cánh hoa, mỗi cạnh gồm 2 viên wing ghép đôi và không có tâm chính giữa cố định.",
+    "structure": "Gồm 60 viên tâm góc (5 viên/mặt), 60 viên cạnh wing (30 cặp cạnh đôi) và 20 viên góc.",
+    "differences": "Không có OLL/PLL Parity đơn lẻ như 4x4x4 lập phương vì phép xoay lớp trong của khối 12 mặt là chu kỳ 5 (hoán vị chẵn!). Tuy nhiên vẫn có trường hợp 2 wing của 1 cặp cạnh cuối bị ngược chiều nhau (giải bằng thuật toán Flip-Swap).",
+    "supportedNotation": [
+      "U",
+      "R",
+      "L",
+      "F",
+      "Uw",
+      "Rw",
+      "Lw",
+      "Fw"
+    ],
+    "supportedMethods": [
+      "megaminx-reduction"
+    ],
+    "stages": [
+      "Bước 1: Ghép 12 cụm tâm 5 cánh theo đúng sơ đồ 12 màu chuẩn của Megaminx",
+      "Bước 2: Ghép 30 cặp cạnh đôi bằng Freeslice và công thức lật cạnh `R U R' F R' F' R`",
+      "Bước 3: Giải hoàn chỉnh như Megaminx tiêu chuẩn"
+    ],
+    "specialCases": [
+      "Do tính chất hoán vị chẵn của nhóm ngũ giác A5, Master Kilominx không bao giờ bị kẹt 1 cạnh đơn lật ngược; nếu 1 cặp cạnh bị ngược, dùng Commutator 3-cycle wing hoặc lật 2 cặp cạnh cùng lúc."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "gigaminx",
+    "name": "Gigaminx (5-Layer Megaminx)",
+    "slug": "gigaminx",
+    "category": "Megaminx Family (Họ Thập Nhị Diện 12 Mặt)",
+    "categoryCode": "megaminx",
+    "difficulty": "Nâng cao – Chuyên gia",
+    "layers": "12 mặt 5 tầng (Tương đương 5x5x5)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Khối thập nhị diện 5 tầng tương đương Rubik 5x5x5: mỗi mặt có 1 viên tâm cố định chính giữa bao quanh bởi 5 tâm cạnh và 5 tâm góc (ngôi sao 11 viên tâm/mặt), và mỗi cạnh gồm 3 viên (1 mid-edge + 2 wings).",
+    "structure": "132 viên tâm (11 viên/mặt), 90 viên cạnh (30 bộ cạnh 3 viên) và 20 viên góc.",
+    "differences": "Có tâm chính giữa cố định nên dễ định vị 12 màu hơn Master Kilominx; giai đoạn 2 cạnh cuối (L2E) sử dụng đúng các thuật toán Freeslice/L2E của 5x5x5.",
+    "supportedNotation": [
+      "U",
+      "R",
+      "L",
+      "F",
+      "Uw",
+      "Rw",
+      "Lw",
+      "Fw"
+    ],
+    "supportedMethods": [
+      "megaminx-reduction"
+    ],
+    "stages": [
+      "Bước 1: Ghép 12 cụm tâm ngôi sao 11 viên trên 12 mặt (2 tâm cuối dùng Commutator Niklas `[Rw U Rw', U']`)",
+      "Bước 2: Ghép 30 bộ cạnh 3 viên (Tredges)",
+      "Bước 3: Giải hoàn tất như Megaminx 3 tầng"
+    ],
+    "specialCases": [
+      "Last 2 Centers trên Gigaminx: dùng `[Rw U Rw', U']` để trao đổi tâm góc và `[Rw U' Lw', U]` để trao đổi tâm cạnh."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "teraminx",
+    "name": "Teraminx (7-Layer Megaminx)",
+    "slug": "teraminx",
+    "category": "Megaminx Family (Họ Thập Nhị Diện 12 Mặt)",
+    "categoryCode": "megaminx",
+    "difficulty": "Chuyên gia",
+    "layers": "12 mặt 7 tầng (Tương đương 7x7x7)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Khối thập nhị diện 7 tầng khổng lồ với hơn 750 mảnh ghép chuyển động: mỗi mặt có 31 viên tâm tạo thành 2 vòng ngôi sao đồng tâm và mỗi cạnh gồm 5 viên.",
+    "structure": "372 viên tâm (31 viên/mặt), 150 viên cạnh (30 bộ 5 viên) và 20 viên góc.",
+    "differences": "Cần ghép tâm theo từng vòng ngôi sao từ trong ra ngoài (vòng 11 viên trong -> vòng 20 viên ngoài) và dùng Commutator 2 lớp cho các viên tâm oblique trên mặt ngũ giác.",
+    "supportedNotation": [
+      "U",
+      "R",
+      "L",
+      "F",
+      "2Rw",
+      "3Rw",
+      "2Uw",
+      "3Uw"
+    ],
+    "supportedMethods": [
+      "megaminx-reduction"
+    ],
+    "stages": [
+      "Bước 1: Hoàn thiện 12 cụm tâm 31 viên theo từng cánh hoa ngũ giác",
+      "Bước 2: Ghép 30 bộ cạnh 5 viên",
+      "Bước 3: Giải hoàn thiện như Megaminx tiêu chuẩn"
+    ],
+    "specialCases": [
+      "Commutator tâm Oblique trên Teraminx: `[2Rw U' 3Lw', U]` đưa đúng 1 viên tâm lệch từ mặt U xuống mặt F."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "petaminx",
+    "name": "Petaminx (9-Layer Megaminx)",
+    "slug": "petaminx",
+    "category": "Megaminx Family (Họ Thập Nhị Diện 12 Mặt)",
+    "categoryCode": "megaminx",
+    "difficulty": "Chuyên gia",
+    "layers": "12 mặt 9 tầng (1.212 mảnh ghép)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Tác phẩm cơ khí huyền thoại do Jason Smith thiết kế (9 tầng trên khối 12 mặt, tương đương 9x9x9): mỗi mặt chứa 61 viên tâm và mỗi cạnh gồm 7 viên.",
+    "structure": "732 viên tâm (61 viên/mặt), 210 viên cạnh (30 bộ 7 viên) và 20 viên góc.",
+    "differences": "Mọi quy tắc giải đều tuân theo phương pháp Reduction tổng quát của Gigaminx/Teraminx với các lớp xoay từ `2Rw` đến `4Rw`.",
+    "supportedNotation": [
+      "U",
+      "R",
+      "L",
+      "F",
+      "2Rw",
+      "3Rw",
+      "4Rw"
+    ],
+    "supportedMethods": [
+      "megaminx-reduction"
+    ],
+    "stages": [
+      "Bước 1: Xây dựng 12 cụm tâm 61 viên từ ngôi sao trung tâm ra viền ngoài",
+      "Bước 2: Ghép 30 bộ cạnh 7 viên",
+      "Bước 3: Giải hoàn tất như Megaminx tiêu chuẩn"
+    ],
+    "specialCases": [
+      "Sử dụng bảng tọa độ lớp xoay `(mRw, nLw)` để hoán đổi chính xác từng viên tâm lẻ ở 2 mặt cuối cùng."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "skewb",
+    "name": "Skewb (Rubik Xoay Chéo Góc WCA)",
+    "slug": "skewb",
+    "category": "Skewb Family (Họ Xoay Chéo Góc)",
+    "categoryCode": "skewb",
+    "difficulty": "Cơ bản – Nâng cao",
+    "layers": "Deep-cut Corner-Turning Cube (6 tâm, 8 góc)",
+    "wcaOfficial": true,
+    "simulatorEngine": "none",
+    "description": "Được Tony Durham phát minh và trở thành bộ môn thi đấu chính thức của WCA từ năm 2014. Khác với 3x3x3 xoay theo mặt phẳng song song với mặt, Skewb xoay quanh 4 trục đường chéo đi qua các đỉnh góc, mỗi nhát cắt chia đôi khối lập phương!",
+    "structure": "Chỉ gồm 6 viên tâm hình vuông lớn và 8 viên góc (4 góc gắn liền trục spider và 4 góc tự do). Mỗi bước xoay 120° làm di chuyển đồng thời 3 viên tâm và 4 viên góc.",
+    "differences": "Toàn bộ phương pháp giải Skewb (Sarah's Beginner, Intermediate, Advanced) đều xoay quanh duy nhất một tổ hợp nền tảng gọi là **Sledgehammer** (`R' L R L'`) và nghịch đảo của nó là **Hedgeslammer** (`L R' L' R`).",
+    "supportedNotation": [
+      "R",
+      "R'",
+      "L",
+      "L'",
+      "U",
+      "U'",
+      "B",
+      "B'"
+    ],
+    "supportedMethods": [
+      "skewb-sarah"
+    ],
+    "stages": [
+      "Bước 1: Giải hoàn chỉnh 1 mặt đầu tiên (thường là mặt Trắng — sao cho 4 góc mặt Trắng đúng vị trí tương đối với nhau)",
+      "Bước 2: Định hướng 4 góc mặt đối diện (mặt Vàng) bằng Sledgehammer `R' L R L'` (trường hợp Pi hoặc Peanut)",
+      "Bước 3: Giải viên tâm mặt Vàng lên đỉnh (`R' L R L' y2 R' L R L'`)",
+      "Bước 4: Hoán vị 3 hoặc 4 viên tâm mặt bên cuối cùng (U-Perm của tâm, Z-Perm hoặc H-Perm của tâm)"
+    ],
+    "specialCases": [
+      "Case Pi (2 góc Vàng nhìn sang 2 bên đối diện): Đặt 2 góc Vàng ở mặt Trước-Trái, làm 1 lần Sledgehammer `R' L R L'`.",
+      "Case Peanut (2 góc Vàng nhìn chéo kiểu đèn pha lệch): Làm `R' L R L' y' R' L R L'` để đưa về Pi rồi giải.",
+      "U-Perm 3 Tâm (Hoán vị 3 viên tâm cuối): `R' L R L' y2 R' L R L'`."
+    ],
+    "referenceUrl": "https://www.worldcubeassociation.org/regulations/"
+  },
+  {
+    "id": "master-skewb",
+    "name": "Master Skewb & Elite Skewb",
+    "slug": "master-skewb",
+    "category": "Skewb Family (Họ Xoay Chéo Góc)",
+    "categoryCode": "skewb",
+    "difficulty": "Nâng cao",
+    "layers": "Corner-Turning nhiều tầng (Có thêm 12 cạnh & tâm nhỏ)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Phiên bản nhiều tầng của Skewb (cắt nông hơn và thêm các đường cắt song song với trục chéo), bổ sung 12 viên cạnh và chia mỗi mặt tâm thành 1 tâm giữa + 4 tâm góc.",
+    "structure": "Gồm 6 viên tâm chính giữa, 24 viên tâm góc nhỏ, 12 viên cạnh và 8 viên góc.",
+    "differences": "Vừa có cơ chế xoay góc sâu của Skewb vừa có các viên cạnh cần được ghép và định hướng bằng Commutator Sledgehammer mở rộng.",
+    "supportedNotation": [
+      "R",
+      "R'",
+      "L",
+      "L'",
+      "U",
+      "U'",
+      "B",
+      "B'",
+      "r",
+      "r'",
+      "l",
+      "l'"
+    ],
+    "supportedMethods": [
+      "skewb-sarah"
+    ],
+    "stages": [
+      "Bước 1: Giải 6 viên tâm chính giữa và 8 viên góc như Skewb tiêu chuẩn",
+      "Bước 2: Ghép và hoán vị 12 viên cạnh bằng chu kỳ 3 cạnh `[R' L R L', U]`",
+      "Bước 3: Hoàn thiện 24 viên tâm nhỏ bằng Commutator lớp mỏng (`r, l`)"
+    ],
+    "specialCases": [
+      "Đổi chiều 2 viên cạnh trên Master Skewb: kết hợp Sledgehammer với bước setup tầng đỉnh."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "ultimate-skewb",
+    "name": "Skewb Ultimate & Skewb Diamond",
+    "slug": "ultimate-skewb",
+    "category": "Skewb Family (Họ Xoay Chéo Góc)",
+    "categoryCode": "skewb",
+    "difficulty": "Nâng cao",
+    "layers": "Shape Mod 12 mặt / 8 mặt của Skewb",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Hai biến thể hình dạng nổi tiếng nhất của Skewb do Uwe Mèffert phát hành: **Skewb Diamond** (cắt thành hình bát diện 8 mặt, trong đó 6 tâm Skewb biến thành 6 đỉnh nhọn và 8 góc Skewb biến thành 8 mặt phẳng tam giác!) và **Skewb Ultimate** (cắt thành khối thập nhị diện 12 mặt không đều).",
+    "structure": "Cơ học bên trong 100% là Skewb (6 tâm + 8 góc), nhưng trên Skewb Ultimate thì cả 6 viên tâm đều có 2 màu nên nhạy cảm với hướng xoay 180°, và cả 8 viên góc đều có hình dạng lộ rõ hướng xoay.",
+    "differences": "Trên Skewb chuẩn, viên tâm 1 màu xoay 180° không nhìn thấy sự khác biệt; nhưng trên Skewb Ultimate, bạn phải xoay đúng chiều tất cả 6 viên tâm 2-màu!",
+    "supportedNotation": [
+      "R",
+      "R'",
+      "L",
+      "L'",
+      "U",
+      "U'",
+      "B",
+      "B'"
+    ],
+    "supportedMethods": [
+      "skewb-sarah"
+    ],
+    "stages": [
+      "Bước 1: Ghép 1 nửa khối (1 tâm đáy + 4 góc kề đúng hướng với tâm đáy)",
+      "Bước 2: Hoán vị 5 viên tâm còn lại về đúng vị trí và đúng chiều bằng `(R' L R L')`",
+      "Bước 3: Định hướng và hoán vị 4 góc tầng trên bằng `(R' L R L') x 2` (xoay góc mà giữ nguyên tâm)"
+    ],
+    "specialCases": [
+      "Xoay đồng thời 2 viên tâm 180° trên Skewb Ultimate mà giữ nguyên góc: `(R' L R L') x 6`? Không, `(R' L R L') x 3` là phép đồng nhất trên góc nhưng xoay 4 tâm đi 180°!"
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "square-1",
+    "name": "Square-1 (Back to Square One — WCA)",
+    "slug": "square-1",
+    "category": "Square-1 Family (Họ Biến Đổi Hình Dạng)",
+    "categoryCode": "square1",
+    "difficulty": "Nâng cao – Chuyên gia",
+    "layers": "3 tầng (Tầng U & D cắt góc 30°/60°, Tầng giữa cắt chéo `/ `)",
+    "wcaOfficial": true,
+    "simulatorEngine": "none",
+    "description": "Khối Rubik biến đổi hình dạng (Shapeshifting) duy nhất nằm trong danh sách 17 bộ môn thi đấu chính thức của WCA! Tầng trên và tầng dưới được chia thành các viên góc rộng 60° và viên cạnh hẹp 30°, cho phép viên góc và viên cạnh hoán đổi vị trí cho nhau qua nhát cắt dọc `/`.",
+    "structure": "Tầng U và D (tổng góc 360° mỗi tầng) gồm 8 viên góc (mỗi viên chiếm 60° = 2 đơn vị) và 8 viên cạnh (mỗi viên chiếm 30° = 1 đơn vị). Tầng giữa (Equator) chỉ gồm 2 mảnh hình thang (1 mảnh gắn trục và 1 mảnh xoay theo nhát cắt `/`).",
+    "differences": "Hệ ký hiệu riêng hoàn toàn: `(u, d) /` trong đó `u` là số bội của 30° xoay mặt U theo chiều KĐH (từ -5 đến 6), `d` là số bội của 30° xoay mặt D theo chiều KĐH, và `/` là xoay nửa phải của toàn bộ khối đi 180°. Có tới 90 trạng thái hình dạng (Cube Shape) và xuất hiện Square-1 Parity cực kỳ phức tạp.",
+    "supportedNotation": [
+      "/",
+      "(u, d)",
+      "(1, 0)",
+      "(0, -1)",
+      "(3, 3)",
+      "(6, 0)",
+      "(-3, 0)"
+    ],
+    "supportedMethods": [
+      "sq1-vandenbergh",
+      "sq1-lin"
+    ],
+    "stages": [
+      "Bước 1 — Cube Shape (CS): Đưa khối từ hình dạng bất kỳ về hình lập phương vuông vức (cách phổ biến nhất cho người mới là gom cả 8 viên cạnh nhỏ lên mặt U thành hình Scallop-Kite rồi cắt `/ (-2,-4) / (-1,-2) / (-3,-3) /`)",
+      "Bước 2 — Corner Orientation (CO): Đưa 4 góc mặt Vàng/Trắng về đúng tầng U/D",
+      "Bước 3 — Edge Orientation (EO): Đưa 4 cạnh mặt Vàng/Trắng về đúng tầng U/D bằng công thức đổi M2 hay 1 cạnh `(1,0) / (-1,-1) / (0,1)`",
+      "Bước 4 — Corner Permutation (CP): Giải vị trí 8 viên góc ở cả hai tầng (dùng J/J, J/N, N/J...)",
+      "Bước 5 — Edge Permutation (EP) & Parity: Giải 8 viên cạnh và sửa lật tầng giữa Equator (`/ (6,0) / (6,0) /`)"
+    ],
+    "specialCases": [
+      "Scallop-Kite tới Hình Lập Phương (3 slices): `/ (-2,-4) / (-1,-2) / (-3,-3) /`.",
+      "Square-1 Adjacent Edge Parity (Đổi 2 cạnh kề UF-UR trên mặt U): `/ (-3,0) / (0,3) / (0,-3) / (0,3) / (2,0) / (0,2) / (-2,0) / (4,0) / (0,-2) / (0,2) / (-1,4) / (0,-3) / (0,3)`.",
+      "Equator Flip (Sửa mặt giữa bị lật ngược chữ nhật): `/ (6,0) / (6,0) /`."
+    ],
+    "referenceUrl": "https://www.worldcubeassociation.org/regulations/"
+  },
+  {
+    "id": "super-square-1",
+    "name": "Super Square-1 & Square-2",
+    "slug": "super-square-1",
+    "category": "Square-1 Family (Họ Biến Đổi Hình Dạng)",
+    "categoryCode": "square1",
+    "difficulty": "Chuyên gia",
+    "layers": "4 tầng (Super Sq-1) hoặc cắt đôi góc 30° (Square-2)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Hai biến thể nâng cao của Square-1: **Super Square-1** có 4 tầng (2 tầng trong và 2 tầng ngoài đều có 4 góc 60° + 4 cạnh 30°), còn **Square-2** chia đôi cả 8 viên góc thành 16 mảnh 30° nên mọi mảnh ở tầng U và D đều rộng đúng 30°!",
+    "structure": "Super Square-1 hoạt động như 2 khối Square-1 lồng vào nhau; Square-2 có 24 mảnh 30° ở 2 tầng U/D nên không bao giờ bị kẹt nhát cắt `/`.",
+    "differences": "Square-2 luôn luôn thực hiện được nhát cắt `/` ở mọi vị trí xoay 30° (không bị viên góc 60° chặn nhát cắt), nhưng sau khi ghép các cặp góc 30° thành góc 60° thì giải hệt như Square-1.",
+    "supportedNotation": [
+      "/",
+      "(u, d)",
+      "(u, u_inner, d_inner, d)"
+    ],
+    "supportedMethods": [
+      "sq1-vandenbergh"
+    ],
+    "stages": [
+      "Với Super Square-1: Giải 2 tầng trong (Inner Layers) về hình vuông và hoàn tất CP/EP tầng trong trước, sau đó giải 2 tầng ngoài.",
+      "Với Square-2: Ghép 8 cặp mảnh góc 30° thành 8 góc 60° chuẩn, rồi giải theo 5 bước Vandenbergh của Square-1."
+    ],
+    "specialCases": [
+      "Parity riêng lẻ giữa tầng trong và tầng ngoài của Super Square-1: áp dụng thuật toán Parity chỉ trên tầng đang bị lẻ."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "gear-cube",
+    "name": "Gear Cube (Caution Cube)",
+    "slug": "gear-cube",
+    "category": "Gear Puzzles (Rubik Bánh Răng)",
+    "categoryCode": "gear",
+    "difficulty": "Cơ bản – Trung cấp",
+    "layers": "3x3x3 truyền động bánh răng liên kết",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Được Oskar van Deventer phát minh: một khối 3x3x3 mà toàn bộ 12 viên cạnh là các bánh răng ăn khớp với 8 viên góc. Khi xoay mặt R đi 180°, tầng giữa sẽ tự động quay theo 90° và các bánh răng cạnh tự xoay quanh trục của nó!",
+    "structure": "Chỉ cho phép các bước xoay 180° (`R2, U2, F2...`) để giữ khối ở dạng lập phương; cần tới 6 lần xoay 90° (tức `R6` = 3 vòng 180°) thì cả mặt, tầng giữa và răng cưa mới trở lại trạng thái ban đầu!",
+    "differences": "Dù ngoại hình trông rất phức tạp và hầm hố, nhưng do chỉ xoay được các bước 180° và các mặt đối diện bị ràng buộc bởi bánh răng, số trạng thái khả dĩ của Gear Cube cực nhỏ (chỉ 41.472 trạng thái) và chỉ cần đúng **3 công thức ngắn** để giải xong!",
+    "supportedNotation": [
+      "R",
+      "R2",
+      "R'",
+      "R2'",
+      "U",
+      "U2",
+      "F",
+      "F2"
+    ],
+    "supportedMethods": [
+      "gear-standard"
+    ],
+    "stages": [
+      "Bước 1: Đưa 8 viên góc về đúng vị trí và khớp màu với 6 viên tâm (rất trực quan vì chỉ dùng các bước xoay 180°)",
+      "Bước 2: Hoán vị 12 viên cạnh bánh răng về đúng vị trí bằng 2 công thức đổi cặp cạnh (`R2 U R2 U` hoặc `R2 U2 R2 U2`)",
+      "Bước 3: Xoay tự định hướng răng cưa của 4 bánh răng tầng giữa bằng `(R U) x 3` hoặc `R4` (xoay mặt R 2 vòng 360°)"
+    ],
+    "specialCases": [
+      "Hoán đổi 2 cạnh đối diện trên mặt U (UF và UB): `R2 U R2 U`.",
+      "Xoay định hướng phẳng răng cưa 4 cạnh trên vòng M: `R4` (xoay mặt R đủ 4 lần 90° cùng chiều)."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "gear-ball",
+    "name": "Gear Ball & Gear Cube Extreme",
+    "slug": "gear-ball",
+    "category": "Gear Puzzles (Rubik Bánh Răng)",
+    "categoryCode": "gear",
+    "difficulty": "Trung cấp – Nâng cao",
+    "layers": "Hình cầu bánh răng / Bán bánh răng (8 cạnh răng + 4 cạnh trơn)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "**Gear Ball** là phiên bản hình cầu của Gear Cube với các miếng đệm màu giúp dễ nhận diện hướng bánh răng; còn **Gear Cube Extreme (Ultimate)** loại bỏ răng cưa ở 4 viên cạnh tầng giữa, cho phép xoay tầng U và D đi 90° tự do khiến độ khó tăng vọt!",
+    "structure": "Gear Ball có 12 cạnh bánh răng đầy đủ như Gear Cube; Gear Cube Extreme có 8 cạnh bánh răng (ở tầng U/D) và 4 cạnh trơn không răng (ở tầng E).",
+    "differences": "På Gear Cube Extreme, do tầng U và D xoay được 90° độc lập nên 8 viên góc không còn bị khóa vào các bước 180° nữa, đòi hỏi giải 4 cạnh trơn tầng giữa rồi dùng Commutator 3-cycle cho 8 bánh răng.",
+    "supportedNotation": [
+      "U",
+      "U'",
+      "U2",
+      "D",
+      "D'",
+      "R2",
+      "L2",
+      "F2",
+      "B2"
+    ],
+    "supportedMethods": [
+      "gear-standard"
+    ],
+    "stages": [
+      "Với Gear Ball: Giải 3 bước giống hệt Gear Cube (Góc -> Vị trí Cạnh `R2 U R2 U` -> Hướng bánh răng `R4`).",
+      "Với Gear Cube Extreme: Giải 4 cạnh trơn tầng E -> Giải 8 góc -> Hoán vị và xoay định hướng 8 bánh răng tầng U/D."
+    ],
+    "specialCases": [
+      "3-Cycle bánh răng trên Gear Cube Extreme: `(R2 U R2 U') x 3`."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "gear-shift",
+    "name": "Gear Shift (Khối Tách Ly Hợp Bánh Răng)",
+    "slug": "gear-shift",
+    "category": "Gear Puzzles (Rubik Bánh Răng)",
+    "categoryCode": "gear",
+    "difficulty": "Trung cấp",
+    "layers": "2x2x2 tách trục ly hợp bánh răng (8 góc răng cưa)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Một thiết kế độc đáo gồm 8 mảnh góc bánh răng ăn khớp nhau. Người chơi có thể KÉO TÁCH khối Rubik ra làm 2 nửa (như bộ ly hợp hộp số ô tô) để một nửa xoay tự do trong khi nửa kia đứng yên!",
+    "structure": "8 viên góc rỗng có bánh răng ăn khớp trực tiếp với nhau trên lõi đàn hồi có thể kéo giãn theo 3 trục.",
+    "differences": "Không xoay mặt như Rubik truyền thống mà vặn xoắn các bánh răng góc cùng nhau hoặc kéo tách 4 viên một bên để lệch pha số răng.",
+    "supportedNotation": [
+      "Twist-All",
+      "Split-R-Twist",
+      "Split-U-Twist"
+    ],
+    "supportedMethods": [
+      "gear-standard"
+    ],
+    "stages": [
+      "Bước 1: Đưa 8 viên góc về đúng vị trí lập phương (nếu có viên bị lệch vị trí trong sản xuất mới cần tháo lắp, vì bình thường 8 góc không đổi chỗ cho nhau mà chỉ tự xoay tại chỗ!)",
+      "Bước 2: Kéo tách ly hợp từng mặt để xoay đồng bộ từng nhóm 4 bánh răng cho đến khi cả 8 góc phẳng mặt"
+    ],
+    "specialCases": [
+      "Xoay 1 viên góc đơn lẻ đi 1 nấc răng: kéo tách mặt chứa góc đó, xoay 7 góc còn lại theo chu kỳ hợp lệ."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "gear-pyraminx",
+    "name": "Gear Pyraminx (Kim Tự Tháp Bánh Răng)",
+    "slug": "gear-pyraminx",
+    "category": "Gear Puzzles (Rubik Bánh Răng)",
+    "categoryCode": "gear",
+    "difficulty": "Trung cấp – Nâng cao",
+    "layers": "Tứ diện bánh răng (6 cạnh răng cưa + 4 tâm mặt)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Kết hợp hình học tứ diện của Pyraminx với hệ truyền động bánh răng của Gear Cube: 6 viên cạnh là 6 bánh răng ăn khớp với 4 đỉnh góc lớn.",
+    "structure": "Gồm 4 cụm đỉnh góc lớn, 4 viên tâm mặt tam giác và 6 viên cạnh bánh răng.",
+    "differences": "Khi xoay 1 đỉnh góc, 3 bánh răng cạnh kề đỉnh đó cùng quay và kéo theo tầng đối diện, nên cần dùng chu kỳ lặp của 2 đỉnh để hoán vị cạnh và tâm mặt.",
+    "supportedNotation": [
+      "R",
+      "L",
+      "U",
+      "B"
+    ],
+    "supportedMethods": [
+      "gear-standard"
+    ],
+    "stages": [
+      "Bước 1: Định hướng 4 đỉnh góc lớn về đúng màu tương ứng",
+      "Bước 2: Hoán vị 6 bánh răng cạnh về đúng gờ bằng `(R L) x 3`",
+      "Bước 3: Xoay định hướng phẳng răng cưa và 4 viên tâm mặt"
+    ],
+    "specialCases": [
+      "Chu kỳ hoán vị 3 cạnh bánh răng: `(R L R' L')` lặp theo bội số răng."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "clock",
+    "name": "Rubik's Clock (Đồng Hồ Rubik WCA)",
+    "slug": "clock",
+    "category": "Other Twisty Puzzles (Clock, Copter, Edge/Corner-Turning)",
+    "categoryCode": "other",
+    "difficulty": "Cơ bản – Nâng cao",
+    "layers": "2 mặt x 9 đồng hồ (18 mặt số, 4 bánh xe, 4 chốt Pin)",
+    "wcaOfficial": true,
+    "simulatorEngine": "none",
+    "description": "Puzzle cơ khí phi-đa-diện duy nhất trong danh sách thi đấu chính thức của WCA! Gồm 2 mặt (mặt trước và mặt sau), mỗi mặt có 9 mặt đồng hồ (3x3), được điều khiển bởi 4 bánh xe ở 4 góc và 4 chốt bấm (Pins: UR, DR, DL, UL). Mục tiêu là đưa toàn bộ 18 kim đồng hồ ở cả 2 mặt cùng chỉ đúng **12 giờ**.",
+    "structure": "4 chốt Pin có thể ấn lên (UP) hoặc xuống (DOWN). Khi xoay một bánh xe góc có chốt đang UP, toàn bộ các đồng hồ nằm trong vùng 2x2 quanh các chốt đang UP ở mặt trước sẽ quay cùng nhau, đồng thời ở mặt sau các góc có chốt DOWN chỉ quay riêng đồng hồ góc đó.",
+    "differences": "Hoàn toàn là một hệ phương trình tuyến tính modulo 12 (nhóm Abelian giao hoán — thứ tự các thao tác thực hiện không ảnh hưởng đến kết quả cuối cùng nếu dùng phương pháp 7-Simul không lật mặt!).",
+    "supportedNotation": [
+      "UR",
+      "DR",
+      "DL",
+      "UL",
+      "U",
+      "R",
+      "D",
+      "L",
+      "ALL",
+      "y2",
+      "0+",
+      "1+",
+      "6+",
+      "1-",
+      "5-"
+    ],
+    "supportedMethods": [
+      "clock-flip",
+      "clock-7simul"
+    ],
+    "stages": [
+      "Bước 1 (Mặt 1 — Cross): Lần lượt bật từng cặp chốt để đồng bộ 4 kim cạnh (U, R, D, L) với kim tâm chính giữa (Center), sau đó bật ALL đưa cả 5 kim chữ thập về 12h",
+      "Bước 2 (Lật mặt `y2` — Mặt 2 Cross): Lặp lại quy trình ghép chữ thập 5 kim trên mặt 2 về 12h",
+      "Bước 3 (Giải 4 góc): Lần lượt hạ từng chốt góc xuống (3 chốt kia UP) để đồng bộ từng đồng hồ góc với chữ thập, cuối cùng bật ALL đưa toàn bộ 9 kim (và tự động cả 9 kim mặt sau!) về đúng 12h"
+    ],
+    "specialCases": [
+      "Vì 4 góc thông xuyên qua cả 2 mặt (kim góc UR mặt trước quay +x giờ thì kim góc UL mặt sau quay -x giờ), nên khi giải xong 4 góc ở mặt 2 thì cả 4 góc ở mặt 1 cũng tự động chỉ đúng 12 giờ!"
+    ],
+    "referenceUrl": "https://www.worldcubeassociation.org/regulations/"
+  },
+  {
+    "id": "dino-cube",
+    "name": "Dino Cube (6-Color Edge-Only Cube)",
+    "slug": "dino-cube",
+    "category": "Other Twisty Puzzles (Clock, Copter, Edge/Corner-Turning)",
+    "categoryCode": "other",
+    "difficulty": "Cơ bản",
+    "layers": "Corner-Turning nông (Chỉ gồm 12 viên cạnh)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Khối Rubik xoay quanh 8 đỉnh góc nhưng nhát cắt nông chỉ đi qua tâm mặt, khiến toàn bộ khối chỉ bao gồm đúng **12 viên cạnh** (mỗi viên 2 màu) mà không có viên tâm hay viên góc lộ ra ngoài.",
+    "structure": "12 viên cạnh hình tam giác cân ghép lại thành 6 mặt vuông (mỗi mặt gồm 4 cạnh). Mỗi bước xoay quanh 1 góc làm chu chuyển 3 viên cạnh quanh góc đó.",
+    "differences": "Các viên cạnh của Dino Cube không bao giờ bị lật ngược chiều (luôn đúng định hướng!). Tuy nhiên do không có tâm cố định, Dino Cube có 2 trạng thái 'đã giải' là hệ màu chuẩn và hệ màu phản chiếu gương (Mirror Color Scheme).",
+    "supportedNotation": [
+      "UFR",
+      "UFL",
+      "UBL",
+      "UBR",
+      "DFR",
+      "DFL",
+      "DBL",
+      "DBR"
+    ],
+    "supportedMethods": [
+      "redi-dino-lbl"
+    ],
+    "stages": [
+      "Bước 1: Chọn mặt Trắng làm đáy và đưa 4 viên cạnh Trắng về đúng thứ tự màu (Đỏ - Xanh lá - Cam - Xanh dương) để tránh rơi vào hệ màu gương",
+      "Bước 2: Giải 4 viên cạnh tầng giữa bằng các bước xoay xuống-xuống-lên-lên (Sledgehammer tại góc)",
+      "Bước 3: Giải 4 viên cạnh tầng cuối bằng đúng 1 công thức 3-cycle cạnh (`R' L R L'` trên 2 góc kề)"
+    ],
+    "specialCases": [
+      "Lỗi hệ màu gương (4 cạnh tầng cuối không thể khớp màu với tầng giữa): Do ở Bước 1 bạn đã xếp 4 cạnh đáy Trắng ngược chiều kim đồng hồ (Đỏ - Xanh dương - Cam - Xanh lá); chỉ cần đổi lại 2 cạnh đối ở mặt đáy là giải được ngay."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "ivy-cube",
+    "name": "Ivy Cube (Eye / Leaf Cube)",
+    "slug": "ivy-cube",
+    "category": "Other Twisty Puzzles (Clock, Copter, Edge/Corner-Turning)",
+    "categoryCode": "other",
+    "difficulty": "Cơ bản",
+    "layers": "4 trục xoay góc (6 viên tâm chiếc lá + 4 viên góc)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Được Eitan Cher thiết kế: một biến thể rút gọn của Skewb/Rex Cube chỉ xoay quanh 4 đỉnh góc xen kẽ, tạo nên hình chiếc lá (Ivy Leaf) mềm mại trên mỗi mặt.",
+    "structure": "Chỉ gồm 4 viên góc cố định trục xoay và 6 viên tâm hình chiếc lá nằm giữa các mặt. God's Number của Ivy Cube chỉ là **8 bước xoay**!",
+    "differences": "Dễ hơn cả Skewb vì chỉ có 4 góc (trong đó 2 góc mặt Trắng đối diện nhau và 2 góc mặt Vàng đối diện nhau), rất lý tưởng cho người mới làm quen cơ chế Sledgehammer.",
+    "supportedNotation": [
+      "R",
+      "R'",
+      "L",
+      "L'",
+      "U",
+      "U'",
+      "B",
+      "B'"
+    ],
+    "supportedMethods": [
+      "skewb-sarah"
+    ],
+    "stages": [
+      "Bước 1: Xoay 2 góc Trắng về cùng mặt Trắng và đưa viên lá Trắng vào giữa để hoàn thành mặt Trắng",
+      "Bước 2: Làm tương tự cho mặt Vàng đối diện ở phía trên",
+      "Bước 3: Chu chuyển 3 viên tâm chiếc lá ở 4 mặt bên bằng công thức Sledgehammer `R' L R L'`"
+    ],
+    "specialCases": [
+      "Khi cả 4 viên tâm chiếc lá mặt bên đều sai vị trí: làm `R' L R L'` bất kỳ để đưa 1 viên về đúng rồi làm thêm 1 lần nữa là hoàn tất."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "redi-cube",
+    "name": "Redi Cube (8-Corner Turning Cube)",
+    "slug": "redi-cube",
+    "category": "Other Twisty Puzzles (Clock, Copter, Edge/Corner-Turning)",
+    "categoryCode": "other",
+    "difficulty": "Cơ bản",
+    "layers": "8 trục xoay đỉnh góc (8 góc + 12 cạnh)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Được Oskar van Deventer thiết kế và MoYu sản xuất đại trà: kết hợp 12 viên cạnh của Dino Cube với 8 viên góc xoay tại chỗ (giống như 4 Tips của Pyraminx nhưng trên cả 8 đỉnh lập phương).",
+    "structure": "8 viên góc chỉ tự xoay tại chỗ (3 hướng mỗi góc) và định hình luôn hệ màu chuẩn cho khối; 12 viên cạnh chu chuyển xung quanh các góc nhưng không bao giờ bị lật sai hướng.",
+    "differences": "Nhờ có 8 viên góc cố định vị trí, Redi Cube KHÔNG BAO GIỜ bị nhầm hệ màu gương như Dino Cube!",
+    "supportedNotation": [
+      "R",
+      "R'",
+      "L",
+      "L'",
+      "F",
+      "F'",
+      "B",
+      "B'",
+      "u",
+      "d"
+    ],
+    "supportedMethods": [
+      "redi-dino-lbl"
+    ],
+    "stages": [
+      "Bước 1: Xoay 4 góc mặt Trắng khớp hướng với nhau và đưa 4 cạnh Trắng về đúng giữa các cặp góc",
+      "Bước 2: Đưa 4 cạnh tầng giữa về đúng vị trí bằng Sledgehammer trên 2 góc tầng trên",
+      "Bước 3: Xoay 4 góc tầng Vàng hướng lên trên, sau đó dùng `R' L R L'` để hoán vị 3 cạnh cuối cùng"
+    ],
+    "specialCases": [
+      "Hoán vị 3 cạnh tầng trên (UF -> UL -> UB): giữ mặt F trước mặt, thực hiện `R' L R L'` trên 2 góc UFR và UFL."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "helicopter-cube",
+    "name": "Helicopter Cube (Edge-Turning Cube)",
+    "slug": "helicopter-cube",
+    "category": "Other Twisty Puzzles (Clock, Copter, Edge/Corner-Turning)",
+    "categoryCode": "other",
+    "difficulty": "Nâng cao",
+    "layers": "12 trục xoay cạnh (8 góc + 24 tâm cánh hoa)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Được Adam G. Cowan phát minh năm 2005: thay vì xoay theo mặt (như 3x3x3) hay xoay theo góc (như Skewb), Helicopter Cube xoay quanh **12 gờ cạnh** của hình lập phương! Mỗi bước xoay 180° quanh 1 cạnh sẽ đổi chỗ 2 góc và các mảnh tâm cánh hoa.",
+    "structure": "Bao gồm 8 viên góc và 24 mảnh tâm nhỏ (4 mảnh tâm trên mỗi mặt). Hỗ trợ cả xoay chuẩn 180° lẫn xoay biến dạng **Jumbling Moves** (xoay ~71° làm các mảnh đổi quỹ đạo cho nhau!).",
+    "differences": "Nếu chỉ xoay 180° (không Jumbling), mỗi mảnh tâm trong số 24 mảnh chỉ di chuyển trên một quỹ đạo cố định gồm 6 vị trí (1 vị trí trên mỗi mặt) nên không thể đổi chỗ 2 mảnh tâm cùng quỹ đạo nếu không dùng Jumbling!",
+    "supportedNotation": [
+      "UF",
+      "UR",
+      "UB",
+      "UL",
+      "FR",
+      "FL",
+      "BR",
+      "BL",
+      "DF",
+      "DR",
+      "DB",
+      "DL"
+    ],
+    "supportedMethods": [
+      "copter-standard"
+    ],
+    "stages": [
+      "Bước 1: Nếu khối bị biến dạng bởi Jumbling, đưa khối về lại hình lập phương và trả các mảnh tâm về đúng quỹ đạo",
+      "Bước 2: Giải 24 mảnh tâm về đúng 6 mặt màu bằng các bước xoay 3-cycle tâm `(UF UR UF UR)`",
+      "Bước 3: Hoán vị và định hướng 8 viên góc mà không làm xáo trộn các mảnh tâm đã giải"
+    ],
+    "specialCases": [
+      "Xoay 2 góc tại chỗ trên Helicopter Cube: `(UF UR UB UL) x 3`.",
+      "3-Cycle 3 góc trên mặt U (giữ nguyên tâm): `(UF FR UF FR) U_setup ...`"
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "curvy-copter",
+    "name": "Curvy Copter",
+    "slug": "curvy-copter",
+    "category": "Other Twisty Puzzles (Clock, Copter, Edge/Corner-Turning)",
+    "categoryCode": "other",
+    "difficulty": "Nâng cao – Chuyên gia",
+    "layers": "12 trục xoay cạnh cong (12 cạnh, 8 góc, 24 tâm lá)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Được Tom van der Zanden thiết kế: nâng cấp Helicopter Cube bằng các đường cắt cong sâu hơn, làm lộ ra **12 viên cạnh chính giữa** ở trên 12 trục xoay. Khi thực hiện Jumbling, nó vừa đổi quỹ đạo các mảnh tâm lá vừa làm lật chiều chính viên cạnh trục!",
+    "structure": "12 viên cạnh (mỗi viên là tâm của 1 trục xoay cạnh), 8 viên góc và 24 mảnh tâm hình chiếc lá (Petals).",
+    "differences": "Cung cấp một thao tác Jumbling chuẩn không làm mất hình lập phương (`UF+ UL+ FR- FL- UF+`) dùng để đổi quỹ đạo 2 mảnh tâm lá và lật đồng thời 1 viên cạnh trục!",
+    "supportedNotation": [
+      "UF",
+      "UR",
+      "UB",
+      "UL",
+      "FR",
+      "FL",
+      "BR",
+      "BL",
+      "DF",
+      "DR",
+      "DB",
+      "DL",
+      "UF+",
+      "UL-"
+    ],
+    "supportedMethods": [
+      "copter-standard"
+    ],
+    "stages": [
+      "Bước 1: Đưa khối về hình lập phương và định hướng đúng chiều toàn bộ 12 viên cạnh (vì cạnh chỉ đổi chiều khi Jumbling!)",
+      "Bước 2: Kiểm tra và sửa quỹ đạo (Orbit Parity) cho 24 mảnh tâm chiếc lá bằng Jumbling Algorithm chuẩn",
+      "Bước 3: Giải 5 mặt tâm lá và 4 góc đáy, cuối cùng giải 4 tâm lá và 4 góc tầng U"
+    ],
+    "specialCases": [
+      "Standard Jumbling Orbit Swap (Đổi quỹ đạo 2 mảnh tâm lá & lật cạnh FR/FL): `(UF+ UL+) FR (UF- UL-)`. Làm 2 lần liên tiếp với cạnh trung gian để đổi quỹ đạo tâm mà giữ nguyên hướng cạnh!"
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "rex-cube",
+    "name": "Rex Cube (Super Ivy Cube / Dino + Center Petals)",
+    "slug": "rex-cube",
+    "category": "Other Twisty Puzzles (Clock, Copter, Edge/Corner-Turning)",
+    "categoryCode": "other",
+    "difficulty": "Nâng cao",
+    "layers": "8 trục xoay góc sâu (12 cạnh, 6 tâm giữa, 24 cánh hoa)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Khối Rubik xoay quanh 8 góc với nhát cắt sâu tạo thành họa tiết bông hoa 5 mảnh (1 tâm vuông chính giữa + 4 cánh hoa Petals bao quanh) trên mỗi mặt, kèm theo 12 viên cạnh của Dino Cube.",
+    "structure": "Gồm 12 viên cạnh (như Dino Cube), 6 viên tâm chính giữa (như Ivy Cube) và 24 mảnh cánh hoa (4 cánh/mặt).",
+    "differences": "Giải như sự kết hợp tuần tự của Dino Cube (12 cạnh), Ivy Cube (6 tâm chính giữa) và cuối cùng dùng Commutator 8 bước (`[R' L R L', U' R L' R' L U]`) để chu chuyển từng cụm 3 mảnh cánh hoa mà không làm xáo trộn cạnh và tâm!",
+    "supportedNotation": [
+      "R",
+      "R'",
+      "L",
+      "L'",
+      "U",
+      "U'",
+      "B",
+      "B'"
+    ],
+    "supportedMethods": [
+      "redi-dino-lbl",
+      "copter-standard"
+    ],
+    "stages": [
+      "Bước 1: Giải toàn bộ 12 viên cạnh như Dino Cube",
+      "Bước 2: Giải 6 viên tâm vuông chính giữa như Ivy Cube (xác định chuẩn màu 6 mặt)",
+      "Bước 3: Giải 24 mảnh cánh hoa bằng Commutator 3-cycle cánh hoa: `(R' L R L') U' (L' R L R') U`"
+    ],
+    "specialCases": [
+      "3-Cycle Petals (Chu chuyển 3 mảnh cánh hoa mà bảo toàn toàn bộ 12 cạnh và 6 tâm giữa): `(R' L R L') U' (L' R L R') U` (áp dụng trên 2 góc đáy trước và 1 góc trên)."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "clover-cube",
+    "name": "Clover Cube (4-Leaf Edge-Turning Cube)",
+    "slug": "clover-cube",
+    "category": "Other Twisty Puzzles (Clock, Copter, Edge/Corner-Turning)",
+    "categoryCode": "other",
+    "difficulty": "Trung cấp – Nâng cao",
+    "layers": "12 trục xoay cạnh (6 tâm lớn + 24 cánh hoa cỏ 4 lá)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Biến thể xoay theo 12 cạnh tinh gọn hơn Curvy Copter: không có 8 viên góc lộ ra ngoài mà chỉ gồm 6 viên tâm lớn cố định và 24 mảnh cánh hoa (tạo thành cỏ 4 lá trên mỗi mặt).",
+    "structure": "6 viên tâm mặt cố định định hướng sẵn màu cho 6 mặt, cùng 24 mảnh cánh hoa xoay quanh 12 trục cạnh (có hỗ trợ Jumbling).",
+    "differences": "Không cần lo lắng về hoán vị hay định hướng 8 viên góc như Helicopter/Curvy Copter; toàn bộ lời giải tập trung vào việc đưa 24 cánh hoa về đúng màu 6 viên tâm.",
+    "supportedNotation": [
+      "UF",
+      "UR",
+      "UB",
+      "UL",
+      "FR",
+      "FL",
+      "BR",
+      "BL",
+      "DF",
+      "DR",
+      "DB",
+      "DL"
+    ],
+    "supportedMethods": [
+      "copter-standard"
+    ],
+    "stages": [
+      "Bước 1: Đưa khối về hình lập phương nếu bị Jumbling",
+      "Bước 2: Ghép 4 cánh hoa mặt đáy và 4 mặt bên trực quan",
+      "Bước 3: Dùng Commutator cạnh `(UF UR UF UR)` và Jumbling Swap để hoàn tất 4 cánh hoa mặt trên cùng"
+    ],
+    "specialCases": [
+      "3-Cycle 3 cánh hoa giữa mặt U và mặt F/R: `UF UR UF UR`."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "mixup-cube",
+    "name": "Mixup Cube (Oskar's 45° Slice Interchanging 3x3)",
+    "slug": "mixup-cube",
+    "category": "Other Twisty Puzzles (Clock, Copter, Edge/Corner-Turning)",
+    "categoryCode": "other",
+    "difficulty": "Nâng cao – Chuyên gia",
+    "layers": "3x3x3 cho phép xoay tầng giữa M/E/S đi 45 độ!",
+    "wcaOfficial": false,
+    "simulatorEngine": "cube-3x3",
+    "description": "Một phát minh thiên tài khác của Oskar van Deventer: trông giống một khối 3x3x3 có viên tâm nhỏ và viên cạnh lớn, nhưng điểm kỳ diệu là bạn có thể xoay các tầng giữa (`M, E, S`) đi chỉ **45 độ** (1/8 vòng)! Nhờ đó, **viên TÂM và viên CẠNH có thể đổi chỗ trực tiếp cho nhau**!",
+    "structure": "6 viên tâm và 12 viên cạnh có cùng kích thước cơ học trên đường rãnh tầng giữa, cho phép xoay `M+, E+, S+` (45°) rồi xoay mặt ngoài `U, R, F` để trộn lẫn tâm và cạnh.",
+    "differences": "Do tâm và cạnh hoán đổi được cho nhau, trên Mixup Cube có thể xuất hiện trạng thái **1 viên cạnh duy nhất bị lật ngược** hoặc **2 viên cạnh đổi chỗ cho nhau** ngay trên một khối 3x3x3!",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B",
+      "M+",
+      "M-",
+      "E+",
+      "E-",
+      "S+",
+      "S-"
+    ],
+    "supportedMethods": [
+      "3x3-cfop",
+      "shapemod-core"
+    ],
+    "stages": [
+      "Bước 1: Đưa toàn bộ 6 viên tâm (1 màu) về đúng 6 vị trí tâm và 12 viên cạnh (2 màu) về đúng 12 vị trí cạnh bằng thao tác `M+ U M-`",
+      "Bước 2: Giải khối như Rubik 3x3x3 (Cross + F2L)",
+      "Bước 3: Nếu ở tầng cuối xuất hiện Mixup OLL Parity (1 cạnh bị lật lẻ loi), dùng công thức Mixup Parity để lật riêng 1 cạnh đó rồi giải OLL + PLL như 3x3x3"
+    ],
+    "specialCases": [
+      "Mixup Single Edge Flip (Lật đúng 1 viên cạnh UF nhờ trao đổi tạm thời với tâm): `M+ U R U' R' U M- U2 R U R' U'` hoặc `(M+ U) x 3 M+ U2 (M+ U) x 3 M+`."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  },
+  {
+    "id": "rainbow-cube",
+    "name": "Rainbow Cube (Cuboctahedron 14-Face WCA Historic)",
+    "slug": "rainbow-cube",
+    "category": "Other Twisty Puzzles (Clock, Copter, Edge/Corner-Turning)",
+    "categoryCode": "other",
+    "difficulty": "Trung cấp – Nâng cao",
+    "layers": "Khối Cuboctahedron 14 mặt (6 mặt vuông + 8 mặt tam giác)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Khối đa diện Cuboctahedron 14 mặt màu sắc rực rỡ, từng là một bộ môn thi đấu chính thức của WCA đến năm 2007 (theo lịch sử WCA Regulations). Các mảnh tam giác màu di chuyển quanh các mặt vuông và tam giác.",
+    "structure": "14 mặt (6 mặt tứ giác và 8 mặt tam giác) chia sẻ các mảnh đỉnh xoay quanh trục đối xứng của khối lập phương - bát diện.",
+    "differences": "Cơ học tương đương với việc giải vị trí và định hướng các mảnh cạnh/góc thông qua các chuỗi Commutator 3-cycle `[R, U]`.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B"
+    ],
+    "supportedMethods": [
+      "shapemod-core"
+    ],
+    "stages": [
+      "Bước 1: Ghép các mặt màu tầng đáy và tầng xích đạo",
+      "Bước 2: Dùng Commutator 3-cycle để đưa các mảnh tam giác tầng trên cùng về đúng 14 mặt màu"
+    ],
+    "specialCases": [
+      "Sử dụng cặp mảnh đồng màu để đảo tính chẵn lẻ nếu gặp 2 mảnh cuối cần đổi chỗ."
+    ],
+    "referenceUrl": "https://en.wikipedia.org/wiki/Speedcubing"
+  },
+  {
+    "id": "bagua-cube",
+    "name": "Bagua Cube (Bát Quái Rubik — 45° Edge/Center Split 3x3)",
+    "slug": "bagua-cube",
+    "category": "Other Twisty Puzzles (Clock, Copter, Edge/Corner-Turning)",
+    "categoryCode": "other",
+    "difficulty": "Chuyên gia",
+    "layers": "3x3x3 tách đôi cạnh & tâm góc xoay 45 độ (>66 mảnh ngoài)",
+    "wcaOfficial": false,
+    "simulatorEngine": "none",
+    "description": "Một trong những biến thể 3x3x3 phức tạp nhất từng được thương mại hóa (thiết kế bởi Dayan): mỗi mặt có thể xoay từng nấc 45° làm các viên cạnh tách làm 3 mảnh và viên tâm tách thêm 4 mảnh tam giác nhỏ, cho phép thực hiện các bước cắt xuyên qua cạnh và tâm như sự kết hợp của Mixup Cube và Curvy Copter!",
+    "structure": "Gồm 6 viên tâm chính giữa, 24 mảnh tam giác tâm phụ, 12 viên cạnh chính, 24 mảnh cạnh phụ (wings) và 8 viên góc.",
+    "differences": "Khi bị xáo trộn ở góc 45° (Bandaging + Shapeshifting), các mảnh cạnh phụ và tâm phụ bị khóa chéo vào nhau; phải khôi phục về dạng lập phương 3x3x3 trước rồi mới Reduction từng nhóm mảnh phụ.",
+    "supportedNotation": [
+      "U",
+      "D",
+      "R",
+      "L",
+      "F",
+      "B",
+      "U+",
+      "U-",
+      "R+",
+      "R-"
+    ],
+    "supportedMethods": [
+      "4x4-reduction",
+      "shapemod-core"
+    ],
+    "stages": [
+      "Bước 1: Đưa khối về lại hình lập phương chuẩn (giải phóng các mảnh bị khóa Bandaged ở góc 45°)",
+      "Bước 2: Ghép 24 mảnh tam giác tâm phụ về đúng 6 viên tâm chính bằng Commutator 45° (`R+ U R- U' R+ U' R-`)",
+      "Bước 3: Ghép 24 mảnh cạnh phụ vào 12 viên cạnh chính (như ghép cạnh 5x5x5)",
+      "Bước 4: Giải hoàn tất như Rubik 3x3x3 (chú ý hướng của 6 viên tâm)"
+    ],
+    "specialCases": [
+      "3-Cycle mảnh tam giác tâm phụ trên Bagua Cube: `R+ U R- U' R+ U' R- U`."
+    ],
+    "referenceUrl": "https://www.speedsolving.com/wiki/index.php/Main_Page"
+  }
+]
